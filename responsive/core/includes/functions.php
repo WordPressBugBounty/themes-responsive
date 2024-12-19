@@ -250,8 +250,10 @@ if ( ! function_exists( 'responsive_setup' ) ) :
 				'footer-menu' => __( 'Footer Menu', 'responsive' ),
 			)
 		);
-
-		add_theme_support( 'custom-background' );
+		
+		/* WP-6540 - This part is commented out as it was overlaying the background image 
+		it was causing a bug when updating from 5.1.2 to 6.0.1, */
+		// add_theme_support( 'custom-background' );
 
 		add_theme_support(
 			'custom-header',
@@ -1221,7 +1223,7 @@ if ( ! function_exists( 'responsive_background_images_background_compatibility' 
 			if ( get_theme_mod( 'background_color' ) ) {
 				set_theme_mod( 'responsive_site_background_color', get_theme_mod( 'background_color' ) );
 			}
-			if ( get_theme_mod( 'responsive_inputs_border_width_top_border', 1 ) ) {
+			if ( get_theme_mod( 'responsive_inputs_border_width' ) ) {
 				set_theme_mod( 'responsive_inputs_border_width_top_border', get_theme_mod( 'responsive_inputs_border_width' ) );
 			}
 			update_option( 'responsive_old_background_images_compatible_done', true );

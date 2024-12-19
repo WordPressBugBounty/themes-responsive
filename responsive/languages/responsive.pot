@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive 6.0.2\n"
+"Project-Id-Version: Responsive 6.0.3\n"
 "Report-Msgid-Bugs-To: https://cyberchimps.com/forum/free/responsive/\n"
-"POT-Creation-Date: 2024-11-21 08:51:57+00:00\n"
+"POT-Creation-Date: 2024-12-19 10:29:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,8 +93,8 @@ msgstr ""
 #: admin/class-responsive-plugin-install-helper.php:95
 #: admin/class-responsive-plugin-install-helper.php:104
 #: admin/class-responsive-plugin-install-helper.php:149
-#: admin/templates/getting-started-home.php:348
-#: admin/templates/getting-started-home.php:379
+#: admin/templates/getting-started-home.php:350
+#: admin/templates/getting-started-home.php:381
 #: admin/templates/getting-started-settings.php:99
 msgid "Activate"
 msgstr ""
@@ -108,7 +108,7 @@ msgid "Jetpack Portfolio"
 msgstr ""
 
 #: admin/class-responsive-plugin-install-helper.php:153
-#: admin/templates/getting-started-home.php:353
+#: admin/templates/getting-started-home.php:355
 msgid "Activated"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgstr ""
 #: admin/templates/getting-started-home.php:163
 #: admin/templates/getting-started-home.php:179
 #: admin/templates/getting-started-home.php:195
-#: admin/templates/getting-started-home.php:225
+#: admin/templates/getting-started-home.php:227
 msgid "Settings"
 msgstr ""
 
@@ -176,7 +176,7 @@ msgid "Learn More"
 msgstr ""
 
 #: admin/templates/getting-started-help.php:19
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:90
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:92
 msgid "Documentation"
 msgstr ""
 
@@ -372,17 +372,17 @@ msgid "Update page layout"
 msgstr ""
 
 #: admin/templates/getting-started-home.php:132
-#: admin/templates/getting-started-home.php:205
+#: admin/templates/getting-started-home.php:206
 msgid "Starter Templates"
 msgstr ""
 
 #: admin/templates/getting-started-home.php:133
-#: admin/templates/getting-started-home.php:206
+#: admin/templates/getting-started-home.php:207
 msgid "Unlock the library of 100+ Premium Starter Templates."
 msgstr ""
 
 #: admin/templates/getting-started-home.php:136
-#: admin/templates/getting-started-home.php:209
+#: admin/templates/getting-started-home.php:210
 msgid "Explore Templates"
 msgstr ""
 
@@ -409,13 +409,13 @@ msgstr ""
 #: admin/templates/getting-started-home.php:159
 #: admin/templates/getting-started-home.php:175
 #: admin/templates/getting-started-home.php:191
-#: admin/templates/getting-started-home.php:221
-#: admin/templates/getting-started-home.php:497
-#: admin/templates/getting-started-home.php:532
-#: admin/templates/getting-started-home.php:575
-#: admin/templates/getting-started-home.php:626
-#: admin/templates/getting-started-home.php:693
-#: admin/templates/getting-started-home.php:729
+#: admin/templates/getting-started-home.php:223
+#: admin/templates/getting-started-home.php:500
+#: admin/templates/getting-started-home.php:535
+#: admin/templates/getting-started-home.php:578
+#: admin/templates/getting-started-home.php:629
+#: admin/templates/getting-started-home.php:697
+#: admin/templates/getting-started-home.php:733
 msgid "Docs"
 msgstr ""
 
@@ -428,92 +428,87 @@ msgid "REA Theme Builder lets you design & customize every aspect of your websit
 msgstr ""
 
 #: admin/templates/getting-started-home.php:187
-#: admin/templates/getting-started-home.php:217
+#: admin/templates/getting-started-home.php:219
 #: admin/templates/getting-started-settings.php:51
 msgid "White Label"
 msgstr ""
 
 #: admin/templates/getting-started-home.php:188
-#: admin/templates/getting-started-home.php:218
+#: admin/templates/getting-started-home.php:220
 msgid "White Label the theme name & settings with the Pro Plugin."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:240
-#: admin/templates/getting-started-home.php:247
-#: admin/templates/getting-started-home.php:254
-#: admin/templates/getting-started-home.php:261
+#: admin/templates/getting-started-home.php:242
+#: admin/templates/getting-started-home.php:249
+#: admin/templates/getting-started-home.php:256
+#: admin/templates/getting-started-home.php:263
 msgid "free"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:242
+#: admin/templates/getting-started-home.php:244
 msgid "150+ Ready to Import Designer-Made Website Starter Templates."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:249
+#: admin/templates/getting-started-home.php:251
 msgid "50+ Blocks to Enhance Your WordPress Block Editor Experience."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:256
+#: admin/templates/getting-started-home.php:258
 msgid ""
 "A free Elementor Addons plugin with more than 80+ premium quality Elementor "
 "widgets."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:263
+#: admin/templates/getting-started-home.php:265
 msgid "Free Plugin to Create Privacy Policy Pages for Your Website."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:301
+#: admin/templates/getting-started-home.php:303
 msgid "Customizer Settings"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:328
+#: admin/templates/getting-started-home.php:330
 msgid "Responsive Pro Features"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:330
+#: admin/templates/getting-started-home.php:332
 msgid "Responsive Plus Features"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:332
+#: admin/templates/getting-started-home.php:334
 msgid "Unlock More Features by Installing Responsive Plus"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:343
+#: admin/templates/getting-started-home.php:345
 msgid "Upgrade Now"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:477
-#: admin/templates/getting-started-home.php:560
-#: admin/templates/getting-started-home.php:611
-#: admin/templates/getting-started-home.php:673
+#: admin/templates/getting-started-home.php:479
+#: admin/templates/getting-started-home.php:563
+#: admin/templates/getting-started-home.php:614
+#: admin/templates/getting-started-home.php:676
 #: core/includes/customizer/controls/upsell/class-responsive-control-upsell.php:72
 msgid "PRO"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:481
-#: admin/templates/getting-started-home.php:677
-msgid "FREE"
-msgstr ""
-
-#: admin/templates/getting-started-home.php:485
+#: admin/templates/getting-started-home.php:488
 msgid "Mega Menu"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:486
+#: admin/templates/getting-started-home.php:489
 msgid "Adds menu options such as mega menus, highlight tags, icons, etc."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:499
-#: admin/templates/getting-started-home.php:534
-#: admin/templates/getting-started-home.php:577
-#: admin/templates/getting-started-home.php:628
-#: admin/templates/getting-started-home.php:695
-#: admin/templates/getting-started-home.php:731
+#: admin/templates/getting-started-home.php:502
+#: admin/templates/getting-started-home.php:537
+#: admin/templates/getting-started-home.php:580
+#: admin/templates/getting-started-home.php:631
+#: admin/templates/getting-started-home.php:699
+#: admin/templates/getting-started-home.php:735
 msgid "Customize"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:564
+#: admin/templates/getting-started-home.php:567
 #: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:44
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:230
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:243
@@ -526,40 +521,40 @@ msgstr ""
 msgid "Typography"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:565
+#: admin/templates/getting-started-home.php:568
 msgid "Adds options for font style, size, and family that suits your website best."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:615
+#: admin/templates/getting-started-home.php:618
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:44
 msgid "Colors & Backgrounds"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:616
+#: admin/templates/getting-started-home.php:619
 msgid "Enhances the background spacing, padding and color of your site."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:681
+#: admin/templates/getting-started-home.php:685
 msgid "Woocommerce"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:682
+#: admin/templates/getting-started-home.php:686
 msgid "Adds enhanced set of options in the WooCommerce store customizer."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:755
+#: admin/templates/getting-started-home.php:759
 msgid "See all PRO features"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:764
+#: admin/templates/getting-started-home.php:768
 msgid "Useful Plugins"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:794
+#: admin/templates/getting-started-home.php:798
 msgid "Rate Us"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:796
+#: admin/templates/getting-started-home.php:800
 msgid "Hi! Thanks for using the "
 msgstr ""
 
@@ -567,45 +562,45 @@ msgstr ""
 msgid "Responsive"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:796
+#: admin/templates/getting-started-home.php:800
 msgid ""
 " theme. Can you please do us a favor and give us a 5-star rating? Your "
 "feedback keeps us motivated and helps us grow the Responsive community."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:798
+#: admin/templates/getting-started-home.php:802
 msgid "Submit Review"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:806
+#: admin/templates/getting-started-home.php:810
 msgid "Upgrade to PRO"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:807
+#: admin/templates/getting-started-home.php:811
 msgid ""
 "Upgrade to Cyberchimps Pro plan to unlock access to 150+ Premium Starter "
 "Templates and priority support."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:808
+#: admin/templates/getting-started-home.php:812
 msgid "Upgrade"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:815
+#: admin/templates/getting-started-home.php:819
 msgid "Learn and Grow"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:816
+#: admin/templates/getting-started-home.php:820
 msgid ""
 "Meet the Responsive Power-users. Say hello, ask questions, give feedback, "
 "and help each other"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:818
+#: admin/templates/getting-started-home.php:822
 msgid "Join Facebook"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:821
+#: admin/templates/getting-started-home.php:825
 msgid "Watch Video Tutorials"
 msgstr ""
 
@@ -888,7 +883,7 @@ msgstr ""
 
 #: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-sidebar.php:47
 #: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:170
-#: core/includes/customizer/settings/class-responsive-panel.php:113
+#: core/includes/customizer/settings/class-responsive-panel.php:112
 msgid "Sidebar"
 msgstr ""
 
@@ -1131,7 +1126,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:42
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:53
 #: core/includes/customizer/settings/class-responsive-panel.php:63
-#: core/includes/customizer/settings/class-responsive-panel.php:135
+#: core/includes/customizer/settings/class-responsive-panel.php:134
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:49
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:39
 #: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:50
@@ -1753,7 +1748,7 @@ msgid " Disable Author Profile Box ?"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:43
-#: core/includes/customizer/settings/class-responsive-panel.php:104
+#: core/includes/customizer/settings/class-responsive-panel.php:103
 msgid "Blog / Archive"
 msgstr ""
 
@@ -1893,7 +1888,7 @@ msgid "Buttons"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-buttons-customizer.php:76
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:82
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:81
 msgid "Radius (px)"
 msgstr ""
 
@@ -1903,7 +1898,7 @@ msgid "Border Width (px)"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-buttons-customizer.php:86
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:86
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:85
 #: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:190
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:127
 #: core/includes/customizer/settings/class-responsive-header-widgets-customizer.php:119
@@ -1915,7 +1910,7 @@ msgid "Button Colors"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-buttons-customizer.php:94
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:94
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:93
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:173
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:202
 msgid "Color"
@@ -1923,7 +1918,7 @@ msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-buttons-customizer.php:103
 #: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:239
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:99
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:98
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:211
 #: core/includes/customizer/settings/class-responsive-header-widgets-customizer.php:96
 #: core/includes/customizer/settings/class-responsive-sidebar-colors-customizer.php:50
@@ -1934,7 +1929,7 @@ msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-buttons-customizer.php:111
 #: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:251
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:103
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:102
 #: core/includes/customizer/settings/class-responsive-header-colors-customizer.php:47
 #: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:204
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:123
@@ -2060,10 +2055,6 @@ msgid "Enable on Single Post"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:164
-msgid "Enable on Singular"
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:168
 msgid "Enable on 404 Page"
 msgstr ""
 
@@ -2080,27 +2071,16 @@ msgstr ""
 msgid "Breadcrumb Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:124
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:126
 #. translators: %1$s is Plugin Name
 msgid "To have access to a shop section please install and configure %1$s."
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:125
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:127
 msgid "WooCommerce plugin"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:169
-msgid "Recommended Plugins"
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:174
-#. translators: Orbit Fox Companion
-msgid ""
-"Get free access to 100+ ready-to-use Elementor & Block templates. Import a "
-"template, edit content and launch your website."
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:202
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:206
 msgid "View PRO Features"
 msgstr ""
 
@@ -2212,17 +2192,17 @@ msgstr ""
 msgid "Form Fields"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:90
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:89
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:198
 msgid "Inputs"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:107
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:106
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:215
 msgid "Labels"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:111
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:110
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:219
 msgid "Label Color"
 msgstr ""
@@ -3046,19 +3026,19 @@ msgstr ""
 msgid "Breadcrumb"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:96
+#: core/includes/customizer/settings/class-responsive-panel.php:95
 msgid "Page"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:105
+#: core/includes/customizer/settings/class-responsive-panel.php:104
 msgid "Blog Options"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:122
+#: core/includes/customizer/settings/class-responsive-panel.php:121
 msgid "Footer"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:123
+#: core/includes/customizer/settings/class-responsive-panel.php:122
 msgid "Footer Options"
 msgstr ""
 
@@ -3872,43 +3852,43 @@ msgstr ""
 msgid "Header Menu"
 msgstr ""
 
-#: core/includes/functions.php:408
+#: core/includes/functions.php:410
 msgid "Team Section Options"
 msgstr ""
 
-#: core/includes/functions.php:422
+#: core/includes/functions.php:424
 msgid "To use this post for front page's team section, please enter below details:"
 msgstr ""
 
-#: core/includes/functions.php:425
+#: core/includes/functions.php:427
 msgid "Member designation"
 msgstr ""
 
-#: core/includes/functions.php:429
+#: core/includes/functions.php:431
 msgid "Facebook Link"
 msgstr ""
 
-#: core/includes/functions.php:433
+#: core/includes/functions.php:435
 msgid "Twitter Link"
 msgstr ""
 
-#: core/includes/functions.php:437
+#: core/includes/functions.php:439
 msgid "GooglePlus Link"
 msgstr ""
 
-#: core/includes/functions.php:441
+#: core/includes/functions.php:443
 msgid "LinkedIn Link"
 msgstr ""
 
-#: core/includes/functions.php:787
+#: core/includes/functions.php:789
 msgid "Posted on"
 msgstr ""
 
-#: core/includes/functions.php:787
+#: core/includes/functions.php:789
 msgid "By"
 msgstr ""
 
-#: core/includes/functions.php:806
+#: core/includes/functions.php:808
 #: core/includes/modules/related-posts/class-responsive-related-posts.php:298
 #: partials/entry/meta.php:54 partials/single/meta.php:49
 #. translators: %s: view post by
@@ -3918,7 +3898,7 @@ msgstr ""
 msgid "View all posts by %s"
 msgstr ""
 
-#: core/includes/functions.php:817
+#: core/includes/functions.php:819
 #: core/includes/modules/related-posts/class-responsive-related-posts.php:345
 #: image.php:82 partials/entry/meta.php:104 partials/single/meta.php:96
 #. translators: %s: category list
@@ -3927,7 +3907,7 @@ msgstr ""
 msgid "Posted in %s"
 msgstr ""
 
-#: core/includes/functions.php:817
+#: core/includes/functions.php:819
 #: core/includes/modules/related-posts/class-responsive-related-posts.php:345
 #: core/includes/modules/related-posts/class-responsive-related-posts.php:358
 #: partials/entry/meta.php:104 partials/entry/meta.php:117
@@ -3935,7 +3915,7 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: core/includes/functions.php:834
+#: core/includes/functions.php:836
 msgid "Upgrade To Pro"
 msgstr ""
 
