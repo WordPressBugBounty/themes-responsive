@@ -83,6 +83,9 @@
         api(controlName, function(value) {
             value.bind( function( newval ) {
                 let selector = '.page.front-page .button,.blog.front-page .button,.read-more-button .hentry .read-more .more-link,input[type=button],input[type=submit],button,.button,.wp-block-button__link,div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],div.wpforms-container-full .wpforms-form .wpforms-page-button';
+                if ( responsiveSiteLocalOptions.isElementorVersion ) {
+                    selector += ', .elementor-button-wrapper .elementor-button';
+                }
                 selector += ', .woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button';
                 selector += ', .edit-post-visual-editor.editor-styles-wrapper .wp-block-button__link,.edit-post-visual-editor.editor-styles-wrapper .wp-block-file__button';
     
@@ -143,6 +146,8 @@
             $('.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt,.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button').css('border-width', newval+'px' );
             $('.edit-post-visual-editor.editor-styles-wrapper .wp-block-button__link,.edit-post-visual-editor.editor-styles-wrapper .wp-block-file__button').css('border-width', newval+'px' );
             $('.edit-post-visual-editor.editor-styles-wrapper .wp-block-button__link:focus,.edit-post-visual-editor.editor-styles-wrapper .wp-block-file__button:focus,.edit-post-visual-editor.editor-styles-wrapper .wp-block-button__link:hover,.edit-post-visual-editor.editor-styles-wrapper .wp-block-file__button:hover').css('border-width', newval+'px' );
+            // Apply for RAE Button Widget.
+            $( '.elementor-widget-rael-button .rael-button' ).css( 'border-width', newval+'px' );
         } );
     } );
 
@@ -183,11 +188,11 @@
     } );
 
     //Footer Border width
-    api( 'responsive_footer_border_size', function( value ) {
-        value.bind( function( newval ) {
-            $('.footer-bar').css('border-top-width', newval+'px' );
-        } );
-    } );
+    // api( 'responsive_footer_border_size', function( value ) {
+    //     value.bind( function( newval ) {
+    //         $('.footer-bar').css('border-top-width', newval+'px' );
+    //     } );
+    // } );
 
     //Buttons radius
     api( 'responsive_menu_button_radius', function( value ) {
