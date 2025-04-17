@@ -599,6 +599,24 @@
   }
 }
 
+/**
+ * Fix footer at the bottom 
+ * -----------------------------------------------------------------------------
+ */
+#page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#page .site-content {
+  flex-grow: 1;
+}
+
+.admin-bar #page {
+  min-height: calc(100vh - 32px);
+}
+
 .hentry .hentry.lesson, .hentry .hentry.course {
   margin-top: 15px;
   margin-bottom: 0;
