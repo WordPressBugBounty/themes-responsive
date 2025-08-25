@@ -107,19 +107,7 @@ function responsive_get_option_defaults() {
 		'bing_site_verification'          => '',
 		'yahoo_site_verification'         => '',
 		'site_statistics_tracker'         => '',
-		'twitter_uid'                     => '',
-		'facebook_uid'                    => '',
-		'linkedin_uid'                    => '',
-		'youtube_uid'                     => '',
 		'stumble_uid'                     => '',
-		'rss_uid'                         => '',
-		'google_plus_uid'                 => '',
-		'instagram_uid'                   => '',
-		'pinterest_uid'                   => '',
-		'yelp_uid'                        => '',
-		'vimeo_uid'                       => '',
-		'foursquare_uid'                  => '',
-		'email_uid'                       => '',
 		'testimonial_val'                 => null,
 		'teammember1'                     => null,
 		'teammember2'                     => null,
@@ -443,6 +431,34 @@ if ( ! function_exists( 'responsive_js' ) ) {
 		// enqueue searchform script only when search element is present in builder.
 		if ( responsive_check_element_present_in_hfb( 'search', 'header' ) ) {
 			wp_enqueue_script( 'searchform-script', $template_directory_uri . '/core/' . $directory . '/searchform' . $suffix . '.js', array(), RESPONSIVE_THEME_VERSION, true );
+			// Get the toggle value
+			$live_search_enabled = get_theme_mod( 'responsive_header_search_enable_live_search', false );
+			$selected_post_types_setting = get_theme_mod( 'responsive_header_search_live_search_post_type', array('pages', 'posts') ); 
+
+			if ( ! is_array( $selected_post_types_setting ) ) {
+				$selected_post_types_setting = array_map('trim', explode(',', $selected_post_types_setting));
+			}
+			// Map the customizer choices ('pages', 'posts') to actual WP REST API post types ('page', 'post')
+			$rest_api_post_types = [];
+			foreach ($selected_post_types_setting as $type) {
+				if ($type === 'pages') {
+					$rest_api_post_types[] = 'page';
+				} elseif ($type === 'posts') {
+					$rest_api_post_types[] = 'post';
+				}
+			}
+
+			// Localize script with REST API settings
+			wp_localize_script(
+				'searchform-script',
+				'wpApiSettings',
+				array(
+					'root' => esc_url_raw( rest_url() ),
+					'nonce' => wp_create_nonce( 'wp_rest' ),
+					'enable_live_search' => (bool) $live_search_enabled,
+					'live_search_post_types' => $rest_api_post_types,
+				)
+			);
 		}
 
 		$mobile_menu_breakpoint = array( 'mobileBreakpoint' => get_theme_mod( 'responsive_mobile_menu_breakpoint', 767 ) );
@@ -1203,7 +1219,7 @@ function defaults() {
 			'blog_sidebar_position'               => 'no',
 			'header_social_show_label'            => 0,
 			'header_social_item_color'            => '#2D3748',
-			'header_social_item_hover_color'      => '#FFFFFF',
+			'header_social_item_hover_color'      => '#2D3748',
 			'header_social_border_radius'         => 0,
 			'header_social_border_color'          => '#FFFFFF',
 			'header_social_border_hover_color'    => '#FFFFFF',
@@ -1447,6 +1463,11 @@ function defaults() {
 																				'icon'    => 'search',
 																			),
 																		),
+		'rp_section_bg' => '#ffffff',
+		'responsive_rp_link_color'               => '#0066CC',
+		'responsive_rp_link_hover_color'         => '#10659C', 
+		'responsive_rp_meta_text'                => '#999999',
+		'responsive_rp_body_text_color'          => '#333333',
 		)
 	);
 	return $theme_options;
@@ -1467,6 +1488,14 @@ function responsive_mobile_custom_logo() {
 
 	if ( '' !== $responsive_mobile_logo && '1' == $responsive_mobile_logo_option ) {
 
+		// Fetching the alt text for the mobile logo from media library
+		$mobile_logo_alt = get_post_meta( $responsive_mobile_logo, '_wp_attachment_image_alt', true );
+
+		// Fallback if no alt is set
+		if ( empty( $mobile_logo_alt ) ) {
+			$mobile_logo_alt = get_bloginfo( 'name' );
+		}
+
 		/* Replace transparent header logo and width */
 
 		$html = sprintf(
@@ -1477,7 +1506,7 @@ function responsive_mobile_custom_logo() {
 				'full',
 				false,
 				array(
-					'alt'      => get_bloginfo( 'name' ),
+					'alt'      => esc_attr( $mobile_logo_alt ),
 					'class'    => 'custom-logo',
 					'itemprop' => 'logo',
 					'size'     => '(max-width: 204px) 100vw, 204px',
