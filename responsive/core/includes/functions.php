@@ -464,7 +464,8 @@ if ( ! function_exists( 'responsive_js' ) ) {
 		$mobile_menu_breakpoint = array( 'mobileBreakpoint' => get_theme_mod( 'responsive_mobile_menu_breakpoint', 767 ) );
 		wp_localize_script( 'navigation-scripts', 'responsive_breakpoint', $mobile_menu_breakpoint );
 		if ( responsive_check_element_present_in_hfb( 'primary_navigation', 'header' ) ) {
-			wp_enqueue_script( 'responsive_theme_nested_menus', $template_directory_uri . '/core/' . $directory . '/nested-menus' . $suffix . '.js', array('customize-preview'), RESPONSIVE_THEME_VERSION, true );
+			// jQuery is loading in frontend because of this. We will remove jquery in upcoming versions.
+			wp_enqueue_script( 'responsive_theme_nested_menus', $template_directory_uri . '/core/' . $directory . '/nested-menus' . $suffix . '.js', array('jquery'), RESPONSIVE_THEME_VERSION, true );
 		}
 
 	}
@@ -695,8 +696,16 @@ function responsive_add_custom_body_classes( $classes ) {
 
 		} else {
 
+			// Check page meta first, then theme setting, with global fallback.
 			$sidebar_position = get_post_meta( get_the_ID(), 'responsive_page_meta_sidebar_position', true );
-			$sidebar_position = $sidebar_position ? $sidebar_position : get_theme_mod( 'responsive_page_sidebar_position', 'right' );
+
+			if ( ! $sidebar_position ) {
+				$global_sidebar_position = get_theme_mod( 'responsive_default_sidebar_position', 'no' );
+				$page_sidebar_setting    = get_theme_mod( 'responsive_page_sidebar_position', 'no' );
+
+				$sidebar_position = ( $page_sidebar_setting === 'default' ) ? $global_sidebar_position : $page_sidebar_setting;
+			}
+
 			// Page sidebar Position.
 			$classes[] = 'sidebar-position-' . $sidebar_position;
 			// Page Featured Image Aligmnmnet.
@@ -721,7 +730,12 @@ function responsive_add_custom_body_classes( $classes ) {
 		} else {
 
 			// Single Blog sidebar Position.
-			$classes[] = 'sidebar-position-' . get_theme_mod( 'responsive_single_blog_sidebar_position', 'right' );
+			$global_sidebar_position   = get_theme_mod( 'responsive_default_sidebar_position', 'no' );
+			$single_blog_sidebar_value = get_theme_mod( 'responsive_single_blog_sidebar_position', 'no' );
+
+			$classes[] = 'sidebar-position-' . (
+				$single_blog_sidebar_value === 'default' ? $global_sidebar_position : $single_blog_sidebar_value
+			);
 			// Single Blog Featured Image Aligmnmnet.
 			$classes[] = 'featured-image-alignment-' . get_theme_mod( 'responsive_single_blog_featured_image_alignment', 'left' );
 			// Single Blog Title Aligmnmnet.
@@ -758,9 +772,14 @@ function responsive_add_custom_body_classes( $classes ) {
 			if ( get_theme_mod( 'responsive_blog_layout', 'grid' ) === 'grid' ) {
 				$classes[] = 'blog-entry-columns-' . get_theme_mod( 'responsive_blog_entry_columns', get_responsive_customizer_defaults( 'entry_columns' ) ) . $masonry;
 			}
+			$get_sidebar_position = function( $context, $default = 'no' ) {
+				$global = get_theme_mod( 'responsive_default_sidebar_position', 'no' );
+				$value  = get_theme_mod( "responsive_{$context}_sidebar_position", $default );
+				return ( $value === 'default' ) ? $global : $value;
+			};
 			// Entry Blog sidebar Position.
-			$classes[] = 'sidebar-position-' . get_theme_mod( 'responsive_blog_sidebar_position', get_responsive_customizer_defaults( 'blog_sidebar_position' ) );
-
+			$blog_sidebar_position = $get_sidebar_position( 'blog', get_responsive_customizer_defaults( 'blog_sidebar_position' ) );
+			$classes[] = 'sidebar-position-' . $blog_sidebar_position;
 		}
 	}
 
@@ -2371,3 +2390,62 @@ if ( ! function_exists( 'responsive_site_backwardcompatibility_with_new_blog_fro
 		}
 	}
 endif;
+
+// Remove WooCommerce default breadcrumbs everywhere.
+add_action( 'init', function() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
+});
+
+// Add breadcrumbs back conditionally.
+add_action( 'woocommerce_before_main_content', function() {
+    // Shop / catalog pages.
+    if ( get_theme_mod( 'breadcrumbs_options', 1 ) && ( is_shop() || is_product_taxonomy() ) ) {
+        woocommerce_breadcrumb();
+    }
+
+    // Single product pages.
+    if ( get_theme_mod( 'responsive_single_product_breadcrumbs', 1 ) && is_product() ) {
+        woocommerce_breadcrumb();
+    }
+}, 20 );
+
+add_filter( 'body_class', function( $classes ) {
+	if(! class_exists( 'WooCommerce') )
+	{
+		return $classes;
+	}
+    if ( is_shop() || is_product_taxonomy() ) {
+        $classes[] = 'shop-has-site-header';
+    } elseif ( is_product() ) {
+        $classes[] = 'single-product-has-site-header';
+    }
+    return $classes;
+});
+
+add_filter('woocommerce_breadcrumb_defaults', function ($defaults) {
+    $class = 'woocommerce-breadcrumb';
+    if (is_product()) {
+        $class .= ' is-single-product';
+    } elseif (is_shop() || is_product_taxonomy()) {
+        $class .= ' is-shop';
+    }
+    $defaults['wrap_before'] = '<nav class="' . esc_attr($class) . '" aria-label="Breadcrumb">';
+    return $defaults;
+});
+
+add_action( 'customize_register', function( $wp_customize ) {
+    $catalog_section = $wp_customize->get_section( 'woocommerce_product_catalog' );
+    if ( $catalog_section ) {
+        $catalog_section->priority = 1;
+    }
+
+	 $checkout_section = $wp_customize->get_section( 'woocommerce_checkout' );
+    if ( $checkout_section ) {
+        $checkout_section->priority = 3;
+    }
+
+    $section = $wp_customize->get_section( 'woocommerce_product_images' );
+    if ( $section ) {
+        $section->priority = 7;
+    }
+}, 20 );
