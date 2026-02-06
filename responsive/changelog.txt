@@ -8,6 +8,53 @@ Changelog Legend:
 [x] = Deleted
 [!] = Bugs
 
+(22/01/2025) Version 6.3.2
+[!] = Fix = Resolved mobile header issues.
+[!] = Fix = Addressed PHP deprecated notice related to usage of ${var} syntax in the Responsive theme.
+[!] = Fix = Fixed Customizer layout conflicts with Starter Templates plugin.
+[!] = Fix = Resolved styling issues where LifterLMS styles were affecting LMS and EduKids starter templates.
+[*] = Improvement = Cleaned up and refined the global color palette by removing unused color options.
+[+] = New = Added support for an additional color in the global color palette for handling button hover related styles.
+
+(24/12/2025) Version 6.3.1
+[!] = Fix = Fixed CSS for Gutenberg Page and Post editor.
+[!] = Fix = Fixed a bug that was throwing an error while logging in.
+[!] = Fix = Changed the range of the content width slider in Customizer > Global Settings > Layout > Container Width.
+
+(23/12/2025) Version 6.3.0
+[+] = New = Introduced the Mobile Footer Builder - footer elements can now be configured separately for mobile/tablets and desktop.
+[*] = Improvement = Restructured the global color palette.
+[!] = Fix = Fixed an error which was causing the Footer Builder to disappear while editing Footer Widgets.
+[!] = Fix = Fixed an error which was causing theme's layout padding values to override Responsive Block Addons' (RBA) padding values.
+[!] = Fix = Added a label for Opacity control in all color control fields.
+
+(02/12/2025) Version 6.2.9
+[+] = New = Introduced the Mobile Header Builder
+[+] = New = Introduced new Mobile specific Contact Info, Social, Header Button, Header Widgets, Header HTML elements
+[+] = New = Introduced the Off Canvas Panel and Off Canvas Menu location along with Toggle Button element for Mobile screens
+
+(01/12/2025) Version 6.2.8.1
+[!] = Fix = Accessibility issues reported by reviewer for ‘Accessibility Ready’ tag.
+
+(06/11/2025) Version 6.2.8
+[!] = Fix = Patched an error that was blocking the Customizer from loading.
+
+(29/10/2025) Version 6.2.7
+[+] = New = Added Sidebar width control options for Shop and Single Product Page in Woocommerce
+[+] = New = Added more customization settings for theme footer widgets 
+[*] = Improvement = Added options to set custom logo width options for laptop, tablets, mobiles  
+[*] = Improvement = Revamped visiblity settings for site title and tagline across laptops, mobile, tablets in Site Identity > Site Title and Logo Settings
+[*] = Improvement = Loading CSS for header and footer elements only when they are used
+[!] = Fix = Fixed an issue with Different Logo for Mobile Devices option which was appearing even when no base logo was added 
+[!] = Fix = Fixed the issue of product card margin and padding not getting applied for flat and content boxed layouts
+
+(13/10/2025) Version 6.2.6
+[+] = New = Added an enable/disable toggle option to make logo and site title inline
+[+] = New = Added options to load google fonts locally, preload the fonts if available, flushing existing font cache
+[+] = New = Added customization settings for theme widgets 
+[*] = Improvement = Optimized the code to make lesser requests and improve the overall speed of the website.
+
+
 (30/09/2025) Version 6.2.5
 [*] = Improvement = Revamped the global color palette settings in customizer
 [+] = New = Added retina logo upload option in Site Identity settings 

@@ -114,6 +114,29 @@
         });
     });
 
+    const mobileHeaderSocialBorderRadius = [
+        'responsive_mobile_header_social_radius_top_left_radius',
+        'responsive_mobile_header_social_radius_bottom_left_radius',
+        'responsive_mobile_header_social_radius_bottom_right_radius',
+        'responsive_mobile_header_social_radius_top_right_radius',
+        'responsive_mobile_header_social_radius_tablet_top_left_radius',
+        'responsive_mobile_header_social_radius_tablet_top_right_radius',
+        'responsive_mobile_header_social_radius_tablet_bottom_right_radius',
+        'responsive_mobile_header_social_radius_tablet_bottom_left_radius',
+        'responsive_mobile_header_social_radius_mobile_top_left_radius',
+        'responsive_mobile_header_social_radius_mobile_top_right_radius',
+        'responsive_mobile_header_social_radius_mobile_bottom_right_radius',
+        'responsive_mobile_header_social_radius_mobile_bottom_left_radius',
+    ];
+
+    mobileHeaderSocialBorderRadius.forEach(setting => {
+        api(setting, function(value) {
+            value.bind(function(newval) {
+                responsive_dynamic_radius( 'mobile_header_social', '.site-mobile-header-item .header-layouts.social-icon .social-icons .responsive-social-icon .responsive-social-icon-anchor' );
+            });
+        });
+    });
+
     const footerSocialBorderRadius = [
         'responsive_footer_social_radius_top_left_radius',
         'responsive_footer_social_radius_bottom_left_radius',
@@ -297,6 +320,208 @@
         } );
     } );
 
+    function applyToggleBorderRadius() {
+
+		// remove previously inserted preview style
+		$('style#responsive-toggle-border-radius').remove();
+
+		let mobile_menu_breakpoint = api('responsive_mobile_menu_breakpoint').get();
+
+		if ( api('responsive_disable_mobile_menu').get() == 0 ) {
+			mobile_menu_breakpoint = 0;
+		}
+
+		// Tablet values
+		let tabletTop    = api('responsive_header_toggle_button_border_radius_tablet_top_padding').get();
+		let tabletRight  = api('responsive_header_toggle_button_border_radius_tablet_right_padding').get();
+		let tabletBottom = api('responsive_header_toggle_button_border_radius_tablet_bottom_padding').get();
+		let tabletLeft   = api('responsive_header_toggle_button_border_radius_tablet_left_padding').get();
+
+        // Tablet Border Width - Toggle button
+        let toggle_tablet_border_width_top = api( 'responsive_mobile_menu_toggle_border_width_tablet_top_border').get();
+        let toggle_tablet_border_width_right = api( 'responsive_mobile_menu_toggle_border_width_tablet_right_border').get();
+        let toggle_tablet_border_width_bottom = api( 'responsive_mobile_menu_toggle_border_width_tablet_bottom_border').get();
+        let toggle_tablet_border_width_left = api( 'responsive_mobile_menu_toggle_border_width_tablet_left_border').get();
+
+        // Mobile Border Width - Toggle button
+        let toggle_mobile_border_width_top = api( 'responsive_mobile_menu_toggle_border_width_mobile_top_border').get();
+        let toggle_mobile_border_width_right = api( 'responsive_mobile_menu_toggle_border_width_mobile_right_border').get();
+        let toggle_mobile_border_width_bottom = api( 'responsive_mobile_menu_toggle_border_width_mobile_bottom_border').get();
+        let toggle_mobile_border_width_left = api( 'responsive_mobile_menu_toggle_border_width_mobile_left_border').get();
+
+		// Mobile values
+		let mobileTop    = api('responsive_header_toggle_button_border_radius_mobile_top_padding').get();
+		let mobileRight  = api('responsive_header_toggle_button_border_radius_mobile_right_padding').get();
+		let mobileBottom = api('responsive_header_toggle_button_border_radius_mobile_bottom_padding').get();
+		let mobileLeft   = api('responsive_header_toggle_button_border_radius_mobile_left_padding').get();
+
+		$('head').append(`
+			<style id="responsive-toggle-border-radius">
+				@media (min-width:577px) and (max-width:${mobile_menu_breakpoint}px){
+					.site-header-item-toggle-button .menu-toggle {
+						border-radius: ${tabletTop}px ${tabletRight}px ${tabletBottom}px ${tabletLeft}px;
+                        border-width: ${toggle_tablet_border_width_top}px ${toggle_tablet_border_width_right}px ${toggle_tablet_border_width_bottom}px ${toggle_tablet_border_width_left}px;
+					}
+				}
+                @media (max-width:576px){
+                    .site-header-item-toggle-button .menu-toggle {
+                        border-radius: ${mobileTop}px ${mobileRight}px ${mobileBottom}px ${mobileLeft}px;
+                        border-width: ${toggle_mobile_border_width_top}px ${toggle_mobile_border_width_right}px ${toggle_mobile_border_width_bottom}px ${toggle_mobile_border_width_left}px;
+                    }
+				}
+			</style>
+		`);
+	}
+
+    
+    const headerToggleButtonBorderRadius = [
+        'responsive_header_toggle_button_border_radius_tablet_top_padding', 
+        'responsive_header_toggle_button_border_radius_tablet_right_padding', 
+        'responsive_header_toggle_button_border_radius_tablet_bottom_padding',
+        'responsive_header_toggle_button_border_radius_tablet_left_padding', 
+        'responsive_header_toggle_button_border_radius_mobile_top_padding', 
+        'responsive_header_toggle_button_border_radius_mobile_right_padding', 
+        'responsive_header_toggle_button_border_radius_mobile_bottom_padding',
+        'responsive_header_toggle_button_border_radius_mobile_left_padding', 
+    ]
+
+    const headerToggleBottonBorderWidth = [
+        'responsive_mobile_menu_toggle_border_width_tablet_top_border',
+        'responsive_mobile_menu_toggle_border_width_tablet_right_border',
+        'responsive_mobile_menu_toggle_border_width_tablet_bottom_border',
+        'responsive_mobile_menu_toggle_border_width_tablet_left_border',
+         'responsive_mobile_menu_toggle_border_width_mobile_top_border',
+        'responsive_mobile_menu_toggle_border_width_mobile_right_border',
+        'responsive_mobile_menu_toggle_border_width_mobile_bottom_border',
+        'responsive_mobile_menu_toggle_border_width_mobile_left_border',
+    ]
+    
+    headerToggleButtonBorderRadius.forEach(function (control) {
+        api(control, function (value) {
+            value.bind(function () {
+                applyToggleBorderRadius();
+            });
+        });
+    });
+
+    headerToggleBottonBorderWidth.forEach(function (control) {
+        api(control, function (value) {
+            value.bind(function () {
+                applyToggleBorderRadius();
+            });
+        });
+    });
+
+    // Apply Item divider size and color
+      const headerCanvasItemDividerSettings = [
+        'responsive_header_off_canvas_menu_item_divider_size',
+        'responsive_header_off_canvas_menu_item_divider_color_color',
+        'responsive_header_off_canvas_menu_item_divider_size',
+        'responsive_header_off_canvas_menu_item_divider_color_color',
+    ]
+    
+    headerCanvasItemDividerSettings.forEach(function (control) {
+        api(control, function (value) {
+            value.bind(function () {
+                applyCanvasItemDividerSettings();
+            });
+        });
+    });
+
+    function applyCanvasItemDividerSettings(){
+
+		// remove previously inserted preview style
+		$('style#responsive-item-divider-settings').remove();
+
+		let mobile_menu_breakpoint = api('responsive_mobile_menu_breakpoint').get();
+		if ( api('responsive_disable_mobile_menu').get() == 0 ) {
+			mobile_menu_breakpoint = 0;
+		}
+
+        // Desktop  values
+        let deskTop   
+		// Tablet  values
+		let tabDividerSize    = api('responsive_header_off_canvas_menu_item_divider_size').get();
+		let tabDividerColor    = api('responsive_header_off_canvas_menu_item_divider_color_color').get();
+
+		// Mobile  values
+		let mobDividerSize    = api('responsive_header_off_canvas_menu_item_divider_size').get();
+		let mobDividerColor    = api('responsive_header_off_canvas_menu_item_divider_color_color').get();
+
+		$('head').append(`
+			<style id="responsive-item-divider-settings">
+				@media (min-width:577px) and (max-width:${mobile_menu_breakpoint}px) {
+                    #off-canvas-site-navigation .menu > li{
+                        border-bottom: ${tabDividerSize}px solid ${tabDividerColor};
+                    }
+				}
+				@media (max-width:576px) {
+					 #off-canvas-site-navigation .menu > li{
+                        border-bottom: ${mobDividerSize}px solid ${mobDividerColor};
+                    }
+				}
+			</style>
+		`);
+    }
+
+    function applyToggleMargins() {
+
+		// remove previously inserted preview style
+		$('style#responsive-toggle-margins').remove();
+
+		let mobile_menu_breakpoint = api('responsive_mobile_menu_breakpoint').get();
+		if ( api('responsive_disable_mobile_menu').get() == 0 ) {
+			mobile_menu_breakpoint = 0;
+		}
+
+        // Desktop margin values
+        let deskTop   
+		// Tablet margin values
+		let tabTop    = api('responsive_header_toggle_button_margin_tablet_top_padding').get();
+		let tabRight  = api('responsive_header_toggle_button_margin_tablet_right_padding').get();
+		let tabBottom = api('responsive_header_toggle_button_margin_tablet_bottom_padding').get();
+		let tabLeft   = api('responsive_header_toggle_button_margin_tablet_left_padding').get();
+
+		// Mobile margin values
+		let mobTop    = api('responsive_header_toggle_button_margin_mobile_top_padding').get();
+		let mobRight  = api('responsive_header_toggle_button_margin_mobile_right_padding').get();
+		let mobBottom = api('responsive_header_toggle_button_margin_mobile_bottom_padding').get();
+		let mobLeft   = api('responsive_header_toggle_button_margin_mobile_left_padding').get();
+
+		$('head').append(`
+			<style id="responsive-toggle-margins">
+				@media (min-width:577px) and (max-width:${mobile_menu_breakpoint}px) {
+					.site-header-item-toggle-button .menu-toggle {
+						margin: ${tabTop}px ${tabRight}px ${tabBottom}px ${tabLeft}px;
+					}
+				}
+				@media (max-width:576px) {
+					.site-header-item-toggle-button .menu-toggle {
+						margin: ${mobTop}px ${mobRight}px ${mobBottom}px ${mobLeft}px;
+					}
+				}
+			</style>
+		`);
+	}
+
+	// Watch all margin-related controls
+	[
+		'responsive_header_toggle_button_margin_tablet_top_padding',
+		'responsive_header_toggle_button_margin_tablet_right_padding',
+		'responsive_header_toggle_button_margin_tablet_bottom_padding',
+		'responsive_header_toggle_button_margin_tablet_left_padding',
+		'responsive_header_toggle_button_margin_mobile_top_padding',
+		'responsive_header_toggle_button_margin_mobile_right_padding',
+		'responsive_header_toggle_button_margin_mobile_bottom_padding',
+		'responsive_header_toggle_button_margin_mobile_left_padding',
+		'responsive_mobile_menu_breakpoint'
+	].forEach(function (setting) {
+		api(setting, function (value) {
+			value.bind(function () {
+				applyToggleMargins();
+			});
+		});
+	});
     const headerButtonBorderRadius = [
         'responsive_header_button_radius_top_left_radius',
         'responsive_header_button_radius_bottom_left_radius',
@@ -311,6 +536,20 @@
         'responsive_header_button_radius_mobile_bottom_right_radius',
         'responsive_header_button_radius_mobile_bottom_left_radius',
     ];
+    const mobileHeaderButtonBorderRadius = [
+        'responsive_mobile_header_button_radius_top_left_radius',
+        'responsive_mobile_header_button_radius_bottom_left_radius',
+        'responsive_mobile_header_button_radius_bottom_right_radius',
+        'responsive_mobile_header_button_radius_top_right_radius',
+        'responsive_mobile_header_button_radius_tablet_top_left_radius',
+        'responsive_mobile_header_button_radius_tablet_top_right_radius',
+        'responsive_mobile_header_button_radius_tablet_bottom_right_radius',
+        'responsive_mobile_header_button_radius_tablet_bottom_left_radius',
+        'responsive_mobile_header_button_radius_mobile_top_left_radius',
+        'responsive_mobile_header_button_radius_mobile_top_right_radius',
+        'responsive_mobile_header_button_radius_mobile_bottom_right_radius',
+        'responsive_mobile_header_button_radius_mobile_bottom_left_radius',
+    ]
 
     headerButtonBorderRadius.forEach(setting => {
         api(setting, function(value) {
@@ -319,6 +558,13 @@
             });
         });
     });
+    mobileHeaderButtonBorderRadius.forEach(setting => {
+        api(setting, function(value) {
+            value.bind(function(newvalue) {
+                responsive_dynamic_radius( 'mobile_header_button', '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button');
+            })
+        })
+    })
     // Apply Header Search element border radius - Start.
     const headerSearchBorderRadius = [
         'responsive_header_search_border_radius_top_left_radius',

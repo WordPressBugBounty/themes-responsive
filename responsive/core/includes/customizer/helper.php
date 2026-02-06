@@ -1238,7 +1238,7 @@ function responsive_borderwidth_control( $wp_customize, $element, $section, $pri
  * @param  string  $desc     [description].
  * @return void               [description].
  */
-function responsive_color_control( $wp_customize, $element, $label, $section, $priority, $default, $active_call = null, $desc = '', $is_hover_required = false, $hover_default = null, $hover_element = null, $is_gradient_available = false, $gradient_element = null, $gradient_default = null, $color_type = 'color' ) {
+function responsive_color_control( $wp_customize, $element, $label, $section, $priority, $default, $active_call = null, $desc = '', $is_hover_required = false, $hover_default = null, $hover_element = null, $is_gradient_available = false, $gradient_element = null, $gradient_default = null, $color_type = 'color', $transport = 'postMessage' ) {
 	try {
 		// Menu Background Color.
 	$wp_customize->add_setting(
@@ -1247,7 +1247,7 @@ function responsive_color_control( $wp_customize, $element, $label, $section, $p
 			'default'           => $default,
 			'type'              => 'theme_mod',
 			'sanitize_callback' => 'responsive_sanitize_background',
-			'transport'         => 'postMessage',
+			'transport'         => $transport,
 		)
 	);
 	// Add Hover Setting
@@ -1422,34 +1422,46 @@ function responsive_drag_number_control( $wp_customize, $element, $label, $secti
  * @param  [type]  $step  [description].
  * @return void                [description].
  */
-function responsive_drag_number_control_with_switchers( $wp_customize, $element, $label, $section, $priority, $default, $active_call = null, $max = 4096, $min = 1, $transport = 'refresh', $step = 1, $tablet_default = null, $mobile_default = null ) {
+function responsive_drag_number_control_with_switchers( $wp_customize, $element, $label, $section, $priority, $default, $active_call = null, $max = 4096, $min = 1, $transport = 'refresh', $step = 1, $tablet_default = null, $mobile_default = null, $devices = array( 'desktop', 'tablet', 'mobile' ) ) {
 
-	$wp_customize->add_setting(
-		'responsive_' . $element,
-		array(
-			'transport'         => $transport,
-			'default'           => $default,
-			'sanitize_callback' => 'responsive_sanitize_number',
-		)
-	);
+	// Conditionally register settings based on devices parameter
+	$settings = array();
 
-	$wp_customize->add_setting(
-		'responsive_' . $element . '_tablet',
-		array(
-			'transport'         => $transport,
-			'default'           => $tablet_default ? $tablet_default : $default,
-			'sanitize_callback' => 'responsive_sanitize_number',
-		)
-	);
+	if ( in_array( 'desktop', $devices ) ) {
+		$wp_customize->add_setting(
+			'responsive_' . $element,
+			array(
+				'transport'         => $transport,
+				'default'           => $default,
+				'sanitize_callback' => 'responsive_sanitize_number',
+			)
+		);
+		$settings['desktop'] = 'responsive_' . $element;
+	}
 
-	$wp_customize->add_setting(
-		'responsive_' . $element . '_mobile',
-		array(
-			'transport'         => $transport,
-			'default'           => $mobile_default ? $mobile_default : $default,
-			'sanitize_callback' => 'responsive_sanitize_number',
-		)
-	);
+	if ( in_array( 'tablet', $devices ) ) {
+		$wp_customize->add_setting(
+			'responsive_' . $element . '_tablet',
+			array(
+				'transport'         => $transport,
+				'default'           => $tablet_default ? $tablet_default : $default,
+				'sanitize_callback' => 'responsive_sanitize_number',
+			)
+		);
+		$settings['tablet'] = 'responsive_' . $element . '_tablet';
+	}
+
+	if ( in_array( 'mobile', $devices ) ) {
+		$wp_customize->add_setting(
+			'responsive_' . $element . '_mobile',
+			array(
+				'transport'         => $transport,
+				'default'           => $mobile_default ? $mobile_default : $default,
+				'sanitize_callback' => 'responsive_sanitize_number',
+			)
+		);
+		$settings['mobile'] = 'responsive_' . $element . '_mobile';
+	}
 
 	$wp_customize->add_control(
 		new Responsive_Customizer_Range_With_Switcher_Control(
@@ -1458,11 +1470,8 @@ function responsive_drag_number_control_with_switchers( $wp_customize, $element,
 			array(
 				'label'           => $label,
 				'section'         => $section,
-				'settings'        => array(
-					'desktop' => 'responsive_' . $element,
-					'tablet'  => 'responsive_' . $element . '_tablet',
-					'mobile'  => 'responsive_' . $element . '_mobile',
-				),
+				'settings'        => $settings,
+				'devices'         => $devices,
 				'priority'        => $priority,
 				'active_callback' => $active_call,
 				'input_attrs'     => array(
@@ -1783,6 +1792,31 @@ function responsive_get_default_color_scheme() {
 
 }
 
+function responsive_get_selected_palette_color_scheme ( $selected_design_style = 'playful-default' ) {
+
+	if ( empty( $selected_design_style ) ) {
+		return array();
+	}
+
+	$customizer_color_schemes 		  = explode( '-', $selected_design_style );
+	$customizer_color_schemes_design  = $customizer_color_schemes[0];
+	$customizer_color_schemes_palette = $customizer_color_schemes[1];
+
+	if ( empty( $customizer_color_schemes_design ) || empty( $customizer_color_schemes_palette ) ) {
+		return array();
+	}
+
+	$design_styles = responsive_get_available_design_styles();
+	if ( array_key_exists( $customizer_color_schemes_design, $design_styles ) ) {
+		$color_schemes = $design_styles[ $customizer_color_schemes_design ]['color_schemes'];
+		if ( array_key_exists( $customizer_color_schemes_palette, $color_schemes ) ) {
+			return $color_schemes[ $customizer_color_schemes_palette ];
+		}
+	}
+
+	return array();
+}
+
 /**
  * Returns the avaliable design styles.
  *
@@ -1798,13 +1832,13 @@ function responsive_get_available_design_styles() {
 					'default' => array(
 						'label'             => _x( 'Default', 'color palette name', 'responsive' ),
 						'accent'            => '#0066CC',
-						'link_hover'		=> '#007fff',
-						'text'              => '#364151',
-						'header_text'       => '#fcba03',
-						'background'        => '#ffffff',
+						'link_hover'		=> '#10659C',
+						'text'              => '#333333',
+						'header_text'       => '#333333',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#eaeaea',
+						'subtle_background' => '#10659C'
 
 					),
 					'one'     => array(
@@ -1813,10 +1847,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'		=> '#313789',
 						'text'              => '#ecb43d',
 						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#f7fbff',
+						'subtle_background' => '#313789'
 					),
 					'two'     => array(
 						'label'             => _x( 'Coral', 'color palette name', 'responsive' ),
@@ -1824,10 +1858,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'		=> '#d74143',
 						'text'              => '#40896e',
 						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#fff7f7',
+						'subtle_background' => '#d74143'
 					),
 					'three'   => array(
 						'label'             => _x( 'Organic', 'color palette name', 'responsive' ),
@@ -1835,10 +1869,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'		=> '#2c6651',
 						'text'              => '#6b0369',
 						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#f2f9f7',
+						'subtle_background' => '#2c6651'
 					),
 					'four'    => array(
 						'label'             => _x( 'Berry', 'color palette name', 'responsive' ),
@@ -1846,10 +1880,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'		=> '#0c5067',
 						'text'              => '#d691c1',
 						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#f7feff',
+						'subtle_background' => '#0c5067'
 					),
 				),
 			),
@@ -1864,10 +1898,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'	 => '#e5822e',
 						'text'           => '#122538',
 						'header_text'	 => '#0F172A',
-						'background'     => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background' => '#f8f8f8',
+						'subtle_background' => '#e5822e'
 					),
 					'two'   => array(
 						'label'          => _x( 'Emerald', 'color palette name', 'responsive' ),
@@ -1875,10 +1909,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'  	 => '#21787b',
 						'text'           => '#212121',
 						'header_text'    => '#0F172A',
-						'background'     => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background' => '#f3f1f0',
+						'subtle_background' => '#21787b'
 					),
 					'three' => array(
 						'label'          => _x( 'Brick', 'color palette name', 'responsive' ),
@@ -1886,10 +1920,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'	 => '#b52b13',
 						'text'           => '#242611',
 						'header_text'    => '#0F172A',
-						'background'     => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background' => '#f9f2ef',
+						'subtle_background' => '#b52b13'
 					),
 					'four'  => array(
 						'label'          => _x( 'Bronze', 'color palette name', 'responsive' ),
@@ -1897,10 +1931,10 @@ function responsive_get_available_design_styles() {
 						'link_hover'     => '#846939',
 						'text'           => '#05212d',
 						'header_text'    => '#0F172A',
-						'background'     => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background' => '#f9f4ef',
+						'subtle_background' => '#846939'
 					),
 				),
 			),
@@ -1915,10 +1949,10 @@ function responsive_get_available_design_styles() {
 						'link_hover' 	 => '#808080',
 						'text'           => '#455a64',
 						'header_text'    => '#0F172A',
-						'background'     => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background' => '#eceff1',
+						'subtle_background' => '#808080'
 					),
 					'two'   => array(
 						'label'          => _x( 'Blush', 'color palette name', 'responsive' ),
@@ -1926,32 +1960,21 @@ function responsive_get_available_design_styles() {
 						'link_hover'	 => '#951246',
 						'text'           => '#ec407a',
 						'header_text'    => '#0F172A',
-						'background'     => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background' => '#fce4ec',
+						'subtle_background' => '#951246'
 					),
-					'three' => array(
-						'label'          => _x( 'Indiresponsive', 'color palette name', 'responsive' ),
-						'accent'         => '#303f9f',
-						'link_hover' 	 => '#3d50c5',
-						'text'           => '#5c6bc0',
-						'header_text'    => '#0F172A',
-						'background'     => '#ffffff',
-						'content_background' => '#ffffff',
-						'site_background'   => '#f0f5fa',
-						'alt_background' => '#e8eaf6',
-					),
-					'four'  => array(
+					'three'  => array(
 						'label'          => _x( 'Pacific', 'color palette name', 'responsive' ),
 						'accent'         => '#00796b',
 						'link_hover'	 => '#00463e',
 						'text'           => '#26a69a',
 						'header_text'    => '#0F172A',
-						'background'     => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background' => '#e0f2f1',
+						'subtle_background' => '#00463e'
 					),
 				),
 			),
@@ -1966,44 +1989,10 @@ function responsive_get_available_design_styles() {
 						'link_hover' 		=> '#808080',
 						'text'              => '#4d0859',
 						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
 						'content_background' => '#ffffff',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#ded9e2',
-					),
-
-					'two'   => array(
-						'label'             => _x( 'Steel', 'color palette name', 'responsive' ),
-						'accent'            => '#000000',
-						'link_hover'		=> '#808080',
-						'text'              => '#003c68',
-						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
-						'content_background' => '#ffffff',
-						'site_background'   => '#f0f5fa',
-						'alt_background'    => '#c0c9d0',
-					),
-					'three' => array(
-						'label'             => _x( 'Avocado', 'color palette name', 'responsive' ),
-						'accent'            => '#000000',
-						'link_hover'     	=> '#808080',
-						'text'              => '#02493b',
-						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
-						'content_background' => '#ffffff',
-						'site_background'   => '#f0f5fa',
-						'alt_background'    => '#b4c6af',
-					),
-					'four'  => array(
-						'label'             => _x( 'Champagne', 'color palette name', 'responsive' ),
-						'accent'            => '#000000',
-						'link_hover' 		=> '#808080',
-						'text'              => '#cc224f',
-						'header_text'       => '#0F172A',
-						'background'        => '#ffffff',
-						'content_background' => '#ffffff',
-						'site_background'   => '#f0f5fa',
-						'alt_background'    => '#e5dede',
+						'subtle_background' => '#808080'
 					),
 				),
 			),
@@ -2018,43 +2007,32 @@ function responsive_get_available_design_styles() {
 						'link_hover'	    => '#87dfcb',
 						'text'              => '#01332e',
 						'header_text'       => '#0F172A',
-						'background'        => '#eeeeee',
 						'content_background' => '#eeeeee',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#c9c9c9',
+						'subtle_background' => '#87dfcb'
 					),
-					'two'   => array(
-						'label'             => _x( 'Spruce', 'color palette name', 'responsive' ),
-						'accent'            => '#233a6b',
-						'link_hover'		=> '#87dfcb',
-						'text'              => '#01133d',
-						'header_text' 	 => '#0F172A',
-						'background'        => '#eeeeee',
-						'content_background' => '#eeeeee',
-						'site_background'   => '#f0f5fa',
-						'alt_background'    => '#c9c9c9',
-					),
-					'three' => array(
+					'two' => array(
 						'label'             => _x( 'Mocha', 'color palette name', 'responsive' ),
 						'accent'            => '#5b3f20',
 						'link_hover'		=> '#ddbf9d',
 						'text'              => '#3f2404',
 						'header_text'       => '#0F172A',
-						'background'        => '#eeeeee',
 						'content_background' => '#eeeeee',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#c9c9c9',
+						'subtle_background' => '#ddbf9d'
 					),
-					'four'  => array(
+					'three'  => array(
 						'label'             => _x( 'Lavender', 'color palette name', 'responsive' ),
 						'accent'            => '#443a82',
 						'link_hover'	    => '#d4d1ea',
 						'text'              => '#2b226b',
 						'header_text'       => '#0F172A',
-						'background'        => '#eeeeee',
 						'content_background' => '#eeeeee',
 						'site_background'   => '#f0f5fa',
 						'alt_background'    => '#c9c9c9',
+						'subtle_background' => '#d4d1ea'
 					),
 				),
 			),
@@ -2372,6 +2350,50 @@ function responsive_imageradio_button_control( $wp_customize, $element, $label, 
 }
 
 /**
+ * [responsive_icon_radio_button_control description].
+ * 
+ * @param [type] $wp_customize [description].
+ * @param [type] $element      [description].
+ * @param [type] $label        [description].
+ * @param [type] $section      [description].
+ * @param [type] $priority     [description].
+ * @param [type] $choices      [description]. 
+ * @param [type] $default      [default icon type - hamburger base value]. 
+ * @param [type] $active_call  [description]. 
+ * @param [type] $icon_ext    [icon extension - svg , png, jpg]
+ * @param [type] $transport    [description].
+ * 
+ * @return void
+ */
+function responsive_icon_radio_button_control( $wp_customize, $element, $label, $section, $priority, $choices, $default, $active_call, $icon_ext = 'svg', $transport = 'refresh', $description = '' ) {
+
+	$wp_customize->add_setting(
+		'responsive_' . $element,
+		array(
+			'default'           => $default,
+			'sanitize_callback' => 'responsive_sanitize_select',
+			'transport'         => $transport,
+		)
+	);
+	$wp_customize->add_control(
+		new Responsive_Customizer_Icon_Radio_Button_Control(
+			$wp_customize,
+			'responsive_' . $element,
+			array(
+				'label'           => $label,
+				'description'     => $description,
+				'section'         => $section,
+				'settings'        => 'responsive_' . $element,
+				'priority'        => $priority,
+				'active_callback' => $active_call,
+				'choices'         => apply_filters( 'responsive_' . $element . '_choices', $choices ),
+				'icon_ext'       => $icon_ext,
+			)
+		)
+	);	
+}
+
+/**
  * [responsive_select_control description].
  *
  * @param  [type] $wp_customize [description].
@@ -2449,6 +2471,70 @@ function responsive_select_button_control( $wp_customize, $element, $label, $sec
 				'description'     => $description,
 				'section'         => $section,
 				'settings'        => 'responsive_' . $element,
+				'priority'        => $priority,
+				'active_callback' => $active_call,
+				'choices'         => apply_filters( 'responsive_' . $element . '_choices', $choices ),
+			)
+		)
+	);
+}
+
+	/**
+ * Responsive Select Button Control With Device Switchers.
+ *
+ * @param  [type] $wp_customize [description].
+ * @param  [type] $element      [description].
+ * @param  [type] $label        [description].
+ * @param  [type] $section      [description].
+ * @param  [type] $priority     [description].
+ * @param  [type] $choices      [description].
+ * @param  [type] $default      [description].
+ * @param  [type] $active_call  [description].
+ * @param  [type] $transport  [description].
+ * @param  [type] $description  [description].
+ *
+ * @return void               [description].
+ */
+function responsive_select_button_with_switchers_control( $wp_customize, $element, $label, $section, $priority, $choices, $default, $active_call, $transport = 'refresh', $description = '', $tablet_default = null, $mobile_default = null ) {
+
+	$wp_customize->add_setting(
+		'responsive_' . $element,
+		array(
+			'default'           => $default,
+			'sanitize_callback' => 'responsive_sanitize_select_with_switchers',
+			'transport'         => $transport,
+		)
+	);
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_tablet',
+		array(
+			'transport'         => $transport,
+			'default'           => isset( $tablet_default ) ? $tablet_default : $default,
+			'sanitize_callback' => 'responsive_sanitize_select_with_switchers',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_mobile',
+		array(
+			'transport'         => $transport,
+			'default'           => isset( $mobile_default ) ? $mobile_default : $default,
+			'sanitize_callback' => 'responsive_sanitize_select_with_switchers',
+		)
+	);
+	$wp_customize->add_control(
+		new Responsive_Customizer_Selectbtn_With_Switchers_Control(
+			$wp_customize,
+			'responsive_' . $element,
+			array(
+				'label'           => $label,
+				'description'     => $description,
+				'section'         => $section,
+				'settings'        => array(
+					'desktop' => 'responsive_' . $element,
+					'tablet'  => 'responsive_' . $element . '_tablet',
+					'mobile'  => 'responsive_' . $element . '_mobile',
+				),
 				'priority'        => $priority,
 				'active_callback' => $active_call,
 				'choices'         => apply_filters( 'responsive_' . $element . '_choices', $choices ),
@@ -3223,6 +3309,22 @@ function responsive_show_header_button_padding() {
 }
 
 /**
+ * Check if the mobile header button padding should be displayed.
+ *
+ * Determines whether the custom mobile header button padding option should be shown
+ * based on the value of the 'responsive_mobile_header_button_size' theme mod.
+ *
+ * @return bool True if the header button padding option should be shown, false otherwise.
+ */
+function responsive_show_mobile_header_button_padding() {
+	$header_button_size = get_theme_mod( 'responsive_mobile_header_button_size', Responsive\Core\get_responsive_customizer_defaults( 'responsive_mobile_header_button_size' ) );
+	if ( 'custom' === $header_button_size ) {
+		return true;
+	}
+	return false;
+}
+
+/**
  * Check if the header button border option should be displayed.
  *
  * Determines whether the header button border option should be shown
@@ -3232,6 +3334,22 @@ function responsive_show_header_button_padding() {
  */
 function responsive_show_header_button_border_option() {
 	$header_button_border_style = get_theme_mod( 'responsive_header_button_border_style' , Responsive\Core\get_responsive_customizer_defaults( 'responsive_header_button_border_style' ) );
+	if ( 'none' !== $header_button_border_style ) {
+		return true;
+	}
+	return false;
+}
+
+/**
+ * Check if the mobile header button border option should be displayed.
+ *
+ * Determines whether the mobile header button border option should be shown
+ * based on the value of the 'responsive_mobile_header_button_border_style' theme mod.
+ *
+ * @return bool True if the header button border option should be shown, false otherwise.
+ */
+function responsive_show_mobile_header_button_border_option() {
+	$header_button_border_style = get_theme_mod( 'responsive_mobile_header_button_border_style' , Responsive\Core\get_responsive_customizer_defaults( 'responsive_mobile_header_button_border_style' ) );
 	if ( 'none' !== $header_button_border_style ) {
 		return true;
 	}
@@ -3448,6 +3566,103 @@ function responsive_color_control_with_device_switchers( $wp_customize, $element
 					'desktop' => 'responsive_' . $element . '_color',
 					'tablet'  => 'responsive_' . $element . '_color_tablet',
 					'mobile'  => 'responsive_' . $element . '_color_mobile',
+				),
+				'priority'        => $priority,
+				'active_callback' => $active_call,
+				'description'     => $desc,
+			)
+		)
+	);
+
+}
+
+/**
+ * Color control with device switchers and hover state.
+ *
+ * @param  [type]  $wp_customize  [description].
+ * @param  [type]  $element       [description].
+ * @param  [type]  $label         [description].
+ * @param  [type]  $section       [description].
+ * @param  [type]  $priority      [description].
+ * @param  [type]  $default       [description].
+ * @param  [type]  $default_hover [description].
+ * @param  [type]  $active_call   [description].
+ * @param  [type]  $desc          [description].
+ * @param  [type]  $transport     [description].
+ * @return void [description].
+ */
+function responsive_color_control_with_device_switchers_and_hover( $wp_customize, $element, $label, $section, $priority, $default, $default_hover = '', $active_call = null, $desc='', $transport = 'postMessage' ) {
+
+	// Normal color settings for each device
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_color',
+		array(
+			'transport'         => $transport,
+			'default'           => $default,
+			'sanitize_callback' => 'responsive_sanitize_background',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_color_tablet',
+		array(
+			'transport'         => $transport,
+			'default'           => $default,
+			'sanitize_callback' => 'responsive_sanitize_background',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_color_mobile',
+		array(
+			'transport'         => $transport,
+			'default'           => $default,
+			'sanitize_callback' => 'responsive_sanitize_background',
+		)
+	);
+
+	// Hover color settings for each device
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_color_hover',
+		array(
+			'transport'         => $transport,
+			'default'           => $default_hover,
+			'sanitize_callback' => 'responsive_sanitize_background',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_color_tablet_hover',
+		array(
+			'transport'         => $transport,
+			'default'           => $default_hover,
+			'sanitize_callback' => 'responsive_sanitize_background',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'responsive_' . $element . '_color_mobile_hover',
+		array(
+			'transport'         => $transport,
+			'default'           => $default_hover,
+			'sanitize_callback' => 'responsive_sanitize_background',
+		)
+	);
+
+	$wp_customize->add_control(
+		new Responsive_Customizer_Color_With_Devices_And_Hover_Control(
+			$wp_customize,
+			'responsive_' . $element . '_color',
+			array(
+				'label'           => $label,
+				'section'         => $section,
+				'settings'        => array(
+					'desktop'       => 'responsive_' . $element . '_color',
+					'tablet'        => 'responsive_' . $element . '_color_tablet',
+					'mobile'        => 'responsive_' . $element . '_color_mobile',
+					'desktop_hover' => 'responsive_' . $element . '_color_hover',
+					'tablet_hover'  => 'responsive_' . $element . '_color_tablet_hover',
+					'mobile_hover'  => 'responsive_' . $element . '_color_mobile_hover',
 				),
 				'priority'        => $priority,
 				'active_callback' => $active_call,

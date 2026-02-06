@@ -60,13 +60,12 @@ element.style {
     top: 14%;
     left: 37%;
 }
-.components-button {
+.components-button:not(.components-toolbar-button, .components-dropdown-menu__toggle, .components-menu-item__button, .components-dropdown-menu__menu-item) {
     align-items: center;
     flex: 1 1 auto;
     justify-content: center;
     margin: 0 0;
     padding: 0;
-    border: 1px solid #ccc;
     transition: background-color 140ms linear;
     cursor: pointer;
 }
@@ -277,13 +276,12 @@ element.style {
     bottom: 6px;
     height: 32px;
 }
-.components-button{
+.components-button:not(.components-toolbar-button, .components-dropdown-menu__toggle, .components-menu-item__button, .components-dropdown-menu__menu-item){
     align-items: center;
     flex: 1 1 auto;
     justify-content: center;
     margin: 0 0;
     padding: 0;
-    border: 1px solid #7e8993;
     transition: background-color 140ms linear;
 }
 .components-color-picker__inputs-toggle-wrapper .components-button {
@@ -682,7 +680,7 @@ body.wp-customizer .responsive-color-control-main-wrap .wp-picker-container .wp-
 #customize-control-responsive_header_cart_tray_bg_color .responsive-color-control-main-wrap .wp-picker-holder {
     top: 60px;
 }
-#sub-accordion-section-responsive_woocommerce_cart #customize-control-responsive_cart_buttons_text_color .responsive-color-control-main-wrap {
+#sub-accordion-section-responsive_woocommerce_cart #customize-control-responsive_cart_buttons_text_color {
     padding-bottom: 24px;
 }
 .responsive-color-control-main-wrap .responsive-color-picker-zero-opac {
@@ -784,4 +782,29 @@ body.wp-customizer .responsive-color-control-main-wrap .wp-picker-container .wp-
 
 .responsive-selected-palette-pickers .responsive-inline-color-picker {
     padding-bottom : 0px;
+}
+[id^="customize-control-responsive_footer_widget"][id$="_color"] .responsive-color-control-main-wrap {
+    padding: 0;
+}
+#customize-control-responsive_cart_checkout_button_text_color {
+	padding-bottom: 12px;
+}
+.react-colorful__alpha.react-colorful__last-control::before {
+    content: "Opacity"; 
+    position: absolute;
+    top: -23px;
+    left: 0;
+    pointer-events: none;
+}
+.react-colorful__pointer.react-colorful__alpha-pointer {
+    border: 1px solid black;
+}
+.react-colorful__alpha-gradient {
+    border: 1px solid #00000042;
+}
+.react-colorful__alpha.react-colorful__last-control {
+    margin-top: 25px;
+}
+.css-1gek0tg .react-colorful__pointer.react-colorful__alpha-pointer {
+    border: 1px solid black;
 }

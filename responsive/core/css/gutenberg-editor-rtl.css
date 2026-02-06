@@ -29,3 +29,10 @@
 .editor-styles-wrapper blockquote p {
   max-width: none;
 }
+
+/**
+ * For widget screen.
+ */
+html .edit-widgets-main-block-list :where(.wp-block) {
+  margin-bottom: 28px;
+}
