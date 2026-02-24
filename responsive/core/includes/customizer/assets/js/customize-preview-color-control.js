@@ -637,35 +637,57 @@
             if( newval && newval.startsWith('palette') ) {
                 newval = `var(--responsive-global-${newval})`;
             }
-            $('.page.front-page .button,.blog.front-page .button,.read-more-button .hentry .read-more .more-link,input[type=button],input[type=submit],button,.button,.wp-block-button__link,div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],div.wpforms-container-full .wpforms-form .wpforms-page-button ').not('a.add_to_cart_button').not('a.product_type_grouped').not('button.single_add_to_cart_button').not('.woocommerce-Reviews input').css('background-color', newval );
-            if( responsiveSiteLocalOptions.isDisableElementorDefaultColors ) {
-                jQuery( 'style#responsive-elementor-button-color' ).remove();
-                jQuery( 'head' ).append(
-                    '<style id="responsive-elementor-button-color">'
-                    + '.elementor-button-wrapper .elementor-button { background-color:' + newval +'}'
-                    + '</style>'
-                );
-            }
-        } );
-    } );
-
-    //Buttons hover color
-    api( 'responsive_button_hover_color', function( value ) {
-        value.bind( function( newval ) {
-            if( newval && newval.startsWith('palette') ) {
-                newval = `var(--responsive-global-${newval})`;
-            }
-            // Inline style won't work for :hover, so we inject a style tag
-            var styleId = 'responsive-button-hover-color-preview';
+            var styleId = 'responsive-button-color-preview';
             jQuery('style#' + styleId).remove();
-            
-            var selectors = '.page.front-page .button:hover, .blog.front-page .button:hover, .read-more-button .hentry .read-more .more-link:hover, input[type=button]:hover, input[type=submit]:hover, button:hover, .button:hover, .wp-block-button__link:hover, div.wpforms-container-full .wpforms-form input[type=submit]:hover, body div.wpforms-container-full .wpforms-form button[type=submit]:hover, div.wpforms-container-full .wpforms-form .wpforms-page-button:hover';
-            
+
+            var selectors =
+                '.page.front-page .button,' +
+                '.blog.front-page .button,' +
+                '.read-more-button .hentry .read-more .more-link,' +
+                'input[type=button],' +
+                'input[type=submit],' +
+                'button:not(.responsive-header-button),' +
+                '.button:not(.responsive-header-button),' +
+                '.wp-block-button__link,' +
+                'div.wpforms-container-full .wpforms-form input[type=submit],' +
+                'body div.wpforms-container-full .wpforms-form button[type=submit],' +
+                'div.wpforms-container-full .wpforms-form .wpforms-page-button';
+
             var css = selectors + ' { background-color: ' + newval + ' !important; }';
-            
+
             jQuery('head').append('<style id="' + styleId + '">' + css + '</style>');
         } );
     } );
+
+    // Buttons hover color
+    api( 'responsive_button_hover_color', function( value ) {
+        value.bind( function( newval ) {
+
+            if ( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+
+            var styleId = 'responsive-button-hover-color-preview';
+            jQuery('style#' + styleId).remove();
+
+            var selectors =
+                '.page.front-page .button:hover:not(.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button),' +
+                '.blog.front-page .button:hover:not(.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button),' +
+                '.read-more-button .hentry .read-more .more-link:hover,' +
+                'input[type=button]:hover,' +
+                'input[type=submit]:hover,' +
+                'button:hover:not(.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button),' +
+                '.button:hover:not(.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button),' +
+                '.wp-block-button__link:hover,' +
+                'div.wpforms-container-full .wpforms-form input[type=submit]:hover,' +
+                'body div.wpforms-container-full .wpforms-form button[type=submit]:hover,' +
+                'div.wpforms-container-full .wpforms-form .wpforms-page-button:hover';
+
+            var css = selectors + ' { background-color: ' + newval + ' !important; }';
+
+            jQuery('head').append('<style id="' + styleId + '">' + css + '</style>');
+        });
+    });
 
     // Header Button Hover Color
     api( 'responsive_header_button_bg_hover_color', function( value ) {
@@ -734,7 +756,10 @@
     //Buttons text Color
     api( 'responsive_button_text_color', function( value ) {
         value.bind( function( newval ) {
-            $('.page.front-page .button,.blog.front-page .button,.read-more-button .hentry .read-more .more-link,input[type=button],input[type=submit],button,.button,.wp-block-button__link,div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],div.wpforms-container-full .wpforms-form .wpforms-page-button').css('color', newval );
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            $('.page.front-page .button,.blog.front-page .button,.read-more-button .hentry .read-more .more-link,input[type=button],input[type=submit],button,.button,.wp-block-button__link,div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],div.wpforms-container-full .wpforms-form .wpforms-page-button').not('.footer-widget-area a').css('color', newval );
         } );
     } );
 
@@ -855,10 +880,10 @@
         value.bind( function( newval ) {
             $(".main-navigation .menu li > a").hover(
                 function() {
-                    $(this).css("background-color", api('responsive_header_hover_menu_background_color').get());
+                    $(this).css("background-color", processThemeSettingForCSS('responsive_header_hover_menu_background_color'));
                 },
                 function() {
-                    $(this).css("background-color", api('responsive_header_active_menu_background_color').get());
+                    $(this).css("background-color", processThemeSettingForCSS('responsive_header_active_menu_background_color'));
                 }
             );
         } );
@@ -1179,11 +1204,21 @@
     } );
 
     //Links Color
-    api( 'responsive_footer_links_color', function( value ) {
-        value.bind( function( newval ) {
-            $('.site-footer a').css('color', newval );
-        } );
-    } );
+    api('responsive_footer_links_color', function(value) {
+        value.bind(function(newval) {
+
+            // Remove old style if exists
+            $('#responsive-footer-links-color-style').remove();
+
+            // Add new style tag
+            $('head').append(
+                '<style id="responsive-footer-links-color-style">' +
+                '.site-footer a { color: ' + newval + '; }' +
+                '</style>'
+            );
+
+        });
+    });
 
     //Border Color
     // api( 'responsive_footer_border_color', function( value ) {
@@ -1505,15 +1540,17 @@
         } );
     } );
 
-    //Links Hover Color
-    $(".widget-area .widget-wrapper a").hover(
+    $('.widget-area .widget-wrapper a').not('a.add_to_cart_button').not('a.product_type_grouped').not('.woocommerce-tabs .reviews_tab').hover(
         function() {
-            $(this).css("color", api('responsive_sidebar_link_hover_color').get());
+            const linkHoverColor = processThemeSettingForCSS('responsive_sidebar_link_hover_color');
+            $(this).css("color", linkHoverColor);
         },
+        
         function() {
-            const sidebarLinkColor = processThemeSettingForCSS('responsive_sidebar_link_color');
-            $(this).css("color", sidebarLinkColor);
-        });
+            const linkColor = processThemeSettingForCSS('responsive_sidebar_link_color');
+            $(this).css("color", linkColor);
+        }
+    );
 
     //Scroll To Top
     //Icon Color
@@ -1732,7 +1769,7 @@
     //Hover Colors
 
     //Links Hover Color
-    $("a").hover(
+    $("a").not('.widget-area .widget-wrapper a').not('.footer-navigation #footer-menu li a').not('.responsive-header-button').hover(
         function() {
             const linkHoverColor = processThemeSettingForCSS('responsive_link_hover_color');
             $(this).css("color", linkHoverColor);
@@ -1744,18 +1781,25 @@
         }
     );
     //Buttons Hover Color
-    $(".page.front-page .button,.blog.front-page .button,.read-more-button .hentry .read-more .more-link,input[type=button],input[type=submit],button:not(.menu-toggle),.button,.wp-block-button__link,div.wpforms-container-full .wpforms-form input[type=submit],body div.wpforms-container-full .wpforms-form button[type=submit],div.wpforms-container-full .wpforms-form .wpforms-page-button, .elementor-widget-rael-button .rael-button").hover(
+    $(".page.front-page .button, .blog.front-page .button, .read-more-button .hentry .read-more .more-link, input[type=button], input[type=submit], button:not(.menu-toggle):not(.responsive-header-button), .button:not(.responsive-header-button), .wp-block-button__link, div.wpforms-container-full .wpforms-form input[type=submit], body div.wpforms-container-full .wpforms-form button[type=submit], div.wpforms-container-full .wpforms-form .wpforms-page-button, .elementor-widget-rael-button .rael-button").hover(
         function() {
-            $(this).css("background-color", api('responsive_button_hover_color').get());
-            $(this).css("color", api('responsive_button_hover_text_color').get());
-            $(this).css("border-color", api('responsive_button_hover_border_color').get());
+            const buttonHoverColor = processThemeSettingForCSS('responsive_button_hover_color');
+            const buttonHoverTextColor = processThemeSettingForCSS('responsive_button_hover_text_color');
+            const buttonHoverBorderColor = processThemeSettingForCSS('responsive_button_hover_border_color');
+            
+            $(this).css("background-color", buttonHoverColor);
+            $(this).css("color", buttonHoverTextColor);
+            $(this).css("border-color", buttonHoverBorderColor);
         },
 
         function() {
             const buttonBGColor = processThemeSettingForCSS('responsive_button_color');
+            const buttonTextColor = processThemeSettingForCSS('responsive_button_text_color');
+            const buttonBorderColor = processThemeSettingForCSS('responsive_button_border_color');
+
             $(this).css("background-color", buttonBGColor);
-            $(this).css("color", api('responsive_button_text_color').get());
-            $(this).css("border-color", api('responsive_button_border_color').get());
+            $(this).css("color", buttonTextColor);
+            $(this).css("border-color", buttonBorderColor);
         }
     );
     api( 'responsive_button_hover_color', function( value ) {
@@ -1836,22 +1880,22 @@
     //site title hover color
     $(".res-transparent-header .site-title a").hover(
         function() {
-            $(this).css("color", api('responsive_transparent_header_site_title_hover_color').get());
+            $(this).css("color", processThemeSettingForCSS('responsive_transparent_header_site_title_hover_color'));
         },
 
         function() {
-            $(this).css("color", api('responsive_transparent_header_site_title_color').get());
+            $(this).css("color", processThemeSettingForCSS('responsive_transparent_header_site_title_color'));
         }
     );
 
    //Header widget link hover color...
     $(".header-widgets a").hover(
         function() {
-            $(this).css("color", api('responsive_header_widget_link_hover_color').get());
+            $(this).css("color", processThemeSettingForCSS('responsive_header_widget_link_hover_color'));
         },
 
         function() {
-            $(this).css("color", api('responsive_header_widget_link_color').get());
+            $(this).css("color", processThemeSettingForCSS('responsive_header_widget_link_color'));
         }
     );
 
@@ -1977,11 +2021,11 @@
     //Sub Menu Links Hover Color
     $(".main-navigation .children li a,.main-navigation .sub-menu li a,.responsive-off-canvas-panel .sub-menu li a,.responsive-off-canvas-panel .children li a,#off-canvas-menu .sub-menu li a,#off-canvas-menu .children li a,.off-canvas-widget-area #off-canvas-menu .sub-menu li a,.off-canvas-widget-area #off-canvas-menu .children li a,#off-canvas-site-navigation .menu .sub-menu li a,#off-canvas-site-navigation .menu .children li a").hover(
         function() {
-            $(this).css("color", api('responsive_header_sub_menu_link_hover_color').get());
+            $(this).css("color", processThemeSettingForCSS('responsive_header_sub_menu_link_hover_color'));
         },
 
         function() {
-            $(this).css("color", api('responsive_header_sub_menu_link_color').get());
+            $(this).css("color", processThemeSettingForCSS('responsive_header_sub_menu_link_hover_color'));
         }
     );
     $(".main-navigation .menu .sub-menu li > .res-iconify svg, .main-navigation .menu .sub-menu li > a > .res-iconify svg").hover(
@@ -2016,16 +2060,27 @@
 //Active Sub Menu Links Hover Color
     $(".res-transparent-header .main-navigation .menu .sub-menu .current_page_item > a,.res-transparent-header .main-navigation .menu .sub-menu .current-menu-item > a,.res-transparent-header .main-navigation .menu .children li.current_page_item a,.res-transparent-header .main-navigation .menu .sub-menu li:hover > .res-iconify svg,.res-transparent-header .responsive-off-canvas-panel .sub-menu .current_page_item > a,.res-transparent-header .responsive-off-canvas-panel .sub-menu .current-menu-item > a,.res-transparent-header .responsive-off-canvas-panel .children li.current_page_item a,.res-transparent-header #off-canvas-menu .sub-menu .current_page_item > a,.res-transparent-header #off-canvas-menu .sub-menu .current-menu-item > a,.res-transparent-header #off-canvas-menu .children li.current_page_item a,.res-transparent-header .off-canvas-widget-area #off-canvas-menu .sub-menu .current_page_item > a,.res-transparent-header .off-canvas-widget-area #off-canvas-menu .sub-menu .current-menu-item > a,.res-transparent-header .off-canvas-widget-area #off-canvas-menu .children li.current_page_item a,.res-transparent-header #off-canvas-site-navigation .menu .sub-menu .current_page_item > a,.res-transparent-header #off-canvas-site-navigation .menu .sub-menu .current-menu-item > a,.res-transparent-header #off-canvas-site-navigation .menu .children li.current_page_item a").hover(
         function() {
-            $(this).css("color", api('responsive_transparent_header_sub_menu_link_hover_color').get());
+            const linkHoverColor = processThemeSettingForCSS('responsive_transparent_header_menu_link_hover_color');
+             $(this).css("color", linkHoverColor);
+             $(this).find('.res-iconify svg').css("stroke", linkHoverColor);
         },
 
         function() {
-            $(this).css("color", api('responsive_transparent_header_sub_menu_link_color').get());
+             const linkColor = processThemeSettingForCSS('responsive_transparent_header_menu_link_color');
+             const activeLinkColor = processThemeSettingForCSS('responsive_transparent_header_active_menu_link_color');
+            if( $(this).parent().hasClass('current_page_item') || $(this).parent().hasClass('current-menu-item') ) {
+                $(this).css("color", activeLinkColor);
+                 $(this).find('.res-iconify svg').css("stroke", activeLinkColor);
+            }
+            else {
+                $(this).css("color", linkColor);
+                 $(this).find('.res-iconify svg').css("stroke", linkColor);
+            }
         }
     );
     $(".res-transparent-header .main-navigation .menu .sub-menu li > .res-iconify svg").hover(
         function() {
-            $(this).css("stroke", api('responsive_transparent_header_sub_menu_link_hover_color').get());
+            $(this).css("stroke", processThemeSettingForCSS('responsive_transparent_header_sub_menu_link_hover_color'));
         },
 
         function() {
@@ -2035,21 +2090,41 @@
 //Active Sub Menu Links Hover Color
     $(".res-transparent-header .main-navigation .menu .sub-menu .current_page_item > a,.res-transparent-header .main-navigation .menu .sub-menu .current-menu-item > a,.res-transparent-header .main-navigation .menu .children li.current_page_item a,.res-transparent-header .responsive-off-canvas-panel .sub-menu .current_page_item > a,.res-transparent-header .responsive-off-canvas-panel .sub-menu .current-menu-item > a,.res-transparent-header .responsive-off-canvas-panel .children li.current_page_item a,.res-transparent-header #off-canvas-menu .sub-menu .current_page_item > a,.res-transparent-header #off-canvas-menu .sub-menu .current-menu-item > a,.res-transparent-header #off-canvas-menu .children li.current_page_item a,.res-transparent-header .off-canvas-widget-area #off-canvas-menu .sub-menu .current_page_item > a,.res-transparent-header .off-canvas-widget-area #off-canvas-menu .sub-menu .current-menu-item > a,.res-transparent-header .off-canvas-widget-area #off-canvas-menu .children li.current_page_item a,.res-transparent-header #off-canvas-site-navigation .menu .sub-menu .current_page_item > a,.res-transparent-header #off-canvas-site-navigation .menu .sub-menu .current-menu-item > a,.res-transparent-header #off-canvas-site-navigation .menu .children li.current_page_item a").hover(
         function() {
-            $(this).css("color", api('responsive_transparent_header_sub_menu_link_hover_color').get());
+            const linkHoverAttributes = processThemeSettingForCSS('responsive_transparent_header_sub_menu_link_hover_color');
+            if( linkHoverAttributes ) {
+                $(this).css("color", linkHoverAttributes);
+            }
         },
 
         function() {
             $(this).css("color", api('responsive_transparent_header_sub_menu_active_link_color').get());
         }
     );
-    //Footer Links Hover Color
-    $(".site-footer a").hover(
+
+    // Sub Menu Item Link Hover Color
+    $(".res-transparent-header .main-navigation .menu .sub-menu li a, .res-transparent-header .main-navigation .menu .children li a").hover(
         function() {
-            $(this).css("color", api('responsive_footer_links_hover_color').get());
+            const linkHoverAttributes = processThemeSettingForCSS('responsive_transparent_header_sub_menu_link_hover_color');
+            if( linkHoverAttributes ) {
+                $(this).css("color", linkHoverAttributes);
+            }
         },
 
         function() {
-            $(this).css("color", api('responsive_footer_links_color').get());
+             const linkAttributes = processThemeSettingForCSS('responsive_transparent_header_sub_menu_link_color');
+            if( linkAttributes ) {
+                $(this).css("color", linkAttributes);
+            }
+        }
+    );
+    //Footer Links Hover Color
+    $(".site-footer a").not('.footer-navigation a').hover(
+        function() {
+            $(this).css("color", processThemeSettingForCSS('responsive_footer_links_hover_color'));
+        },
+
+        function() {
+            $(this).css("color", processThemeSettingForCSS('responsive_footer_links_color'));
         }
     );
 
@@ -2067,7 +2142,7 @@
     );
 
     //Cart Button Text Hover Color
-    $(".page.woocommerce-cart .woocommerce button.button:disabled,.page.woocommerce-cart .woocommerce button.button:disabled[disabled],.page.woocommerce-cart .woocommerce button.button").hover(
+    $(".page.woocommerce-cart .woocommerce button.button:disabled,.page.woocommerce-cart .woocommerce button.button:disabled[disabled],.page.woocommerce-cart .woocommerce button.button, .page.woocommerce-cart .wp-block-woocommerce-cart button.wc-block-components-totals-coupon__button").hover(
         function() {
             const cartButtonTextHoverColor = processThemeSettingForCSS('responsive_cart_buttons_hover_text_color');
             $(this).css("color", cartButtonTextHoverColor);
@@ -2080,7 +2155,7 @@
     );
 
     //Checkout Button Hover text Color
-    $(".page.woocommerce-cart .woocommerce a.button.alt,.page.woocommerce-cart .woocommerce a.button,.page.woocommerce-checkout .woocommerce button.button.alt,.page.woocommerce-checkout .woocommerce button.button").hover(
+    $(".page.woocommerce-cart .woocommerce a.button.alt,.page.woocommerce-cart .woocommerce a.button,.page.woocommerce-checkout .woocommerce button.button.alt,.page.woocommerce-checkout .woocommerce button.button, .page.woocommerce-cart .wp-block-woocommerce-cart a.wc-block-cart__submit-button, .page.woocommerce-checkout .wp-block-woocommerce-checkout button.wc-block-components-checkout-place-order-button").hover(
         function() {
             const checkoutButtonTextHoverColor = processThemeSettingForCSS('responsive_cart_checkout_button_hover_text_color');
             $(this).css("color", checkoutButtonTextHoverColor);
@@ -2095,11 +2170,11 @@
     //Add to Cart Button Hover Color
     $(".woocommerce #respond input#submit,.wp-block-button__link.add_to_cart_button,.woocommerce button.button,.woocommerce button.button.alt,.woocommerce button.button,.woocommerce a.button").hover(
         function() {
-            $(this).css("background-color", api('responsive_add_to_cart_button_hover_color').get());
+            $(this).css("background-color", processThemeSettingForCSS('responsive_add_to_cart_button_hover_color'));
         },
 
         function() {
-            $(this).css("background-color", api('responsive_add_to_cart_button_color').get());
+            $(this).css("background-color", processThemeSettingForCSS('responsive_add_to_cart_button_color'));
         }
     );
 
@@ -2123,11 +2198,11 @@
 
     $(".responsive-off-canvas-close svg").hover(
         function() {
-            $(this).css("fill", api('responsive_off_canvas_close_button_hover_color').get());
+            $(this).css("fill", processThemeSettingForCSS('responsive_off_canvas_close_button_hover_color'));
         },
 
         function() {
-            $(this).css("fill", api('responsive_off_canvas_close_button_color').get());
+            $(this).css("fill", processThemeSettingForCSS('responsive_off_canvas_close_button_color'));
         }
     );
     
@@ -3251,6 +3326,141 @@
             );
         })
     });
+
+    // Footer Menu Link Color - Desktop
+    api( 'responsive_footer_menu_link_color', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-color' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-color">'
+                + '.footer-navigation #footer-menu li a { color: ' + newval + '; }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Hover Color - Desktop
+    api( 'responsive_footer_menu_link_color_hover', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-hover-color' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-hover-color">'
+                + '.footer-navigation #footer-menu li a:hover { color: ' + newval + '; }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Active Color - Desktop
+    api( 'responsive_footer_menu_link_color_active', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-active-color' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-active-color">'
+                + '.footer-navigation #footer-menu li.current-menu-item > a, .footer-navigation #footer-menu li.current_page_item > a { color: ' + newval + '; }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Color - Tablet
+    api( 'responsive_footer_menu_link_color_tablet', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-color-tablet' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-color-tablet">'
+                + '@media screen and ( min-width: 577px ) and ( max-width: 992px ) { .footer-navigation #footer-menu li a { color: ' + newval + '; } }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Hover Color - Tablet
+    api( 'responsive_footer_menu_link_color_tablet_hover', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-hover-color-tablet' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-hover-color-tablet">'
+                + '@media screen and ( min-width: 577px ) and ( max-width: 992px ) { .footer-navigation #footer-menu li a:hover { color: ' + newval + '; } }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Active Color - Tablet
+    api( 'responsive_footer_menu_link_color_tablet_active', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-active-color-tablet' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-active-color-tablet">'
+                + '@media screen and ( min-width: 577px ) and ( max-width: 992px ) { .footer-navigation #footer-menu li.current-menu-item > a, .footer-navigation ul li.current_page_item > a { color: ' + newval + '; } }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Color - Mobile
+    api( 'responsive_footer_menu_link_color_mobile', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-color-mobile' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-color-mobile">'
+                + '@media screen and ( max-width: 576px ) { .footer-navigation #footer-menu li a { color: ' + newval + '; } }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Hover Color - Mobile
+    api( 'responsive_footer_menu_link_color_mobile_hover', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-hover-color-mobile' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-hover-color-mobile">'
+                + '@media screen and ( max-width: 576px ) { .footer-navigation #footer-menu li a:hover { color: ' + newval + '; } }'
+                + '</style>'
+            );
+        });
+    });
+
+    // Footer Menu Link Active Color - Mobile
+    api( 'responsive_footer_menu_link_color_mobile_active', function( val ){
+        val.bind( function( newval ){
+            if( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            jQuery( 'style#responsive-footer-menu-link-active-color-mobile' ).remove();
+            jQuery( 'head' ).append(
+                '<style id="responsive-footer-menu-link-active-color-mobile">'
+                + '@media screen and ( max-width: 576px ) { .footer-navigation #footer-menu li.current-menu-item > a, .footer-navigation ul li.current_page_item > a { color: ' + newval + '; } }'
+                + '</style>'
+            );
+        });
+    });
     // Footer Copyright Text Color - Desktop
     api( 'responsive_footer_copyright_text_color', function(val){
         val.bind(function(newval){
@@ -3385,30 +3595,38 @@
     });
     api( 'responsive_header_button_color', function(val){
         val.bind(function(newval){
+            if ( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
             $( '.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button' ).css( 'color', newval );
         });
     });
     api( 'responsive_header_button_hover_color', function(val){
         val.bind(function(newval){
-            $( '.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover' ).css( 'color', newval );
+            if ( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            var styleId = 'responsive-header-button-text-hover-color-preview';
+            jQuery('style#' + styleId).remove();
+            
+            var selectors = '.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover';
+            var css = selectors + ' { color: ' + newval + ' !important; }';
+            
+            jQuery('head').append('<style id="' + styleId + '">' + css + '</style>');
         });
     });
     api( 'responsive_header_button_bg_color', function(val){
         val.bind(function(newval){
+            if ( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
             let header_button_style = api('responsive_header_button_style').get();
             if ( 'filled' === header_button_style ) {
                 $( '.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button' ).css( 'background-color', newval );
             }
         });
     });
-    api( 'responsive_header_button_bg_hover_color', function(val){
-        val.bind(function(newval){
-            let header_button_style = api('responsive_header_button_style').get();
-            if ( 'filled' === header_button_style ) {
-                $( '.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover' ).css( 'background-color', newval );
-            }
-        });
-    });
+
     api( 'responsive_header_button_border_color', function(val){
         val.bind(function(newval){
             let header_button_border_style = api('responsive_header_button_border_style').get();
@@ -3419,40 +3637,51 @@
     });
     api( 'responsive_header_button_border_hover_color', function(val){
         val.bind(function(newval){
-            let header_button_border_style = api('responsive_header_button_border_style').get();
-            if ( 'none' !== header_button_border_style ) {
-                $( '.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover' ).css( 'border-color', newval );
-            }
+            var styleId = 'responsive-header-button-border-hover-color-preview';
+            jQuery('style#' + styleId).remove();
+            
+            var selectors = '.site-header-item .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover';
+            var css = selectors + ' { border-color: ' + newval + '; }';
+            
+            jQuery('head').append('<style id="' + styleId + '">' + css + '</style>');
         });
     });
 
     // Mobile Header Button Color Controls
     api( 'responsive_mobile_header_button_color', function(val){
         val.bind(function(newval){
+            if ( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
             $( '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button' ).css( 'color', newval );
         });
     });
     api( 'responsive_mobile_header_button_hover_color', function(val){
         val.bind(function(newval){
-            $( '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover' ).css( 'color', newval );
+            if ( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
+            var styleId = 'responsive-mobile-header-button-hover-color-preview';
+            jQuery('style#' + styleId).remove();
+            
+            var selectors = '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover';
+            var css = selectors + ' { color: ' + newval + ' ; }';
+            
+            jQuery('head').append('<style id="' + styleId + '">' + css + '</style>');
         });
     });
     api( 'responsive_mobile_header_button_bg_color', function(val){
         val.bind(function(newval){
+            if ( newval && newval.startsWith('palette') ) {
+                newval = `var(--responsive-global-${newval})`;
+            }
             let mobile_header_button_style = api('responsive_mobile_header_button_style').get();
             if ( 'filled' === mobile_header_button_style ) {
                 $( '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button' ).css( 'background-color', newval );
             }
         });
     });
-    api( 'responsive_mobile_header_button_bg_hover_color', function(val){
-        val.bind(function(newval){
-            let mobile_header_button_style = api('responsive_mobile_header_button_style').get();
-            if ( 'filled' === mobile_header_button_style ) {
-                $( '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover' ).css( 'background-color', newval );
-            }
-        });
-    });
+
     api( 'responsive_mobile_header_button_border_color', function(val){
         val.bind(function(newval){
             let mobile_header_button_border_style = api('responsive_mobile_header_button_border_style').get();
@@ -3463,10 +3692,13 @@
     });
     api( 'responsive_mobile_header_button_border_hover_color', function(val){
         val.bind(function(newval){
-            let mobile_header_button_border_style = api('responsive_mobile_header_button_border_style').get();
-            if ( 'none' !== mobile_header_button_border_style ) {
-                $( '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover' ).css( 'border-color', newval );
-            }
+            var styleId = 'responsive-mobile-header-button-border-hover-color-preview';
+            jQuery('style#' + styleId).remove();
+            
+            var selectors = '.site-header-mobile .responsive-header-button-wrap .responsive-header-button-inner-wrap .responsive-header-button:hover';
+            var css = selectors + ' { border-color: ' + newval + '; }';
+            
+            jQuery('head').append('<style id="' + styleId + '">' + css + '</style>');
         });
     });
     api( 'responsive_mobile_header_button_shadow_color', function(val){

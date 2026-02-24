@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive 6.3.3\n"
+"Project-Id-Version: Responsive 6.3.4\n"
 "Report-Msgid-Bugs-To: https://cyberchimps.com/forum/free/responsive/\n"
-"POT-Creation-Date: 2026-02-12 11:41:44+00:00\n"
+"POT-Creation-Date: 2026-02-24 08:40:20+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -205,7 +205,7 @@ msgid "Contact"
 msgstr ""
 
 #: admin/starter-custom-page/responsive-home-starter-content.php:121
-#: core/includes/functions.php:1536
+#: core/includes/functions.php:1546
 msgid "Primary Menu"
 msgstr ""
 
@@ -1367,7 +1367,7 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-cart-colors-customizer.php:41
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-cart-colors-customizer.php:55
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:414
-#: core/includes/functions.php:1556 core/includes/functions.php:1609
+#: core/includes/functions.php:1566 core/includes/functions.php:1619
 msgid "Button"
 msgstr ""
 
@@ -1593,7 +1593,7 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:206
 #: core/includes/customizer/settings/class-responsive-buttons-customizer.php:78
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:170
-#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:101
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:121
 #: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:73
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:138
 #: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:219
@@ -1834,7 +1834,7 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:184
 #: core/includes/customizer/settings/class-responsive-buttons-customizer.php:62
 #: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:296
-#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:95
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:97
 #: core/includes/customizer/settings/class-responsive-header-button-customizer.php:176
 #: core/includes/customizer/settings/class-responsive-header-contact-info-customizer.php:120
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:112
@@ -2535,7 +2535,7 @@ msgid "View PRO Features"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:37
-#: core/includes/functions.php:1425 core/includes/functions.php:1478
+#: core/includes/functions.php:1435 core/includes/functions.php:1488
 #: template-parts/footer/footer_copyright.php:26
 msgid "Copyright"
 msgstr ""
@@ -2593,26 +2593,35 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:67
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:69
 msgid "Configure Footer Menu"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:73
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:75
 msgid "Footer Widgets"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:77
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:79
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:152
 msgid "Hide on Desktop"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:81
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:83
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:156
 msgid "Hide on Tablet"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:85
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:87
 msgid "Hide on Mobile"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:102
+#: core/includes/customizer/settings/class-responsive-footer-widgets-settings-customizer.php:85
+#: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:117
+#: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:213
+#: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:265
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:161
+msgid "Link Color"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-footer-social-customizer.php:39
@@ -2801,14 +2810,6 @@ msgstr ""
 msgid "Content Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-footer-widgets-settings-customizer.php:85
-#: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:117
-#: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:213
-#: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:265
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:161
-msgid "Link Color"
-msgstr ""
-
 #: core/includes/customizer/settings/class-responsive-footer-widgets-settings-customizer.php:97
 #: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:176
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:479
@@ -2846,7 +2847,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-builder-section-customizer.php:95
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:61
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:66
-#: core/includes/functions.php:2307 core/includes/functions.php:2345
+#: core/includes/functions.php:2320 core/includes/functions.php:2358
 #: template-parts/header/woo-cart.php:43
 #: template-parts/mobile-header/mobile_woo-cart.php:43
 msgid "Cart"
@@ -3226,7 +3227,7 @@ msgid "Sub Menu Background"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-off-canvas-menu-layouts-customizer.php:42
-#: core/includes/functions.php:246 core/includes/functions.php:1584
+#: core/includes/functions.php:246 core/includes/functions.php:1594
 #: template-parts/mobile-header/off_canvas_navigation.php:10
 #: template-parts/mobile-header/off_canvas_navigation.php:11
 msgid "Off Canvas Menu"
@@ -3418,8 +3419,8 @@ msgid "Modal Background"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:75
-#: core/includes/functions.php:245 core/includes/functions.php:1541
-#: core/includes/functions.php:1594
+#: core/includes/functions.php:245 core/includes/functions.php:1551
+#: core/includes/functions.php:1604
 #: template-parts/header/secondary_navigation.php:13
 msgid "Secondary Menu"
 msgstr ""
@@ -3504,7 +3505,7 @@ msgid "Site Tagline Typography"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:42
-#: core/includes/functions.php:1589
+#: core/includes/functions.php:1599
 msgid "Toggle Button"
 msgstr ""
 
@@ -3664,8 +3665,8 @@ msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-widgets-customizer.php:39
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:220
-#: core/includes/functions-sidebar.php:100 core/includes/functions.php:1561
-#: core/includes/functions.php:1614
+#: core/includes/functions-sidebar.php:100 core/includes/functions.php:1571
+#: core/includes/functions.php:1624
 msgid "Header Widgets"
 msgstr ""
 
@@ -4045,7 +4046,7 @@ msgid "Address"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-home-page-customizer.php:832
-#: core/includes/functions-extensions.php:400 core/includes/functions.php:1984
+#: core/includes/functions-extensions.php:400 core/includes/functions.php:1997
 msgid "Email"
 msgstr ""
 
@@ -5129,43 +5130,43 @@ msgstr ""
 msgid "I already did"
 msgstr ""
 
-#: core/includes/functions-extensions.php:389 core/includes/functions.php:1973
+#: core/includes/functions-extensions.php:389 core/includes/functions.php:1986
 msgid "Twitter"
 msgstr ""
 
-#: core/includes/functions-extensions.php:390 core/includes/functions.php:1974
+#: core/includes/functions-extensions.php:390 core/includes/functions.php:1987
 msgid "Facebook"
 msgstr ""
 
-#: core/includes/functions-extensions.php:391 core/includes/functions.php:1975
+#: core/includes/functions-extensions.php:391 core/includes/functions.php:1988
 msgid "LinkedIn"
 msgstr ""
 
-#: core/includes/functions-extensions.php:392 core/includes/functions.php:1976
+#: core/includes/functions-extensions.php:392 core/includes/functions.php:1989
 msgid "YouTube"
 msgstr ""
 
-#: core/includes/functions-extensions.php:393 core/includes/functions.php:1977
+#: core/includes/functions-extensions.php:393 core/includes/functions.php:1990
 msgid "StumbleUpon"
 msgstr ""
 
-#: core/includes/functions-extensions.php:394 core/includes/functions.php:1978
+#: core/includes/functions-extensions.php:394 core/includes/functions.php:1991
 msgid "RSS Feed"
 msgstr ""
 
-#: core/includes/functions-extensions.php:395 core/includes/functions.php:1979
+#: core/includes/functions-extensions.php:395 core/includes/functions.php:1992
 msgid "Instagram"
 msgstr ""
 
-#: core/includes/functions-extensions.php:396 core/includes/functions.php:1980
+#: core/includes/functions-extensions.php:396 core/includes/functions.php:1993
 msgid "Pinterest"
 msgstr ""
 
-#: core/includes/functions-extensions.php:397 core/includes/functions.php:1981
+#: core/includes/functions-extensions.php:397 core/includes/functions.php:1994
 msgid "Yelp!"
 msgstr ""
 
-#: core/includes/functions-extensions.php:398 core/includes/functions.php:1982
+#: core/includes/functions-extensions.php:398 core/includes/functions.php:1995
 msgid "Vimeo"
 msgstr ""
 
@@ -5306,8 +5307,8 @@ msgid ""
 "clicked in a Gallery"
 msgstr ""
 
-#: core/includes/functions-sidebar.php:88 core/includes/functions.php:1467
-#: core/includes/functions.php:1520
+#: core/includes/functions-sidebar.php:88 core/includes/functions.php:1477
+#: core/includes/functions.php:1530
 msgid "Colophon Widget"
 msgstr ""
 
@@ -5380,8 +5381,8 @@ msgstr ""
 msgid "Header Menu"
 msgstr ""
 
-#: core/includes/functions.php:247 core/includes/functions.php:1429
-#: core/includes/functions.php:1482
+#: core/includes/functions.php:247 core/includes/functions.php:1439
+#: core/includes/functions.php:1492
 #: template-parts/footer/footer_navigation.php:11
 #: template-parts/footer/footer_navigation.php:12
 msgid "Footer Menu"
@@ -5426,59 +5427,59 @@ msgstr ""
 msgid "Upgrade To Pro"
 msgstr ""
 
-#: core/includes/functions.php:1433 core/includes/functions.php:1486
-#: core/includes/functions.php:1546 core/includes/functions.php:1599
+#: core/includes/functions.php:1443 core/includes/functions.php:1496
+#: core/includes/functions.php:1556 core/includes/functions.php:1609
 msgid "Social"
 msgstr ""
 
-#: core/includes/functions.php:1437 core/includes/functions.php:1490
+#: core/includes/functions.php:1447 core/includes/functions.php:1500
 msgid "Widget 1"
 msgstr ""
 
-#: core/includes/functions.php:1442 core/includes/functions.php:1495
+#: core/includes/functions.php:1452 core/includes/functions.php:1505
 msgid "Widget 2"
 msgstr ""
 
-#: core/includes/functions.php:1447 core/includes/functions.php:1500
+#: core/includes/functions.php:1457 core/includes/functions.php:1510
 msgid "Widget 3"
 msgstr ""
 
-#: core/includes/functions.php:1452 core/includes/functions.php:1505
+#: core/includes/functions.php:1462 core/includes/functions.php:1515
 msgid "Widget 4"
 msgstr ""
 
-#: core/includes/functions.php:1457 core/includes/functions.php:1510
+#: core/includes/functions.php:1467 core/includes/functions.php:1520
 msgid "Widget 5"
 msgstr ""
 
-#: core/includes/functions.php:1462 core/includes/functions.php:1515
+#: core/includes/functions.php:1472 core/includes/functions.php:1525
 msgid "Widget 6"
 msgstr ""
 
-#: core/includes/functions.php:1472 core/includes/functions.php:1525
+#: core/includes/functions.php:1482 core/includes/functions.php:1535
 #: template-parts/footer/scroll_to_top.php:16
 msgid "Scroll to Top"
 msgstr ""
 
-#: core/includes/functions.php:1531 core/includes/functions.php:1579
+#: core/includes/functions.php:1541 core/includes/functions.php:1589
 msgid "Site Title & Logo"
 msgstr ""
 
-#: core/includes/functions.php:1551 core/includes/functions.php:1604
+#: core/includes/functions.php:1561 core/includes/functions.php:1614
 msgid "HTML"
 msgstr ""
 
-#: core/includes/functions.php:1566 core/includes/functions.php:1619
+#: core/includes/functions.php:1576 core/includes/functions.php:1629
 msgid "Contact Info"
 msgstr ""
 
-#: core/includes/functions.php:1571 core/includes/functions.php:1624
+#: core/includes/functions.php:1581 core/includes/functions.php:1634
 #: template-parts/header/search.php:43 template-parts/header/search.php:60
 #: template-parts/header/search.php:87
 msgid "Search"
 msgstr ""
 
-#: core/includes/functions.php:1983
+#: core/includes/functions.php:1996
 msgid "foursquare"
 msgstr ""
 
