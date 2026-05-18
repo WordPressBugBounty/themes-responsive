@@ -2961,7 +2961,7 @@ body.mega-menu-header-menu button.menu-toggle {
   position: relative;
   top: 0;
   transition: all .3s ease;
-  z-index: 0;
+  z-index: 9999;
 }
 
 .responsive-header-search .search-submit {
@@ -2989,6 +2989,7 @@ body.mega-menu-header-menu button.menu-toggle {
 
 .site-header-section-left .responsive-header-search #searchform {
   left: 0;
+  right: auto;
 }
 
 .site-header-section-left .search-type-responsive-slide .res-search-wrapper {
@@ -2996,11 +2997,12 @@ body.mega-menu-header-menu button.menu-toggle {
   gap: 10px;
 }
 
-.site-mobile-header-section .responsive-header-search #searchform {
+.site-mobile-header-section-left .responsive-header-search #searchform {
   left: 0;
+  right: auto;
 }
 
-.site-mobile-header-section .search-type-responsive-slide .res-search-wrapper {
+.site-mobile-header-section-left .search-type-responsive-slide .res-search-wrapper {
   flex-direction: row-reverse;
   gap: 10px;
 }
