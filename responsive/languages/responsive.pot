@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive 6.3.6\n"
+"Project-Id-Version: Responsive 6.3.7\n"
 "Report-Msgid-Bugs-To: https://cyberchimps.com/forum/free/responsive/\n"
-"POT-Creation-Date: 2026-05-18 10:30:12+00:00\n"
+"POT-Creation-Date: 2026-05-26 09:13:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -978,38 +978,37 @@ msgstr ""
 msgid "Save Changes"
 msgstr ""
 
-#: comments.php:31
-msgid "This post is password protected. Enter the password to view any comments."
+#: comments.php:43
+msgid "Name"
 msgstr ""
 
 #: comments.php:46
+msgid "E-mail"
+msgstr ""
+
+#: comments.php:49
+msgid "Website"
+msgstr ""
+
+#: comments.php:73
 #. translators: 1: title.
 msgid "One Comment on &ldquo;%1$s&rdquo;"
 msgstr ""
 
-#: comments.php:62 comments.php:75
+#: comments.php:89 comments.php:100
 msgid "&#8249; Older comments"
 msgstr ""
 
-#: comments.php:64 comments.php:77
+#: comments.php:90 comments.php:101
 msgid "Newer comments &#8250;"
 msgstr ""
 
-#: comments.php:89
+#: comments.php:110
 msgid "Pings&#47;Trackbacks"
 msgstr ""
 
-#: comments.php:108
-#. translators: 1 : Count, 2 : Pings 3 : Post title
-msgid "Name"
-msgstr ""
-
-#: comments.php:110
-msgid "E-mail"
-msgstr ""
-
-#: comments.php:112
-msgid "Website"
+#: comments.php:121
+msgid "Comments are closed."
 msgstr ""
 
 #: core/gutenberg/gutenberg-support.php:35
@@ -1206,15 +1205,15 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:188
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:106
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:112
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:241
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:249
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:259
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:267
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:344
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:352
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:362
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:372
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:413
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:250
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:258
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:268
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:276
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:353
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:361
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:371
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:381
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:422
 msgid "dashicons-editor-alignleft"
 msgstr ""
 
@@ -1241,15 +1240,15 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:167
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:180
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:187
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:242
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:248
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:260
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:266
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:345
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:351
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:363
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:371
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:414
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:251
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:257
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:269
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:275
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:354
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:360
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:372
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:380
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:423
 msgid "dashicons-editor-aligncenter"
 msgstr ""
 
@@ -1278,15 +1277,15 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:186
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:107
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:111
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:243
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:247
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:261
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:265
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:346
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:350
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:364
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:370
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:415
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:252
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:256
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:270
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:274
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:355
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:359
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:373
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:379
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:424
 msgid "dashicons-editor-alignright"
 msgstr ""
 
@@ -1417,7 +1416,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-panel.php:145
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:49
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:64
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:109
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:118
 #: core/includes/customizer/settings/class-responsive-sticky-header-customizer.php:58
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:141
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:141
@@ -1435,7 +1434,7 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:97
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:188
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:86
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:185
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:194
 msgid "Main Content Width (%)"
 msgstr ""
 
@@ -1493,6 +1492,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-social-customizer.php:149
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:123
 #: core/includes/customizer/settings/class-responsive-mobile-header-social-customizer.php:149
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:567
 msgid "Border Radius (px)"
 msgstr ""
 
@@ -1598,6 +1598,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:138
 #: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:219
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:273
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:571
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:126
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:138
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:126
@@ -1620,6 +1621,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:223
 #: core/includes/customizer/settings/class-responsive-mobile-header-html-customizer.php:92
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:277
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:573
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:130
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:130
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-primary-row.php:130
@@ -1678,7 +1680,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:235
 #: core/includes/customizer/settings/class-responsive-header-search-customizer.php:200
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:132
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:231
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:240
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:694
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:727
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:733
@@ -2021,9 +2023,9 @@ msgstr ""
 #: core/includes/customizer/helper.php:294
 #: core/includes/customizer/helper.php:317
 #: core/includes/customizer/helper.php:344
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:138
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:399
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:467
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:147
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:408
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:476
 msgid "Title"
 msgstr ""
 
@@ -2031,16 +2033,16 @@ msgstr ""
 #: core/includes/customizer/helper.php:118
 #: core/includes/customizer/helper.php:295
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:223
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:219
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:468
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:228
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:477
 msgid "Featured Image"
 msgstr ""
 
 #: core/includes/customizer/helper.php:37
 #: core/includes/customizer/helper.php:119
 #: core/includes/customizer/helper.php:322
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:275
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:469
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:284
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:478
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:162
 msgid "Meta"
 msgstr ""
@@ -2074,7 +2076,7 @@ msgid "Add to Cart"
 msgstr ""
 
 #: core/includes/customizer/helper.php:345
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:436
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:445
 msgid "Category"
 msgstr ""
 
@@ -2185,31 +2187,31 @@ msgid "Post Structure"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:211
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:207
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:216
 msgid "Post Elements"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:227
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:124
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:223
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:232
 msgid "Image Width Size (px)"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:233
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:130
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:229
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:238
 msgid "Image Style"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:236
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:133
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:232
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:241
 msgid "Stretched"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:241
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:140
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:239
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:248
 msgid "Image Alignment"
 msgstr ""
 
@@ -2222,53 +2224,55 @@ msgid "Post Meta"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:301
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:297
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:306
 msgid "Meta Elements"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:308
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:137
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:304
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:503
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:146
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:313
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:512
 msgid "Author"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:309
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:305
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:314
 msgid "Date Published"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:310
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:306
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:315
 msgid "Last Updated"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:311
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:307
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:505
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:316
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:514
 msgid "Categories"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:312
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:308
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:506
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:62
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:317
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:515
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:527
 msgid "Comments"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:313
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:309
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:437
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:507
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:318
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:446
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:516
 msgid "Tag"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:335
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:331
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:340
 msgid "Meta Separator"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:346
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:342
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:351
 msgid "Meta Alignment"
 msgstr ""
 
@@ -2293,8 +2297,8 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:387
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:178
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:185
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:365
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:369
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:374
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:378
 msgid "dashicons-editor-justify"
 msgstr ""
 
@@ -2346,7 +2350,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:236
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:248
 #: core/includes/customizer/settings/class-responsive-sidebar-colors-customizer.php:50
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:160
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:169
 msgid "Text Color"
 msgstr ""
 
@@ -2363,6 +2367,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:192
 #: core/includes/customizer/settings/class-responsive-mobile-header-social-customizer.php:151
 #: core/includes/customizer/settings/class-responsive-mobile-header-widgets-customizer.php:106
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:563
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:118
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:118
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-primary-row.php:118
@@ -2375,6 +2380,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-social-customizer.php:147
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:105
 #: core/includes/customizer/settings/class-responsive-mobile-header-social-customizer.php:147
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:559
 msgid "Border Width (px)"
 msgstr ""
 
@@ -2620,7 +2626,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:117
 #: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:213
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:265
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:161
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:170
 msgid "Link Color"
 msgstr ""
 
@@ -2811,7 +2817,7 @@ msgid "Content Color"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-footer-widgets-settings-customizer.php:97
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:176
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:185
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:479
 msgid "Content Font"
 msgstr ""
@@ -2847,7 +2853,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-builder-section-customizer.php:95
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:61
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:66
-#: core/includes/functions.php:2320 core/includes/functions.php:2358
+#: core/includes/functions.php:2328 core/includes/functions.php:2366
 #: template-parts/header/woo-cart.php:43
 #: template-parts/mobile-header/mobile_woo-cart.php:43
 msgid "Cart"
@@ -4046,7 +4052,7 @@ msgid "Address"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-home-page-customizer.php:832
-#: core/includes/functions-extensions.php:400 core/includes/functions.php:1997
+#: core/includes/functions-extensions.php:400 core/includes/functions.php:2005
 msgid "Email"
 msgstr ""
 
@@ -4235,112 +4241,130 @@ msgid "Single Post"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:52
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:381
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:390
 msgid "Related Posts"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:131
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:140
 msgid "Order posts by"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:136
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:504
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:145
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:513
 msgid "Date"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:139
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:148
 msgid "Comment Count"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:146
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:155
 msgid "Ascending"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:147
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:156
 msgid "Descending"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:149
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:158
 msgid "Order Direction"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:151
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:160
 msgid "Enable Post Excerpt"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:152
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:161
 msgid "Excerpt Word Count"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:154
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:163
 msgid "Show Read More Button"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:156
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:165
 msgid "Color Controls"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:157
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:166
 msgid "Section Title"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:158
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:167
 msgid "Section Background"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:162
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:171
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:71
 msgid "Meta Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:164
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:173
 msgid "Font Controls"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:165
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:174
 msgid "Section Title Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:168
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:177
 msgid "Post Title Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:172
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:181
 #: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:75
 msgid "Meta Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:257
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:411
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:266
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:420
 msgid "Title Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:360
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:369
 msgid "Post Content Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:384
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:393
 msgid "Enable Related Posts"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:422
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:431
 msgid "Related Posts Count"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:428
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:437
 msgid "No.of Posts Per Row"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:434
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:443
 msgid "Related Posts Taxonomy"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:460
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:469
 msgid "Related Post Elements"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:496
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:505
 msgid "Related Post Meta Elements"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:531
+msgid "Enable Comments"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:548
+msgid "Below"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:549
+msgid "Above"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:554
+msgid ""
+"You need at least one published comment on a post to see the effect in the "
+"live preview."
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-site-color-palettes-scheme-customizer.php:46
@@ -5134,43 +5158,43 @@ msgstr ""
 msgid "I already did"
 msgstr ""
 
-#: core/includes/functions-extensions.php:389 core/includes/functions.php:1986
+#: core/includes/functions-extensions.php:389 core/includes/functions.php:1994
 msgid "Twitter"
 msgstr ""
 
-#: core/includes/functions-extensions.php:390 core/includes/functions.php:1987
+#: core/includes/functions-extensions.php:390 core/includes/functions.php:1995
 msgid "Facebook"
 msgstr ""
 
-#: core/includes/functions-extensions.php:391 core/includes/functions.php:1988
+#: core/includes/functions-extensions.php:391 core/includes/functions.php:1996
 msgid "LinkedIn"
 msgstr ""
 
-#: core/includes/functions-extensions.php:392 core/includes/functions.php:1989
+#: core/includes/functions-extensions.php:392 core/includes/functions.php:1997
 msgid "YouTube"
 msgstr ""
 
-#: core/includes/functions-extensions.php:393 core/includes/functions.php:1990
+#: core/includes/functions-extensions.php:393 core/includes/functions.php:1998
 msgid "StumbleUpon"
 msgstr ""
 
-#: core/includes/functions-extensions.php:394 core/includes/functions.php:1991
+#: core/includes/functions-extensions.php:394 core/includes/functions.php:1999
 msgid "RSS Feed"
 msgstr ""
 
-#: core/includes/functions-extensions.php:395 core/includes/functions.php:1992
+#: core/includes/functions-extensions.php:395 core/includes/functions.php:2000
 msgid "Instagram"
 msgstr ""
 
-#: core/includes/functions-extensions.php:396 core/includes/functions.php:1993
+#: core/includes/functions-extensions.php:396 core/includes/functions.php:2001
 msgid "Pinterest"
 msgstr ""
 
-#: core/includes/functions-extensions.php:397 core/includes/functions.php:1994
+#: core/includes/functions-extensions.php:397 core/includes/functions.php:2002
 msgid "Yelp!"
 msgstr ""
 
-#: core/includes/functions-extensions.php:398 core/includes/functions.php:1995
+#: core/includes/functions-extensions.php:398 core/includes/functions.php:2003
 msgid "Vimeo"
 msgstr ""
 
@@ -5483,7 +5507,7 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: core/includes/functions.php:1996
+#: core/includes/functions.php:2004
 msgid "foursquare"
 msgstr ""
 
@@ -5910,7 +5934,7 @@ msgctxt "Theme starter content"
 msgid "Home"
 msgstr ""
 
-#: comments.php:52
+#: comments.php:79
 #. translators: 1: comment count number, 2: title.
 msgctxt "comments title"
 msgid "%1$s Comment on &ldquo;%2$s&rdquo;"
