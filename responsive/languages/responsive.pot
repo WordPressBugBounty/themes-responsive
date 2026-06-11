@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive 6.3.7\n"
+"Project-Id-Version: Responsive 6.3.8\n"
 "Report-Msgid-Bugs-To: https://cyberchimps.com/forum/free/responsive/\n"
-"POT-Creation-Date: 2026-05-26 09:13:47+00:00\n"
+"POT-Creation-Date: 2026-06-10 11:28:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -396,7 +396,6 @@ msgid "Learn More"
 msgstr ""
 
 #: admin/templates/getting-started-help.php:19
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:92
 msgid "Documentation"
 msgstr ""
 
@@ -726,6 +725,7 @@ msgid "Customize"
 msgstr ""
 
 #: admin/templates/getting-started-home.php:623
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:86
 #: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:52
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:250
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:263
@@ -1077,7 +1077,7 @@ msgstr ""
 
 #: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-content-customizer.php:46
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-cart-layout-customizer.php:86
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:161
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:176
 #: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:56
 #: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:44
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:72
@@ -1092,7 +1092,6 @@ msgid "Course Archive Layout"
 msgstr ""
 
 #: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-content-customizer.php:68
-#: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:135
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:49
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:49
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-primary-row.php:49
@@ -1143,7 +1142,7 @@ msgid "Course Modifications like course colums,layout preferences can be done he
 msgstr ""
 
 #: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-sidebar.php:47
-#: core/includes/customizer/settings/class-responsive-panel.php:121
+#: core/includes/customizer/settings/class-responsive-panel.php:123
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:99
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:147
 msgid "Sidebar"
@@ -1183,14 +1182,14 @@ msgstr ""
 #: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-user-dashborad.php:61
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:228
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:234
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:243
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:251
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:264
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:273
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:348
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:356
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:381
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:390
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:258
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:266
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:279
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:288
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:363
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:371
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:396
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:405
 #: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:94
 #: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:103
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:112
@@ -1205,29 +1204,29 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:188
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:106
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:112
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:250
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:258
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:268
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:276
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:353
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:361
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:371
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:381
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:422
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:251
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:259
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:269
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:277
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:354
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:362
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:372
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:382
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:423
 msgid "dashicons-editor-alignleft"
 msgstr ""
 
 #: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-user-dashborad.php:62
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:229
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:235
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:244
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:250
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:259
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:265
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:272
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:349
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:355
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:382
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:389
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:280
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:287
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:364
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:370
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:397
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:404
 #: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:95
 #: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:102
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:113
@@ -1240,29 +1239,29 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:167
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:180
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:187
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:251
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:257
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:269
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:275
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:354
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:360
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:372
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:380
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:423
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:252
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:258
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:270
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:276
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:355
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:361
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:373
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:381
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:424
 msgid "dashicons-editor-aligncenter"
 msgstr ""
 
 #: core/includes/compatibility/lifterlms/customizer/settings/class-responsive-lifterlms-user-dashborad.php:63
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:230
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:236
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:245
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:249
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:266
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:271
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:350
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:354
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:383
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:388
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:260
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:264
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:281
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:286
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:365
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:369
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:398
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:403
 #: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:96
 #: core/includes/customizer/settings/class-responsive-content-header-layout-customizer.php:101
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:114
@@ -1277,15 +1276,15 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:186
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:107
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:111
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:252
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:256
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:270
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:274
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:355
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:359
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:373
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:379
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:424
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:253
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:257
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:271
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:275
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:356
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:360
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:374
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:380
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:425
 msgid "dashicons-editor-alignright"
 msgstr ""
 
@@ -1293,7 +1292,7 @@ msgstr ""
 #: core/includes/customizer/helper.php:38
 #: core/includes/customizer/helper.php:120
 #: core/includes/customizer/helper.php:296
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:364
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:379
 msgid "Content"
 msgstr ""
 
@@ -1302,7 +1301,7 @@ msgid "Courses Per Row"
 msgstr ""
 
 #: core/includes/compatibility/sensei/customizer/settings/class-responsive-sensei-content-customizer.php:58
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:398
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:413
 msgid "Excerpt Length"
 msgstr ""
 
@@ -1365,7 +1364,7 @@ msgstr ""
 
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-cart-colors-customizer.php:41
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-cart-colors-customizer.php:55
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:414
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:429
 #: core/includes/functions.php:1566 core/includes/functions.php:1619
 msgid "Button"
 msgstr ""
@@ -1389,16 +1388,16 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-cart-layout-customizer.php:54
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:46
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:46
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:50
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:65
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:45
 #: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:64
 #: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:47
 #: core/includes/customizer/settings/class-responsive-footer-social-customizer.php:45
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:50
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:51
 #: core/includes/customizer/settings/class-responsive-header-button-customizer.php:39
 #: core/includes/customizer/settings/class-responsive-header-contact-info-customizer.php:39
 #: core/includes/customizer/settings/class-responsive-header-html-customizer.php:39
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:50
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:51
 #: core/includes/customizer/settings/class-responsive-header-off-canvas-menu-layouts-customizer.php:134
 #: core/includes/customizer/settings/class-responsive-header-search-customizer.php:39
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:42
@@ -1413,10 +1412,10 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:50
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:53
 #: core/includes/customizer/settings/class-responsive-panel.php:64
-#: core/includes/customizer/settings/class-responsive-panel.php:145
+#: core/includes/customizer/settings/class-responsive-panel.php:153
 #: core/includes/customizer/settings/class-responsive-scroll-to-top-customizer.php:49
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:64
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:118
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:119
 #: core/includes/customizer/settings/class-responsive-sticky-header-customizer.php:58
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:141
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:141
@@ -1432,9 +1431,9 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-checkout-customizer.php:46
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:173
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:97
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:188
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:203
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:86
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:194
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:195
 msgid "Main Content Width (%)"
 msgstr ""
 
@@ -1492,7 +1491,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-social-customizer.php:149
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:123
 #: core/includes/customizer/settings/class-responsive-mobile-header-social-customizer.php:149
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:567
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:568
 msgid "Border Radius (px)"
 msgstr ""
 
@@ -1515,7 +1514,6 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:107
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:115
 #: core/includes/customizer/settings/class-responsive-panel.php:40
-#: core/includes/customizer/settings/class-responsive-panel.php:41
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:105
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:112
 #: core/includes/customizer/settings/class-responsive-sidebar-layout-customizer.php:129
@@ -1591,14 +1589,14 @@ msgid "Sidebar Width (%)"
 msgstr ""
 
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:206
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:78
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:83
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:170
 #: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:121
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:73
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:74
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:138
 #: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:219
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:273
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:571
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:572
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:126
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:138
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:126
@@ -1621,7 +1619,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:223
 #: core/includes/customizer/settings/class-responsive-mobile-header-html-customizer.php:92
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:277
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:573
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:574
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:130
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:130
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-primary-row.php:130
@@ -1677,10 +1675,10 @@ msgstr ""
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-shop-layout-customizer.php:268
 #: core/includes/customizer/controls/typography/class-responsive-customizer-typography-control.php:71
 #: core/includes/customizer/settings/class-responsive-blog-customizer.php:129
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:235
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:250
 #: core/includes/customizer/settings/class-responsive-header-search-customizer.php:200
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:132
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:240
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:241
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:694
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:727
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:733
@@ -1828,13 +1826,13 @@ msgid "Display"
 msgstr ""
 
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:176
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:182
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:334
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:183
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:335
 msgid "Hide"
 msgstr ""
 
 #: core/includes/compatibility/woocommerce/customizer/settings/class-responsive-woocommerce-single-product-layout-customizer.php:184
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:62
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:67
 #: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:296
 #: core/includes/customizer/settings/class-responsive-footer-menu-customizer.php:97
 #: core/includes/customizer/settings/class-responsive-header-button-customizer.php:176
@@ -1948,7 +1946,7 @@ msgid "Something went wrong. Please try again."
 msgstr ""
 
 #: core/includes/customizer/controls/flush-fonts/class-responsive-customizer-flush-fonts-control.php:60
-#: core/includes/customizer/settings/class-responsive-performance-customizer.php:91
+#: core/includes/customizer/settings/class-responsive-performance-customizer.php:93
 msgid "Flush Cache"
 msgstr ""
 
@@ -2023,26 +2021,26 @@ msgstr ""
 #: core/includes/customizer/helper.php:294
 #: core/includes/customizer/helper.php:317
 #: core/includes/customizer/helper.php:344
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:147
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:408
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:476
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:148
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:409
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:477
 msgid "Title"
 msgstr ""
 
 #: core/includes/customizer/helper.php:36
 #: core/includes/customizer/helper.php:118
 #: core/includes/customizer/helper.php:295
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:223
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:228
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:477
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:238
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:229
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:478
 msgid "Featured Image"
 msgstr ""
 
 #: core/includes/customizer/helper.php:37
 #: core/includes/customizer/helper.php:119
 #: core/includes/customizer/helper.php:322
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:284
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:478
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:285
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:479
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:162
 msgid "Meta"
 msgstr ""
@@ -2076,7 +2074,7 @@ msgid "Add to Cart"
 msgstr ""
 
 #: core/includes/customizer/helper.php:345
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:445
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:446
 msgid "Category"
 msgstr ""
 
@@ -2093,8 +2091,32 @@ msgstr ""
 msgid "Read More &raquo;"
 msgstr ""
 
+#: core/includes/customizer/helper.php:3783
+msgid "Filled Square"
+msgstr ""
+
+#: core/includes/customizer/helper.php:3784
+msgid "Filled Rounded"
+msgstr ""
+
+#: core/includes/customizer/helper.php:3785
+msgid "Filled Pill"
+msgstr ""
+
+#: core/includes/customizer/helper.php:3786
+msgid "Outline Square"
+msgstr ""
+
+#: core/includes/customizer/helper.php:3787
+msgid "Outline Rounded"
+msgstr ""
+
+#: core/includes/customizer/helper.php:3788
+msgid "Outline Pill"
+msgstr ""
+
 #: core/includes/customizer/settings/class-responsive-background-image-customizer.php:109
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:151
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:152
 msgid "Background Image"
 msgstr ""
 
@@ -2119,7 +2141,7 @@ msgid "Image Left"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-customizer.php:55
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:155
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:156
 msgid "Image Position"
 msgstr ""
 
@@ -2148,169 +2170,198 @@ msgid " Disable Author Profile Box ?"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:43
-#: core/includes/customizer/settings/class-responsive-panel.php:104
 msgid "Blog / Archive"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:127
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:45
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:45
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:45
+#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:40
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:45
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:44
+#: core/includes/customizer/settings/class-responsive-panel.php:49
+#: core/includes/customizer/settings/class-responsive-panel.php:58
+#: core/includes/customizer/settings/class-responsive-panel.php:105
+#: core/includes/customizer/settings/class-responsive-panel.php:124
+#: core/includes/customizer/settings/class-responsive-panel.php:134
+#: core/includes/customizer/settings/class-responsive-panel.php:141
+#: core/includes/customizer/settings/class-responsive-panel.php:144
+#: core/includes/customizer/settings/class-responsive-performance-customizer.php:35
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:44
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:47
+#: core/includes/customizer/settings/class-responsive-site-scripts-customizer.php:45
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:53
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:48
+msgid "Helpful Information"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:49
+msgid "Show Last Updated Dates on Your Blog Posts »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:55
+msgid "Blog Archive Settings »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:142
 msgid "Enable Blog Page Title"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:146
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:161
 msgid "Blog Page Title"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:157
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:172
 msgid "Blog Layout"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:163
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:169
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:178
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:184
 msgid "Grid"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:164
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:168
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:179
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:183
 msgid "List"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:176
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:191
 msgid "Blog Archive Columns"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:182
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:197
 msgid "Enable Masonry Layout"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:191
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:206
 msgid "Post Structure"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:211
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:216
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:226
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:217
 msgid "Post Elements"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:227
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:242
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:124
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:232
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:233
 msgid "Image Width Size (px)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:233
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:248
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:130
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:238
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:239
 msgid "Image Style"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:236
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:251
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:133
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:241
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:242
 msgid "Stretched"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:241
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:256
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:140
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:248
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:249
 msgid "Image Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:262
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:277
 msgid "Post Title Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:281
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:296
 msgid "Post Meta"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:301
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:306
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:316
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:307
 msgid "Meta Elements"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:308
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:146
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:313
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:512
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:323
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:147
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:314
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:513
 msgid "Author"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:309
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:314
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:324
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:315
 msgid "Date Published"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:310
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:315
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:325
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:316
 msgid "Last Updated"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:311
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:316
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:514
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:326
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:317
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:515
 msgid "Categories"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:312
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:62
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:317
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:515
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:527
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:327
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:63
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:318
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:516
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:528
 msgid "Comments"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:313
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:318
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:446
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:516
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:328
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:319
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:447
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:517
 msgid "Tag"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:335
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:340
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:350
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:341
 msgid "Meta Separator"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:346
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:351
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:361
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:352
 msgid "Meta Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:368
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:383
 msgid "Content Type"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:370
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:385
 msgid "Excerpt"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:371
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:386
 msgid "Full Content"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:378
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:393
 #: core/includes/customizer/settings/hfb-builder/header/class-responsive-hfb-mobile-header-off-canvas.php:77
 msgid "Content Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:380
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:387
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:395
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:402
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:178
 #: core/includes/customizer/settings/class-responsive-page-content-customizer.php:185
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:374
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:378
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:375
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:379
 msgid "dashicons-editor-justify"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:404
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:419
 msgid "Read More Text"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:411
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:426
 msgid "Read More Type"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:413
+#: core/includes/customizer/settings/class-responsive-blog-layout-customizer.php:428
 #: core/includes/customizer/settings/hfb-builder/header/class-responsive-hfb-mobile-header-off-canvas.php:69
 msgid "Link"
 msgstr ""
@@ -2319,28 +2370,36 @@ msgstr ""
 msgid "Buttons"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:50
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:85
-#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:197
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:45
+msgid "Buttons Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:51
+msgid "Button Presets"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:55
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:86
+#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:199
 #: core/includes/customizer/settings/class-responsive-header-contact-info-customizer.php:128
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:186
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:187
 #: core/includes/customizer/settings/class-responsive-header-off-canvas-menu-layouts-customizer.php:101
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:131
 #: core/includes/customizer/settings/class-responsive-header-widgets-customizer.php:119
-#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:198
+#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:200
 #: core/includes/customizer/settings/class-responsive-mobile-header-contact-info-customizer.php:129
 #: core/includes/customizer/settings/class-responsive-mobile-header-widgets-customizer.php:121
 msgid "Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:54
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:59
 msgid "Button Colors"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:58
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:63
 #: core/includes/customizer/settings/class-responsive-footer-copyright-customizer.php:132
 #: core/includes/customizer/settings/class-responsive-footer-layout-customizer.php:300
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:98
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:99
 #: core/includes/customizer/settings/class-responsive-header-search-customizer.php:264
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:260
 #: core/includes/customizer/settings/class-responsive-header-widgets-customizer.php:96
@@ -2350,13 +2409,13 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:236
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:248
 #: core/includes/customizer/settings/class-responsive-sidebar-colors-customizer.php:50
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:169
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:170
 msgid "Text Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:66
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:71
 #: core/includes/customizer/settings/class-responsive-footer-social-customizer.php:151
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:102
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:103
 #: core/includes/customizer/settings/class-responsive-header-button-customizer.php:191
 #: core/includes/customizer/settings/class-responsive-header-social-customizer.php:151
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:109
@@ -2367,25 +2426,25 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:192
 #: core/includes/customizer/settings/class-responsive-mobile-header-social-customizer.php:151
 #: core/includes/customizer/settings/class-responsive-mobile-header-widgets-customizer.php:106
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:563
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:564
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:118
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:118
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-primary-row.php:118
 msgid "Border Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:70
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:75
 #: core/includes/customizer/settings/class-responsive-footer-social-customizer.php:147
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:77
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:78
 #: core/includes/customizer/settings/class-responsive-header-social-customizer.php:147
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:105
 #: core/includes/customizer/settings/class-responsive-mobile-header-social-customizer.php:147
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:559
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:560
 msgid "Border Width (px)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:74
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:81
+#: core/includes/customizer/settings/class-responsive-buttons-customizer.php:79
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:82
 msgid "Radius (px)"
 msgstr ""
 
@@ -2527,16 +2586,16 @@ msgstr ""
 msgid "Breadcrumb Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:126
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:94
 #. translators: %1$s is Plugin Name
 msgid "To have access to a shop section please install and configure %1$s."
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:127
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:95
 msgid "WooCommerce plugin"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-customizer-notices.php:206
+#: core/includes/customizer/settings/class-responsive-customizer-notices.php:174
 msgid "View PRO Features"
 msgstr ""
 
@@ -2626,7 +2685,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:117
 #: core/includes/customizer/settings/class-responsive-header-woo-cart-customizer.php:213
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:265
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:170
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:171
 msgid "Link Color"
 msgstr ""
 
@@ -2664,7 +2723,7 @@ msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-footer-social-customizer.php:119
 #: core/includes/customizer/settings/class-responsive-header-contact-info-customizer.php:103
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:178
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:179
 #: core/includes/customizer/settings/class-responsive-header-social-customizer.php:119
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:60
 #: core/includes/customizer/settings/class-responsive-mobile-header-contact-info-customizer.php:104
@@ -2712,6 +2771,7 @@ msgstr ""
 #: core/includes/customizer/settings/class-responsive-footer-social-customizer.php:131
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:108
 #: core/includes/customizer/settings/class-responsive-header-social-customizer.php:131
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:54
 #: core/includes/customizer/settings/class-responsive-mobile-header-social-customizer.php:131
 msgid "Colors"
 msgstr ""
@@ -2817,7 +2877,7 @@ msgid "Content Color"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-footer-widgets-settings-customizer.php:97
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:185
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:186
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:479
 msgid "Content Font"
 msgstr ""
@@ -2826,22 +2886,26 @@ msgstr ""
 msgid "Form Fields"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:89
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:45
+msgid "Form Fields Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:90
 msgid "Inputs"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:93
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:94
 #: core/includes/customizer/settings/class-responsive-header-button-customizer.php:172
 #: core/includes/customizer/settings/class-responsive-header-off-canvas-menu-layouts-customizer.php:130
 #: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:173
 msgid "Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:106
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:107
 msgid "Labels"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:110
+#: core/includes/customizer/settings/class-responsive-form-fields-customizer.php:111
 msgid "Label Color"
 msgstr ""
 
@@ -2851,8 +2915,8 @@ msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-builder-section-customizer.php:58
 #: core/includes/customizer/settings/class-responsive-header-builder-section-customizer.php:95
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:61
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:66
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:62
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:67
 #: core/includes/functions.php:2328 core/includes/functions.php:2366
 #: template-parts/header/woo-cart.php:43
 #: template-parts/mobile-header/mobile_woo-cart.php:43
@@ -2975,20 +3039,20 @@ msgstr ""
 msgid "Border Width"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:193
-#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:194
+#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:195
+#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:196
 msgid "Border Radius"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:201
+#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:203
 #: core/includes/customizer/settings/class-responsive-header-contact-info-customizer.php:132
-#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:202
+#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:204
 #: core/includes/customizer/settings/class-responsive-mobile-header-contact-info-customizer.php:133
 msgid "Margin"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:207
-#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:208
+#: core/includes/customizer/settings/class-responsive-header-button-customizer.php:209
+#: core/includes/customizer/settings/class-responsive-mobile-header-button-customizer.php:210
 msgid "Button Shadow Color"
 msgstr ""
 
@@ -3020,7 +3084,7 @@ msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-contact-info-customizer.php:124
 #: core/includes/customizer/settings/class-responsive-mobile-header-contact-info-customizer.php:125
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:1042
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:1041
 msgid "Font Color"
 msgstr ""
 
@@ -3060,17 +3124,27 @@ msgstr ""
 msgid "Link Colors"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:47
+#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:40
+#: core/includes/customizer/settings/class-responsive-panel.php:49
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:48
+msgid "Header Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:48
 msgid "Full Width Header"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:118
+#: core/includes/customizer/settings/class-responsive-header-layout-customizer.php:119
 msgid "Logo Padding (px)"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:44
 #: template-parts/header/primary_navigation.php:35
 msgid "Main Menu"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:45
+msgid "Primary Menu Overview »"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:87
@@ -3111,124 +3185,124 @@ msgstr ""
 msgid "Text / HTML"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:127
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:128
 msgid "CTA Button Text"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:131
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:132
 msgid "CTA Button Link (URL)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:135
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:136
 msgid "Custom Menu Text"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:143
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:144
 msgid "Mobile Menu Settings"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:147
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:148
 msgid "Enable Mobile Menu"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:151
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:152
 msgid "Stack Mobile Menu"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:155
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:156
 msgid "Hide Last item in Mobile Menu"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:159
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:160
 msgid "Breakpoint"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:163
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:164
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:89
 msgid "Mobile Menu Label"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:167
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:168
 msgid "Menu Label Font Size"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:171
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:172
 msgid "Hamburger Menu padding (px)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:175
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:176
 msgid "Mobile Menu Toggle Style"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:177
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:178
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:59
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:118
 msgid "Fill"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:179
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:180
 #: core/includes/customizer/settings/class-responsive-header-toggle-button-customizer.php:61
 #: core/includes/customizer/settings/class-responsive-mobile-header-woo-cart-customizer.php:120
 msgid "Minimal"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:192
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:193
 msgid "Main & Mobile Menu Colors"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:195
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:196
 msgid "Menu Item Link"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:217
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:218
 #: core/includes/modules/color-palette/class-responsive-global-color-palette.php:126
 msgid "Background"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:240
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:241
 msgid "Mobile Menu Border Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:244
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:245
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:246
 msgid "Menu Toggle Background Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:248
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:249
 msgid "Sub Menu Settings"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:252
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:253
 msgid "Container Border"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:256
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:257
 msgid "Container Top Offset"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:260
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:261
 #: core/includes/customizer/settings/class-responsive-header-off-canvas-menu-layouts-customizer.php:122
 #: core/includes/customizer/settings/class-responsive-header-secondary-menu-layouts-customizer.php:89
 msgid "Item Divider"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:264
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:265
 msgid "Sub Menu Colors"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:268
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:269
 msgid "Container Border Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:272
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:273
 msgid "Divider Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:276
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:277
 msgid "Sub Menu Item Link"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:297
+#: core/includes/customizer/settings/class-responsive-header-menu-layouts-customizer.php:298
 msgid "Sub Menu Background"
 msgstr ""
 
@@ -3323,8 +3397,7 @@ msgid "Menu Spacing (px)"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-off-canvas-menu-layouts-customizer.php:126
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:188
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:908
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:189
 msgid "Size"
 msgstr ""
 
@@ -3476,37 +3549,29 @@ msgstr ""
 msgid "Logo"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:53
-msgid "Site Title Colors"
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:44
+#: core/includes/customizer/settings/class-responsive-panel.php:141
+msgid "Site Identity Overview »"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:56
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:57
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:61
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:175
 #: core/includes/customizer/settings/class-responsive-sticky-header-customizer.php:169
 msgid "Site Title Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:59
-#: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:178
-#: core/includes/customizer/settings/class-responsive-sticky-header-customizer.php:172
-msgid "Site Title Hover Color"
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:67
-msgid "Site Title Typography"
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:73
-msgid "Site Tagline Colors"
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:76
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:74
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:181
 #: core/includes/customizer/settings/class-responsive-sticky-header-customizer.php:175
 msgid "Site Tagline Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:84
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:80
+msgid "Site Title Typography"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:94
 msgid "Site Tagline Typography"
 msgstr ""
 
@@ -3600,6 +3665,11 @@ msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:169
 msgid "Transparent Header Colors"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:178
+#: core/includes/customizer/settings/class-responsive-sticky-header-customizer.php:172
+msgid "Site Title Hover Color"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-header-transparent-customizer.php:187
@@ -4132,59 +4202,75 @@ msgstr ""
 msgid "Page Content Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:49
+#: core/includes/customizer/settings/class-responsive-panel.php:48
 msgid "Header"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:50
-msgid "Header Options"
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-panel.php:58
+#: core/includes/customizer/settings/class-responsive-panel.php:57
 msgid "Breadcrumb"
 msgstr ""
 
+#: core/includes/customizer/settings/class-responsive-panel.php:58
+msgid "Breadcrumb Overview »"
+msgstr ""
+
 #: core/includes/customizer/settings/class-responsive-panel.php:96
+msgid "Post Types"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-panel.php:104
 msgid "Page"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-panel.php:105
-msgid "Blog Options"
+msgid "Page Overview »"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:112
+#: core/includes/customizer/settings/class-responsive-panel.php:114
 msgid "General"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:113
+#: core/includes/customizer/settings/class-responsive-panel.php:115
 msgid "General Options"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:131
+#: core/includes/customizer/settings/class-responsive-panel.php:124
+msgid "Sidebar Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-panel.php:133
 msgid "Footer"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-panel.php:132
-msgid "Footer Options"
+#: core/includes/customizer/settings/class-responsive-panel.php:134
+msgid "Footer Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-panel.php:144
+msgid "Widgets Overview »"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-performance-customizer.php:34
 msgid "Performance"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-performance-customizer.php:43
+#: core/includes/customizer/settings/class-responsive-performance-customizer.php:35
+msgid "Performance Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-performance-customizer.php:45
 msgid "Load Google Fonts Locally"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-performance-customizer.php:54
+#: core/includes/customizer/settings/class-responsive-performance-customizer.php:56
 msgid "Preload Local Fonts"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-performance-customizer.php:86
+#: core/includes/customizer/settings/class-responsive-performance-customizer.php:88
 msgid "Flush Local Fonts Cache"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-performance-customizer.php:87
+#: core/includes/customizer/settings/class-responsive-performance-customizer.php:89
 msgid "Deletes cached local font files. They will be regenerated as needed."
 msgstr ""
 
@@ -4240,128 +4326,132 @@ msgstr ""
 msgid "Single Post"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:52
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:390
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:44
+msgid "Single Post Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:53
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:391
 msgid "Related Posts"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:140
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:141
 msgid "Order posts by"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:145
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:513
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:146
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:514
 msgid "Date"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:148
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:149
 msgid "Comment Count"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:155
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:156
 msgid "Ascending"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:156
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:157
 msgid "Descending"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:158
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:159
 msgid "Order Direction"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:160
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:161
 msgid "Enable Post Excerpt"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:161
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:162
 msgid "Excerpt Word Count"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:163
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:164
 msgid "Show Read More Button"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:165
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:166
 msgid "Color Controls"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:166
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:167
 msgid "Section Title"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:167
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:168
 msgid "Section Background"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:171
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:71
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:172
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:72
 msgid "Meta Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:173
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:174
 msgid "Font Controls"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:174
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:175
 msgid "Section Title Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:177
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:178
 msgid "Post Title Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:181
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:75
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:182
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:76
 msgid "Meta Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:266
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:420
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:267
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:421
 msgid "Title Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:369
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:370
 msgid "Post Content Alignment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:393
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:394
 msgid "Enable Related Posts"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:431
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:432
 msgid "Related Posts Count"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:437
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:438
 msgid "No.of Posts Per Row"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:443
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:444
 msgid "Related Posts Taxonomy"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:469
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:470
 msgid "Related Post Elements"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:505
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:506
 msgid "Related Post Meta Elements"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:531
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:532
 msgid "Enable Comments"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:548
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:549
 msgid "Below"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:549
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:550
 msgid "Above"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:554
+#: core/includes/customizer/settings/class-responsive-single-blog-layout-customizer.php:555
 msgid ""
 "You need at least one published comment on a post to see the effect in the "
 "live preview."
@@ -4375,142 +4465,146 @@ msgstr ""
 msgid "Global Palette"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:57
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:47
+msgid "Colors & Backgrounds Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:58
 msgid "Global Colors"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:61
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:62
 msgid "Body Text Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:66
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:67
 msgid "Links"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:77
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:78
 msgid "All Headings (H1 - H6)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:81
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:82
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:91
 msgid "Heading 1 (H1)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:85
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:86
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:103
 msgid "Heading 2 (H2)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:89
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:90
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:115
 msgid "Heading 3 (H3)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:93
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:94
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:127
 msgid "Heading 4 (H4)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:97
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:98
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:139
 msgid "Heading 5 (H5)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:101
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:102
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:151
 msgid "Heading 6 (H6)"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:107
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:108
 #: core/includes/modules/color-palette/class-responsive-global-color-palette.php:127
 msgid "Site Background"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:127
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:128
 msgid "Content Background"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:147
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:148
 msgid "Alternate Background Color"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:157
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:158
 msgid "Left Top"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:158
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:159
 msgid "Left Center"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:159
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:160
 msgid "Left Bottom"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:160
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:161
 msgid "Right Top"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:161
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:162
 msgid "Right Center"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:162
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:163
 msgid "Right Bottom"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:163
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:164
 msgid "Center Top"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:164
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:165
 msgid "Center Center"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:165
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:166
 msgid "Center Bottom"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:170
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:171
 msgid "Attachment"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:172
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:173
 msgid "Fixed"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:173
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:174
 msgid "Scroll"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:178
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:179
 msgid "Repeat"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:180
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:181
 msgid "No Repeat"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:181
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:182
 msgid "Repeat All"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:182
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:183
 msgid "Repeat Horizontally"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:183
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:184
 msgid "Repeat Vertically"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:190
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:191
 msgid "Auto"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:191
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:192
 msgid "Cover"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:192
+#: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:193
 msgid "Contain"
 msgstr ""
 
@@ -4543,10 +4637,11 @@ msgid "Site Title/Logo URL"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:133
-#: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:46
-#: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:46
-#: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-primary-row.php:46
-msgid "Width"
+msgid "Container Layout"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:135
+msgid "Normal"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:143
@@ -4558,7 +4653,7 @@ msgid "Note: This setting applies to Desktop devices only."
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:149
-msgid "Style"
+msgid "Container Style"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-site-layouts-customizer.php:164
@@ -4581,59 +4676,67 @@ msgstr ""
 msgid "Embed Scripts"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-scripts-customizer.php:62
+#: core/includes/customizer/settings/class-responsive-site-scripts-customizer.php:45
+msgid "Scripts Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-site-scripts-customizer.php:63
 msgid "Embeds to header.php"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-scripts-customizer.php:82
+#: core/includes/customizer/settings/class-responsive-site-scripts-customizer.php:83
 msgid "Embeds to footer.php"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:63
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:53
+msgid "Typography Overview »"
+msgstr ""
+
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:64
 msgid "Base Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:67
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:68
 msgid "Body Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:71
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:72
 msgid "All Headings Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:79
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:80
 msgid "Heading Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:83
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:84
 msgid "H1 Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:87
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:88
 msgid "H2 Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:91
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:92
 msgid "H3 Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:95
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:96
 msgid "H4 Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:99
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:100
 msgid "H5 Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:103
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:104
 msgid "H6 Font"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:109
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:110
 msgid "Paragraph Margin Bottom"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:118
+#: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:119
 msgid "Underline Content Links"
 msgstr ""
 
@@ -4710,10 +4813,6 @@ msgstr ""
 msgid "Font Weight"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:723
-msgid "Not all fonts support every font-weight."
-msgstr ""
-
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:734
 msgid "Thin: 100"
 msgstr ""
@@ -4750,17 +4849,9 @@ msgstr ""
 msgid "Black: 900"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:769
-msgid "Font Style"
-msgstr ""
-
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:775
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:776
 msgid "T"
-msgstr ""
-
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:803
-msgid "Text Transform"
 msgstr ""
 
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:810
@@ -4775,226 +4866,232 @@ msgstr ""
 msgid "AA"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:909
-msgid "You can add: px-em-%"
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:908
+msgid "Font Size"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:968
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:967
 msgid "Line Height"
 msgstr ""
 
-#: core/includes/customizer/settings/class-responsive-typography-customizer.php:1004
+#: core/includes/customizer/settings/class-responsive-typography-customizer.php:1003
 msgid "Letter Spacing (px)"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:47
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:183
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:184
 msgid "Header Builder"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:103
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:107
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:146
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:150
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:104
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:108
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:147
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:151
 msgid "Above - Right"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:103
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:107
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:146
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:150
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:104
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:108
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:147
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:151
 msgid "Above - Left"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:104
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:106
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:147
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:149
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:105
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:107
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:148
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:150
 msgid "Above - Right Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:104
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:106
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:147
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:149
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:105
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:107
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:148
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:150
 msgid "Above - Left Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:105
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:148
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:106
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:149
 msgid "Above - Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:110
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:114
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:153
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:157
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:111
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:115
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:154
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:158
 msgid "Primary - Right"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:110
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:114
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:153
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:157
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:111
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:115
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:154
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:158
 msgid "Primary - Left"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:111
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:113
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:154
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:156
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:112
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:114
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:155
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:157
 msgid "Primary - Right Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:111
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:113
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:154
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:156
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:112
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:114
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:155
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:157
 msgid "Primary - Left Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:112
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:155
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:113
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:156
 msgid "Primary - Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:117
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:121
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:164
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:118
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:122
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:165
 msgid "Below - Right"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:117
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:121
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:160
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:164
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:118
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:122
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:161
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:165
 msgid "Below - Left"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:118
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:120
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:161
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:163
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:119
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:121
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:162
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:164
 msgid "Below - Right Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:118
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:120
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:161
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:163
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:119
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:121
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:162
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:164
 msgid "Below - Left Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:119
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:162
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:120
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:163
 msgid "Below - Center"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:143
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:144
 msgid "Popup Content"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:160
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:161
 msgid "Below -Right"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:209
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:335
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:210
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:336
 msgid "Footer Builder"
-msgstr ""
-
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:252
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:295
-msgid "Above - 1"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:253
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:296
-msgid "Above - 2"
+msgid "Above - 1"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:254
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:297
-msgid "Above - 3"
+msgid "Above - 2"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:255
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:298
-msgid "Above - 4"
+msgid "Above - 3"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:256
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:299
-msgid "Above - 5"
+msgid "Above - 4"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:257
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:300
-msgid "Above - 6"
+msgid "Above - 5"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:260
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:303
-msgid "Primary - 1"
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:258
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:301
+msgid "Above - 6"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:261
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:304
-msgid "Primary - 2"
+msgid "Primary - 1"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:262
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:305
-msgid "Primary - 3"
+msgid "Primary - 2"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:263
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:306
-msgid "Primary - 4"
+msgid "Primary - 3"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:264
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:307
-msgid "Primary - 5"
+msgid "Primary - 4"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:265
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:308
-msgid "Primary - 6"
+msgid "Primary - 5"
 msgstr ""
 
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:268
-#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:311
-msgid "Below - 1"
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:266
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:309
+msgid "Primary - 6"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:269
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:312
-msgid "Below - 2"
+msgid "Below - 1"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:270
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:313
-msgid "Below - 3"
+msgid "Below - 2"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:271
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:314
-msgid "Below - 4"
+msgid "Below - 3"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:272
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:315
-msgid "Below - 5"
+msgid "Below - 4"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:273
 #: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:316
+msgid "Below - 5"
+msgstr ""
+
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:274
+#: core/includes/customizer/settings/hfb-builder/class-responsive-header-footer-builder.php:317
 msgid "Below - 6"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:39
 msgid "Above Footer"
+msgstr ""
+
+#: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:46
+#: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-below-row.php:46
+#: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-primary-row.php:46
+msgid "Width"
 msgstr ""
 
 #: core/includes/customizer/settings/hfb-builder/footer/class-responsive-hfb-footer-above-row.php:54
