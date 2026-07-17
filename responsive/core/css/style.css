@@ -1097,6 +1097,10 @@ select {
   background-repeat: no-repeat;
 }
 
+body div.wpforms-container-full .wpforms-form button {
+  height: auto;
+}
+
 /**
  * Site header and Header Menu styles
  * -----------------------------------------------------------------------------
@@ -3171,10 +3175,6 @@ body.mega-menu-header-menu button.menu-toggle {
 
 .page-template-gutenberg-fullwidth:not(.front-page):not(.res-transparent-header) .site-content .content-area {
   padding: 0;
-}
-
-.page-template-gutenberg-fullwidth:not(.front-page):not(.res-transparent-header).responsive-site-style-content-boxed .site-content, .page-template-gutenberg-fullwidth:not(.front-page):not(.res-transparent-header).responsive-site-style-boxed .site-content {
-  background-color: #ffffff;
 }
 
 .page-template-gutenberg-fullwidth:not(.front-page):not(.res-transparent-header).responsive-site-style-content-boxed .hentry, .page-template-gutenberg-fullwidth:not(.front-page):not(.res-transparent-header).responsive-site-style-content-boxed article.product, .page-template-gutenberg-fullwidth:not(.front-page):not(.res-transparent-header).responsive-site-style-boxed .hentry, .page-template-gutenberg-fullwidth:not(.front-page):not(.res-transparent-header).responsive-site-style-boxed article.product {
@@ -6615,6 +6615,10 @@ a img.aligncenter {
 
 .post-entry .wp-block-cover .wp-block-cover__inner-container {
   padding: 0;
+}
+
+ul.wp-block-post-template {
+  margin-left: 0;
 }
 
 .responsive-about-me-widget-container {

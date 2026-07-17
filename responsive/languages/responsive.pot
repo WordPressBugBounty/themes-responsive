@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Responsive 6.3.8\n"
+"Project-Id-Version: Responsive 6.3.9\n"
 "Report-Msgid-Bugs-To: https://cyberchimps.com/forum/free/responsive/\n"
-"POT-Creation-Date: 2026-06-10 11:28:45+00:00\n"
+"POT-Creation-Date: 2026-07-17 10:07:56+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -63,96 +63,349 @@ msgstr ""
 
 #: admin/admin-functions.php:23
 #: admin/class-responsive-plugin-install-helper.php:253
-#: core/includes/classes/class-responsive-admin-settings.php:145
+#: core/includes/classes/class-responsive-admin-settings.php:252
 msgid "Activating "
 msgstr ""
 
 #: admin/admin-functions.php:24
-#: core/includes/classes/class-responsive-admin-settings.php:146
+#: core/includes/classes/class-responsive-admin-settings.php:253
 msgid "Not connect. Verify Network."
 msgstr ""
 
 #: admin/admin-functions.php:25
-#: core/includes/classes/class-responsive-admin-settings.php:147
+#: core/includes/classes/class-responsive-admin-settings.php:254
 msgid "Requested page not found. [404]"
 msgstr ""
 
 #: admin/admin-functions.php:26
-#: core/includes/classes/class-responsive-admin-settings.php:148
+#: core/includes/classes/class-responsive-admin-settings.php:255
 msgid "Internal Server Error [500]"
 msgstr ""
 
 #: admin/admin-functions.php:27
-#: core/includes/classes/class-responsive-admin-settings.php:149
+#: core/includes/classes/class-responsive-admin-settings.php:256
 msgid "Requested JSON parse failed"
 msgstr ""
 
 #: admin/admin-functions.php:28
-#: core/includes/classes/class-responsive-admin-settings.php:150
+#: core/includes/classes/class-responsive-admin-settings.php:257
 msgid "Time out error"
 msgstr ""
 
 #: admin/admin-functions.php:29
-#: core/includes/classes/class-responsive-admin-settings.php:151
+#: core/includes/classes/class-responsive-admin-settings.php:258
 msgid "Ajax request aborted"
 msgstr ""
 
 #: admin/admin-functions.php:30
-#: core/includes/classes/class-responsive-admin-settings.php:152
+#: core/includes/classes/class-responsive-admin-settings.php:259
 msgid "Uncaught Error"
 msgstr ""
 
-#: admin/admin-functions.php:80
-msgid "Thank You for Installing Responsive Theme!"
+#: admin/admin-functions.php:71
+msgid "Customizer: Header"
 msgstr ""
 
-#: admin/admin-functions.php:86
+#: admin/admin-functions.php:72
+msgid "Header, Primary Header, Logo, Site Title, Navigation, Menu, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:77
+msgid "Customizer: Footer"
+msgstr ""
+
+#: admin/admin-functions.php:78
+msgid "Footer, Bottom Bar, Copyright, Widgets, Menu, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:83
+msgid "Customizer: Global"
+msgstr ""
+
+#: admin/admin-functions.php:84
 msgid ""
-"Import 250+ fully functional and ready to use business websites with the "
-"free Responsive Addons Plugin. Explore features like the mega menu, white "
-"label, advance WooCommerce settings and many more."
+"Global, Layout, Buttons, Color Palette, Form Fields, Typography, "
+"Background, Embed Scripts, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:89 admin/admin-functions.php:197
+msgid "Customizer: Typography"
+msgstr ""
+
+#: admin/admin-functions.php:90
+msgid "Typography, Fonts, Text, Base Typography, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:95
+msgid "Customizer: Blog/Archive"
+msgstr ""
+
+#: admin/admin-functions.php:96
+msgid "Blog, Archive, Single Post, Post, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:101
+msgid "Customizer: Performance"
+msgstr ""
+
+#: admin/admin-functions.php:102
+msgid "Performance, Local Font, Speed, Optimization, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:107
+msgid "Customizer: Breadcrumb"
+msgstr ""
+
+#: admin/admin-functions.php:108
+msgid "Breadcrumb, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:113
+msgid "Customizer: Sidebar"
+msgstr ""
+
+#: admin/admin-functions.php:114
+msgid "Sidebar, Default Sidebar, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:119
+msgid "Customizer: Site Identity"
+msgstr ""
+
+#: admin/admin-functions.php:120
+msgid "Site Identity, Logo, Site Title, Site Tagline, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:125
+msgid "Customizer: General"
+msgstr ""
+
+#: admin/admin-functions.php:126
+msgid "General, Breadcrumb, Sidebar, Performance, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:131
+msgid "Customizer: Post Types"
+msgstr ""
+
+#: admin/admin-functions.php:132
+msgid "Post Types, Post, Page, Blog/Archive, Single Post, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:137
+msgid "Customizer: Homepage Settings"
+msgstr ""
+
+#: admin/admin-functions.php:138
+msgid "Homepage Settings, Static Front Page, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:143
+msgid "Customizer: Menus"
+msgstr ""
+
+#: admin/admin-functions.php:144
+msgid "Menus, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:149
+msgid "Customizer: Additional CSS"
+msgstr ""
+
+#: admin/admin-functions.php:150
+msgid "Additional CSS, Custom CSS, CSS, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:155
+msgid "Customizer: Page"
+msgstr ""
+
+#: admin/admin-functions.php:156
+msgid "Page, Customizer"
 msgstr ""
 
 #: admin/admin-functions.php:161
-msgid "Important Theme Update Notice:"
+msgid "Customizer: Blog / Archive"
 msgstr ""
 
 #: admin/admin-functions.php:162
+msgid "Blog / Archive, Archive, Blog, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:167
+msgid "Customizer: Single Post"
+msgstr ""
+
+#: admin/admin-functions.php:168
+msgid "Single Post, Post, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:173
+msgid "Customizer: Layout"
+msgstr ""
+
+#: admin/admin-functions.php:174
+msgid "Layout, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:179
+msgid "Customizer: Buttons"
+msgstr ""
+
+#: admin/admin-functions.php:180
+msgid "Buttons, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:185
+msgid "Customizer: Form Fields"
+msgstr ""
+
+#: admin/admin-functions.php:186
+msgid "Form Fields, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:191
+msgid "Customizer: Colors & Backgrounds"
+msgstr ""
+
+#: admin/admin-functions.php:192
+msgid "Colors & Backgrounds, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:198
+msgid "Typography, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:203
+msgid "Customizer: Embed Scripts"
+msgstr ""
+
+#: admin/admin-functions.php:204
+msgid "Embed Scripts, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:209
+msgid "Customizer: Widgets"
+msgstr ""
+
+#: admin/admin-functions.php:210
+msgid "Widgets, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:219
+msgid "Customizer: WooCommerce"
+msgstr ""
+
+#: admin/admin-functions.php:220
+msgid "WooCommerce, Shop, Store, Product, Cart, Checkout, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:225
+msgid "Customizer: Product Catalog"
+msgstr ""
+
+#: admin/admin-functions.php:226
+msgid "Product Catalog, Catalog, Store, Product, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:231
+msgid "Customizer: Product Images"
+msgstr ""
+
+#: admin/admin-functions.php:232
+msgid "Product Images, Images, Product, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:237
+msgid "Customizer: Single Product"
+msgstr ""
+
+#: admin/admin-functions.php:238
+msgid "Single Product, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:243
+msgid "Customizer: Product Catalog Options"
+msgstr ""
+
+#: admin/admin-functions.php:244
+msgid "Product Catalog Options, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:249
+msgid "Customizer: Cart Options"
+msgstr ""
+
+#: admin/admin-functions.php:250
+msgid "Cart Options, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:255
+msgid "Customizer: Distraction Free"
+msgstr ""
+
+#: admin/admin-functions.php:256
+msgid "Distraction Free, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:261
+msgid "Customizer: Store Notice"
+msgstr ""
+
+#: admin/admin-functions.php:262
+msgid "Store Notice, Customizer"
+msgstr ""
+
+#: admin/admin-functions.php:312
+msgid "Thank You for Installing Responsive Theme!"
+msgstr ""
+
+#: admin/admin-functions.php:318
+msgid ""
+"Import 100+ fully functional and ready to use business websites with the "
+"free Responsive Starter Templates Plugin."
+msgstr ""
+
+#: admin/admin-functions.php:393
+msgid "Important Theme Update Notice:"
+msgstr ""
+
+#: admin/admin-functions.php:394
 msgid ""
 "We've updated the mobile header feature in this version! If you're using a "
 "child theme, you may need to update your header.php file to ensure "
 "compatibility."
 msgstr ""
 
-#: admin/admin-functions.php:164
+#: admin/admin-functions.php:396
 msgid "If you have a child theme, check your child theme's header.php file."
 msgstr ""
 
-#: admin/admin-functions.php:165
+#: admin/admin-functions.php:397
 msgid ""
 "Compare your child theme's header.php with the parent theme's header.php to "
 "identify any changes needed."
 msgstr ""
 
-#: admin/admin-functions.php:166
+#: admin/admin-functions.php:398
 msgid ""
 "Update your child theme's header.php to include the new mobile header "
 "functionality."
 msgstr ""
 
-#: admin/admin-functions.php:168
+#: admin/admin-functions.php:400
 msgid "Need help? Check our "
 msgstr ""
 
-#: admin/admin-functions.php:169
+#: admin/admin-functions.php:401
 msgid "documentation"
 msgstr ""
 
-#: admin/admin-functions.php:169
+#: admin/admin-functions.php:401
 msgid " or ask for "
 msgstr ""
 
-#: admin/admin-functions.php:169
+#: admin/admin-functions.php:401
 msgid "support."
 msgstr ""
 
@@ -163,8 +416,8 @@ msgstr ""
 #: admin/class-responsive-plugin-install-helper.php:95
 #: admin/class-responsive-plugin-install-helper.php:104
 #: admin/class-responsive-plugin-install-helper.php:149
-#: admin/templates/getting-started-home.php:402
-#: admin/templates/getting-started-home.php:433
+#: admin/templates/getting-started-home.php:407
+#: admin/templates/getting-started-home.php:438
 #: admin/templates/getting-started-settings.php:99
 msgid "Activate"
 msgstr ""
@@ -178,7 +431,7 @@ msgid "Jetpack Portfolio"
 msgstr ""
 
 #: admin/class-responsive-plugin-install-helper.php:153
-#: admin/templates/getting-started-home.php:407
+#: admin/templates/getting-started-home.php:412
 msgid "Activated"
 msgstr ""
 
@@ -320,10 +573,10 @@ msgstr ""
 
 #: admin/templates/get-started.php:56
 msgid ""
-"Introducing the Site Builder in Responsive Plus v3.3.0! Now you can easily "
-"create custom Headers, Footers, and 404 Pages. Display them based on "
-"specific page or time conditions. Update the Responsive theme to v6.2.2 and "
-"unlock the new Site Builder features."
+"Introducing the Site Builder in Responsive Starter Templates v3.3.0! Now "
+"you can easily create custom Headers, Footers, and 404 Pages. Display them "
+"based on specific page or time conditions. Update the Responsive theme to "
+"v6.2.2 and unlock the new Site Builder features."
 msgstr ""
 
 #: admin/templates/get-started.php:56
@@ -343,10 +596,8 @@ msgstr ""
 #: admin/templates/get-started.php:75
 #: admin/templates/getting-started-home.php:186
 #: admin/templates/getting-started-home.php:202
-#: admin/templates/getting-started-home.php:218
-#: admin/templates/getting-started-home.php:250
-#: admin/templates/getting-started-home.php:824
-#: admin/templates/getting-started-home.php:857
+#: admin/templates/getting-started-home.php:219
+#: admin/templates/getting-started-home.php:255
 msgid "Settings"
 msgstr ""
 
@@ -586,17 +837,17 @@ msgid "Update page layout"
 msgstr ""
 
 #: admin/templates/getting-started-home.php:155
-#: admin/templates/getting-started-home.php:229
+#: admin/templates/getting-started-home.php:233
 msgid "Starter Templates"
 msgstr ""
 
 #: admin/templates/getting-started-home.php:156
-#: admin/templates/getting-started-home.php:230
+#: admin/templates/getting-started-home.php:234
 msgid "Unlock the library of 100+ Premium Starter Templates."
 msgstr ""
 
 #: admin/templates/getting-started-home.php:159
-#: admin/templates/getting-started-home.php:233
+#: admin/templates/getting-started-home.php:237
 msgid "Explore Templates"
 msgstr ""
 
@@ -622,16 +873,10 @@ msgstr ""
 
 #: admin/templates/getting-started-home.php:182
 #: admin/templates/getting-started-home.php:198
-#: admin/templates/getting-started-home.php:214
-#: admin/templates/getting-started-home.php:246
-#: admin/templates/getting-started-home.php:556
-#: admin/templates/getting-started-home.php:591
-#: admin/templates/getting-started-home.php:634
-#: admin/templates/getting-started-home.php:685
-#: admin/templates/getting-started-home.php:753
-#: admin/templates/getting-started-home.php:789
-#: admin/templates/getting-started-home.php:822
-#: admin/templates/getting-started-home.php:855
+#: admin/templates/getting-started-home.php:215
+#: admin/templates/getting-started-home.php:251
+#: admin/templates/getting-started-home.php:585
+#: admin/templates/getting-started-home.php:636
 msgid "Docs"
 msgstr ""
 
@@ -644,87 +889,78 @@ msgid "REA Theme Builder lets you design & customize every aspect of your websit
 msgstr ""
 
 #: admin/templates/getting-started-home.php:210
-#: admin/templates/getting-started-home.php:242
+#: admin/templates/getting-started-home.php:246
 #: admin/templates/getting-started-settings.php:51
 msgid "White Label"
 msgstr ""
 
 #: admin/templates/getting-started-home.php:211
-#: admin/templates/getting-started-home.php:243
+#: admin/templates/getting-started-home.php:247
 msgid "White Label the theme name & settings with the Pro Plugin."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:265
-#: admin/templates/getting-started-home.php:272
-#: admin/templates/getting-started-home.php:279
-#: admin/templates/getting-started-home.php:286
+#: admin/templates/getting-started-home.php:270
+#: admin/templates/getting-started-home.php:277
+#: admin/templates/getting-started-home.php:284
+#: admin/templates/getting-started-home.php:291
 msgid "free"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:267
+#: admin/templates/getting-started-home.php:272
 msgid "150+ Ready to Import Designer-Made Website Starter Templates."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:274
+#: admin/templates/getting-started-home.php:279
 msgid "50+ Blocks to Enhance Your WordPress Block Editor Experience."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:281
+#: admin/templates/getting-started-home.php:286
 msgid ""
 "A free Elementor Addons plugin with more than 80+ premium quality Elementor "
 "widgets."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:288
+#: admin/templates/getting-started-home.php:293
 msgid "Free Plugin to Create Privacy Policy Pages for Your Website."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:350
+#: admin/templates/getting-started-home.php:355
 msgid "Customizer Settings"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:382
+#: admin/templates/getting-started-home.php:387
 msgid "Responsive Pro Features"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:384
-msgid "Responsive Plus Features"
+#: admin/templates/getting-started-home.php:389
+msgid "Responsive Starter Templates Features"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:386
-msgid "Unlock More Features by Installing Responsive Plus"
+#: admin/templates/getting-started-home.php:391
+msgid "Unlock More Features by Installing Responsive Starter Templates"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:397
+#: admin/templates/getting-started-home.php:402
 msgid "Upgrade Now"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:535
-#: admin/templates/getting-started-home.php:619
-#: admin/templates/getting-started-home.php:670
-#: admin/templates/getting-started-home.php:732
+#: admin/templates/getting-started-home.php:546
+#: admin/templates/getting-started-home.php:570
+#: admin/templates/getting-started-home.php:621
+#: admin/templates/getting-started-home.php:683
 #: core/includes/customizer/controls/upsell/class-responsive-control-upsell.php:72
 msgid "PRO"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:544
+#: admin/templates/getting-started-home.php:555
 msgid "Mega Menu"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:545
+#: admin/templates/getting-started-home.php:556
 msgid "Adds menu options such as mega menus, highlight tags, icons, etc."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:558
-#: admin/templates/getting-started-home.php:593
-#: admin/templates/getting-started-home.php:636
-#: admin/templates/getting-started-home.php:687
-#: admin/templates/getting-started-home.php:755
-#: admin/templates/getting-started-home.php:791
-msgid "Customize"
-msgstr ""
-
-#: admin/templates/getting-started-home.php:623
+#: admin/templates/getting-started-home.php:574
 #: core/includes/customizer/settings/class-responsive-header-title-tagline-customizer.php:86
 #: core/includes/customizer/settings/class-responsive-site-typography-customizer.php:52
 #: core/includes/customizer/settings/class-responsive-typography-customizer.php:250
@@ -751,60 +987,65 @@ msgstr ""
 msgid "Typography"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:624
+#: admin/templates/getting-started-home.php:575
 msgid "Adds options for font style, size, and family that suits your website best."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:674
+#: admin/templates/getting-started-home.php:587
+#: admin/templates/getting-started-home.php:638
+msgid "Customize"
+msgstr ""
+
+#: admin/templates/getting-started-home.php:625
 #: core/includes/customizer/settings/class-responsive-site-colors-customizer.php:46
 msgid "Colors & Backgrounds"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:675
+#: admin/templates/getting-started-home.php:626
 msgid "Enhances the background spacing, padding and color of your site."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:741
+#: admin/templates/getting-started-home.php:692
 msgid "Woocommerce"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:742
+#: admin/templates/getting-started-home.php:693
 msgid "Adds enhanced set of options in the WooCommerce store customizer."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:811
+#: admin/templates/getting-started-home.php:701
 msgid "Custom Fonts"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:812
+#: admin/templates/getting-started-home.php:702
 msgid ""
 "Enables you to upload custom fonts directly, no additional font plugin "
 "required."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:844
+#: admin/templates/getting-started-home.php:710
 msgid "Site Builder"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:845
+#: admin/templates/getting-started-home.php:711
 msgid ""
 "Site Builder lets you edit parts of site like the header, footer, 404, and "
 "archive templates."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:881
+#: admin/templates/getting-started-home.php:723
 msgid "See all PRO features"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:890
+#: admin/templates/getting-started-home.php:732
 msgid "Useful Plugins"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:920
+#: admin/templates/getting-started-home.php:762
 msgid "Rate Us"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:922
+#: admin/templates/getting-started-home.php:764
 msgid "Hi! Thanks for using the "
 msgstr ""
 
@@ -812,45 +1053,45 @@ msgstr ""
 msgid "Responsive"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:922
+#: admin/templates/getting-started-home.php:764
 msgid ""
 " theme. Can you please do us a favor and give us a 5-star rating? Your "
 "feedback keeps us motivated and helps us grow the Responsive community."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:924
+#: admin/templates/getting-started-home.php:766
 msgid "Submit Review"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:932
+#: admin/templates/getting-started-home.php:774
 msgid "Upgrade to PRO"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:933
+#: admin/templates/getting-started-home.php:775
 msgid ""
 "Upgrade to Cyberchimps Pro plan to unlock access to 150+ Premium Starter "
 "Templates and priority support."
 msgstr ""
 
-#: admin/templates/getting-started-home.php:934
+#: admin/templates/getting-started-home.php:776
 msgid "Upgrade"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:941
+#: admin/templates/getting-started-home.php:783
 msgid "Learn and Grow"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:942
+#: admin/templates/getting-started-home.php:784
 msgid ""
 "Meet the Responsive Power-users. Say hello, ask questions, give feedback, "
 "and help each other"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:944
+#: admin/templates/getting-started-home.php:786
 msgid "Join Facebook"
 msgstr ""
 
-#: admin/templates/getting-started-home.php:947
+#: admin/templates/getting-started-home.php:789
 msgid "Watch Video Tutorials"
 msgstr ""
 
@@ -864,8 +1105,8 @@ msgstr ""
 #: admin/templates/getting-started-rst.php:23
 msgid ""
 "Browse 150+ fully-functional ready site templates by installing the free "
-"Responsive Plus - Starter Templates plugin. Click the button below to get "
-"started."
+"Responsive Starter Templates - Starter Templates plugin. Click the button "
+"below to get started."
 msgstr ""
 
 #: admin/templates/getting-started-settings.php:66
@@ -1040,15 +1281,15 @@ msgstr ""
 msgid " Options"
 msgstr ""
 
-#: core/includes/classes/class-responsive-admin-settings.php:144
+#: core/includes/classes/class-responsive-admin-settings.php:251
 msgid "Installing "
 msgstr ""
 
-#: core/includes/classes/class-responsive-admin-settings.php:176
+#: core/includes/classes/class-responsive-admin-settings.php:347
 msgid "Responsive - Dashboard"
 msgstr ""
 
-#: core/includes/classes/class-responsive-admin-settings.php:176
+#: core/includes/classes/class-responsive-admin-settings.php:347
 msgid "Dashboard"
 msgstr ""
 
@@ -5379,7 +5620,7 @@ msgstr ""
 msgid "Custom3"
 msgstr ""
 
-#: core/includes/functions-extras.php:135 gutenberg-fullwidth.php:46
+#: core/includes/functions-extras.php:135 gutenberg-fullwidth.php:45
 #: image.php:59 partials/page/content.php:15
 msgid "Read more &#8250;"
 msgstr ""
@@ -5777,13 +6018,13 @@ msgstr ""
 msgid "Flush handler unavailable."
 msgstr ""
 
-#: gutenberg-fullwidth.php:49 image.php:63 partials/entry/layout.php:72
+#: gutenberg-fullwidth.php:48 image.php:63 partials/entry/layout.php:72
 #: partials/page/layout.php:45 partials/single/content.php:38
 #: partials/single/layout.php:61
 msgid "Pages:"
 msgstr ""
 
-#: gutenberg-fullwidth.php:57 image.php:87 partials/entry/layout.php:81
+#: gutenberg-fullwidth.php:56 image.php:87 partials/entry/layout.php:81
 #: partials/page/layout.php:53 partials/single/layout.php:69
 msgid "<span class=\"post-edit\">Edit</span>"
 msgstr ""
