@@ -4267,10 +4267,6 @@ embed, iframe, object {
   padding-bottom: 0;
 }
 
-.responsive-site-style-boxed .widget-wrapper {
-  padding: 28px;
-}
-
 .widget-area:not(.home-widgets) .widget-wrapper, .footer-widgets .footer-widget:not(.home-widgets) .widget-wrapper {
   font-size: 13px;
 }
