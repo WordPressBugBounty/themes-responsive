@@ -68,6 +68,7 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'priority' => 2,
 					'exclude'  => array( 'font-color' ),
 					'defaults' => array(
+						'font-family'    => 'System Font',
 						'font-size'      => '16px',
 						'font-weight'    => '400',
 						'line-height'    => '1.75',
@@ -106,7 +107,9 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'priority' => 9,
 					'exclude'  => array( 'font-color' ),
 					'defaults' => array(
-						'font-size'      => '26px',
+						'font-family'    => 'System Font',
+						'font-size'      => '30px',
+						'font-weight'    => '600',
 						'line-height'    => '1.25',
 						'text-transform' => 'inherit',
 					),
@@ -118,7 +121,7 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'priority' => 11,
 					'exclude'  => array( 'font-color' ),
 					'defaults' => array(
-						'font-size'      => '20px',
+						'font-size'      => '24px',
 						'line-height'    => '1.25',
 						'text-transform' => 'inherit',
 					),
@@ -165,9 +168,10 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'priority' => 19,
 					'exclude'  => array( 'font-color' ),
 					'defaults' => array(
-						'font-size'      => '12px',
+						'font-family'    => 'System Font',
+						'font-size'      => '14px',
 						'line-height'    => '1.75',
-						'text-transform' => 'uppercase',
+						'text-transform' => 'capitalize',
 					),
 				),
 				'button'                     => array(
@@ -179,6 +183,8 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'defaults' => array(
 						'font-size'   => '16px',
 						'line-height' => '1',
+						'text-transform' => 'capitalize',
+						'font-weight'    => '400',
 					),
 				),
 				'input'                      => array(
@@ -199,6 +205,7 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'priority' => 14,
 					'exclude'  => array( 'font-color' ),
 					'defaults' => array(
+						'font-family'    => 'System Font',
 						'font-size'      => '20px',
 						'line-height'    => '1',
 						'letter-spacing' => '0',
@@ -211,6 +218,7 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'priority' => 15,
 					'exclude'  => array( 'font-color' ),
 					'defaults' => array(
+						'font-family'    => 'System Font',
 						'font-size'      => '13px',
 						'line-height'    => '1.25',
 						'letter-spacing' => '0',
@@ -254,6 +262,7 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'priority'        => 110,
 					'active_callback' => 'responsive_disabled_main_menu',
 					'defaults'        => array(
+						'font-family' => 'System Font',
 						'font-size'   => '16px',
 						'font-weight' => '600',
 						'line-height' => '1.75',
@@ -289,8 +298,9 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'section'  => 'responsive_content_header_layout',
 					'exclude'  => array( 'font-color' ),
 					'defaults' => array(
-						'font-size'   => '33px',
+						'font-size'   => '32px',
 						'line-height' => '1.75',
+						'font-weight' => '600',
 					),
 				),
 				'content_header_description' => array(
@@ -373,7 +383,7 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 					'exclude'  => array( 'font-color' ),
 					'priority' => 80,
 					'defaults' => array(
-						'font-size'   => '13px',
+						'font-size'   => '16px',
 						'line-height' => '1.75',
 					),
 				),
@@ -791,7 +801,7 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 								'type'              => 'theme_mod',
 								'sanitize_callback' => 'responsive_sanitize_select',
 								'transport'         => $transport,
-								'default'           => 'meta' === $element ? 'uppercase' : '',
+								'default'           => 'meta' === $element ? 'capitalize' : '',
 							)
 						);
 
@@ -1151,6 +1161,9 @@ if ( ! class_exists( 'Responsive_Typography_Customizer' ) ) :
 								$val = str_replace( '\'', '', $val );
 							} else {
 								$val = $val;
+							}
+							if ( 'System Font' === $val || '\'System Font\'' === $val || '"System Font"' === $val ) {
+								$val = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
 							}
 							$fonts[] = $val;
 						}

@@ -5,8 +5,8 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 @media (min-width: 0) {
@@ -67,8 +67,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 /**
@@ -78,58 +78,58 @@
 @media (min-width: 0) {
   .col-xs-1 {
     width: 8.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-2 {
     width: 16.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-3 {
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-4 {
     width: 33.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-5 {
     width: 41.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-6 {
     width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-7 {
     width: 58.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-8 {
     width: 66.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-9 {
     width: 75%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-10 {
     width: 83.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-11 {
     width: 91.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xs-12, .page.front-page .custom-home-about-section, .page.front-page .custom-home-feature-section, .page.front-page .custom-home-team-section, .page.front-page .custom-home-testimonial-section, .page.front-page .custom-home-contact-section, .page.front-page .custom-home-widget-section, .page.front-page .custom-home-featured-area,
   .blog.front-page .custom-home-about-section,
@@ -156,89 +156,89 @@
   .blog.front-page aside.home-widgets .home-widget-wrapper .home-widget-2,
   .blog.front-page aside.home-widgets .home-widget-wrapper .home-widget-3 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
 @media (min-width: 576px) {
   .col-sm-1 {
     width: 8.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-2 {
     width: 16.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-3 {
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-4 {
     width: 33.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-5 {
     width: 41.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-6 {
     width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-7 {
     width: 58.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-8 {
     width: 66.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-9 {
     width: 75%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-10 {
     width: 83.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-11 {
     width: 91.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-sm-12 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
 @media (min-width: 768px) {
   .col-md-1 {
     width: 8.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-2 {
     width: 16.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-3 {
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-4, .page.front-page .custom-home-testimonial-section .testimonial-content .testimonial-img,
   .blog.front-page .custom-home-testimonial-section .testimonial-content .testimonial-img, .page.front-page aside.home-widgets .home-widget-wrapper .home-widget-1,
@@ -248,80 +248,80 @@
   .blog.front-page aside.home-widgets .home-widget-wrapper .home-widget-2,
   .blog.front-page aside.home-widgets .home-widget-wrapper .home-widget-3 {
     width: 33.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-5 {
     width: 41.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-6, .page.front-page .custom-home-about-section .about-section-wrapper .about-content,
   .blog.front-page .custom-home-about-section .about-section-wrapper .about-content, .page.front-page .custom-home-about-section .about-section-wrapper .about-cta,
   .blog.front-page .custom-home-about-section .about-section-wrapper .about-cta {
     width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-7 {
     width: 58.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-8, .page.front-page .custom-home-testimonial-section .testimonial-content .testimonial_main_text,
   .blog.front-page .custom-home-testimonial-section .testimonial-content .testimonial_main_text {
     width: 66.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-9 {
     width: 75%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-10 {
     width: 83.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-11 {
     width: 91.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-md-12 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
 @media (min-width: 992px) {
   .col-lg-1 {
     width: 8.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-2 {
     width: 16.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-3 {
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-4, .page.front-page .custom-home-about-section .about-section-wrapper .about-cta,
   .blog.front-page .custom-home-about-section .about-section-wrapper .about-cta {
     width: 33.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-5 {
     width: 41.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-6, .page.front-page .custom-home-featured-area .featured-area-wrapper .featured-content,
   .page.front-page .custom-home-featured-area .featured-area-wrapper .featured-image,
@@ -329,228 +329,228 @@
   .blog.front-page .custom-home-featured-area .featured-area-wrapper .featured-image, .page.front-page .custom-home-contact-section .contact-content .contact_left,
   .blog.front-page .custom-home-contact-section .contact-content .contact_left {
     width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-7 {
     width: 58.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-8, .page.front-page .custom-home-about-section .about-section-wrapper .about-content,
   .blog.front-page .custom-home-about-section .about-section-wrapper .about-content {
     width: 66.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-9 {
     width: 75%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-10 {
     width: 83.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-11 {
     width: 91.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-lg-12 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
 @media (min-width: 1200px) {
   .col-xl-1 {
     width: 8.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-2 {
     width: 16.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-3 {
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-4 {
     width: 33.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-5 {
     width: 41.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-6 {
     width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-7 {
     width: 58.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-8 {
     width: 66.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-9 {
     width: 75%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-10 {
     width: 83.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-11 {
     width: 91.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xl-12 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
 @media (min-width: 2400px) {
   .col-xxl-1 {
     width: 8.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-2 {
     width: 16.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-3 {
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-4 {
     width: 33.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-5 {
     width: 41.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-6 {
     width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-7 {
     width: 58.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-8 {
     width: 66.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-9 {
     width: 75%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-10 {
     width: 83.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-11 {
     width: 91.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxl-12 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
 @media (min-width: 4800px) {
   .col-xxxl-1 {
     width: 8.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-2 {
     width: 16.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-3 {
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-4 {
     width: 33.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-5 {
     width: 41.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-6 {
     width: 50%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-7 {
     width: 58.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-8 {
     width: 66.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-9 {
     width: 75%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-10 {
     width: 83.3333333333%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-11 {
     width: 91.6666666667%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
   .col-xxxl-12 {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 }
 
