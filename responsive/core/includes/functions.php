@@ -408,7 +408,13 @@ if ( ! function_exists( 'responsive_css' ) ) {
 		wp_enqueue_style( 'icomoon-style', get_template_directory_uri() . "/core/css/icomoon/style{$suffix}.css", false, $responsive['Version'] );
 
 		// If plugin - 'WooCommerce' is active.
-		if ( class_exists( 'WooCommerce' ) ) {
+		if ( class_exists( 'WooCommerce' ) && (
+			is_woocommerce() || is_cart() || is_checkout() || is_account_page()
+			|| responsive_check_element_present_in_hfb( 'woo-cart', 'header' )
+			|| responsive_check_element_in_mobile_tablet_items( 'woo-cart', 'header' )
+			|| responsive_page_has_woocommerce_content()
+			|| is_customize_preview()
+		) ) {
 			wp_enqueue_style( 'responsive-woocommerce-style', get_template_directory_uri() . "/core/css/woocommerce{$suffix}.css", false, $responsive['Version'] );
 		}
 
@@ -746,12 +752,17 @@ function responsive_add_custom_body_classes( $classes ) {
 			$classes[] = 'sidebar-position-' . (
 				( $single_blog_sidebar_value === 'global' || $single_blog_sidebar_value === 'default' ) ? $global_sidebar_position : $single_blog_sidebar_value
 			);
-			// Single Blog Featured Image Aligmnmnet.
+			// Single Blog Featured Image Alignment.
 			$classes[] = 'featured-image-alignment-' . get_theme_mod( 'responsive_single_blog_featured_image_alignment', 'left' );
 			// Single Blog Title Aligmnmnet.
 			$classes[] = 'title-alignment-' . get_theme_mod( 'responsive_single_blog_title_alignment', 'left' );
-			// Single Blog Meta Aligmnmnet.
+			$classes[] = 'title-alignment-tablet-' . get_theme_mod( 'responsive_single_blog_title_alignment_tablet', 'left' );
+			$classes[] = 'title-alignment-mobile-' . get_theme_mod( 'responsive_single_blog_title_alignment_mobile', 'left' );
+
+ 			// Single Blog Meta Aligmnmnet.
 			$classes[] = 'meta-alignment-' . get_theme_mod( 'responsive_single_blog_meta_alignment', 'left' );
+			$classes[] = 'meta-alignment-tablet-' . get_theme_mod( 'responsive_single_blog_meta_alignment_tablet', 'left' );
+			$classes[] = 'meta-alignment-mobile-' . get_theme_mod( 'responsive_single_blog_meta_alignment_mobile', 'left' );
 			// Single Blog Content Aligmnmnet.
 			$classes[] = 'content-alignment-' . get_theme_mod( 'responsive_single_blog_content_alignment', 'left' );
 
@@ -1234,13 +1245,23 @@ function defaults() {
 			'shop_content_width'                  => 100,
 			'blog_content_width'                  => 100,
 			'responsive_container_width'		  => 1340,
+			'single_blog_content_width'           => 66,
+			'single_blog_post_title_inner_elements_spacing' => 10,
+			'single_blog_post_title_layout'       => 'post_title_layout1',
+			'blog_title_layout'					  => 'post_title_layout1',
+			'page_title_layout'                   => 'post_title_layout1',
+			'page_title_inner_elements_spacing'   => 10,
+			'single_blog_post_title_color'        => 'palette3',
+			'single_blog_post_text_color'		  => 'palette2',
+			'single_blog_post_link_color'		  => 'palette0',
+			'single_blog_post_link_hover_color'   => 'palette1',
 			'responsive_narrow_container_width'   => 750,
 			'single_blog_content_width'           => 100,
 			'page_content_width'                  => 100,
 			'breadcrumb_alignment'                => 'center',
 			'read_more_text'                      => 'Read more →',
 			'blog_entry_elements_positioning'     => array( 'featured_image', 'categories', 'title', 'meta', 'content' ),
-			'blog_single_elements_positioning'    => array( 'title', 'meta', 'featured_image', 'content' ),
+			'blog_single_elements_positioning'    => array( 'categories', 'title', 'meta', 'featured_image', 'content' ),
 
 			// alignment.
 			'blog_entry_title_alignment'          => 'left',
@@ -1818,6 +1839,9 @@ function defaults() {
 				'palette' => responsive_get_selected_palette_color_scheme(),
 			),
 		'responsive_single_blog_comments'       => true,
+		'responsive_single_blog_post_title'     => true,
+		'responsive_page_title_area'			=> true,
+		'responsive_blog_title_area'            => true,
 		'responsive_comments_position'          => 'below',
 		'responsive_comments_border_width'      => 0,
 		'responsive_comments_border_color'      => '',
@@ -2920,4 +2944,70 @@ if( ! function_exists( 'responsive_prepare_css_value' ) ) {
 
 		return $value;
 	}
+	/**
+	* Check if the current singular page contains WooCommerce blocks or shortcodes.
+	* Lightweight helper — uses WordPress core has_block() and has_shortcode()
+	* which operate on already-fetched post content (no extra DB queries).
+	* Only runs on singular pages; returns false for archives/listings.
+	*
+	* @return bool True if the page contains WooCommerce content.
+	 */
+	function responsive_page_has_woocommerce_content() {
+		if ( ! is_singular() ) {
+			return false;
+		}
+		$post = get_queried_object();
+		if ( ! $post || ! isset( $post->post_content ) ) {
+			return false;
+		}
+
+		// Check for WooCommerce blocks — must use the 'woocommerce/' namespace,
+		// not a bare name, or has_block() silently rewrites it to 'core/...'
+		// and never matches.
+		$wc_blocks = array(
+			'woocommerce/cart',
+			'woocommerce/checkout',
+			'woocommerce/all-products',
+			'woocommerce/all-reviews',
+			'woocommerce/featured-product',
+			'woocommerce/product-new',
+			'woocommerce/product-category',
+			'woocommerce/product-best-sellers',
+			'woocommerce/product-top-rated',
+			'woocommerce/product-on-sale',
+			'woocommerce/product-search',
+		);
+		foreach ( $wc_blocks as $block ) {
+			if ( has_block( $block, $post ) ) {
+				return true;
+			}
+		}
+
+		// Check for WooCommerce shortcodes.
+		$wc_shortcodes = array(
+			'products',
+			'product_category',
+			'product',
+			'product_page',
+			'add_to_cart',
+			'add_to_cart_url',
+			'best_selling_products',
+			'recent_products',
+			'featured_products',
+			'sale_products',
+			'top_rated_products',
+			'related_products',
+			'woocommerce_cart',
+			'woocommerce_checkout',
+			'woocommerce_my_account',
+		);
+		foreach ( $wc_shortcodes as $shortcode ) {
+			if ( has_shortcode( $post->post_content, $shortcode ) ) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+	
 }
