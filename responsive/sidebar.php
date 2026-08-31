@@ -119,9 +119,16 @@ elseif ( class_exists( 'LifterLMS' ) ) {
 	<?php
 
 	Responsive\responsive_widgets(); // above widgets hook.
-	if ( ! dynamic_sidebar( 'main-sidebar' ) ) :
-	endif; // End of main-sidebar.
-		Responsive\responsive_widgets_end(); // after widgets hook.
+	if ( ! dynamic_sidebar( responsive_get_current_sidebar() ) ) :
+        if ( is_user_logged_in() ) :
+		?>
+		<div class="widget-wrapper responsive-empty-sidebar-notice">
+			<?php esc_html_e( 'This sidebar is currently empty. Add widgets in Appearance > Widgets(Sidebar 1/Sidebar 2) to display content here.', 'responsive' ); ?>
+		</div>
+		<?php
+	endif;
+    endif;
+	Responsive\responsive_widgets_end(); // after widgets hook.
 	?>
 
 	</aside><!-- end of #secondary -->

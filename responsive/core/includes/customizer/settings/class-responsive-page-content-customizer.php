@@ -53,8 +53,13 @@ if ( ! class_exists( 'Responsive_Page_Content_Customizer' ) ) :
 			$tabs_label            = esc_html__( 'Tabs', 'responsive' );
 			$design_tab_ids_prefix = 'customize-control-';
 			$design_tab_ids        = array(
+				$design_tab_ids_prefix . 'responsive_border_page_border_radius',
 				$design_tab_ids_prefix . 'responsive_page_typography_title_separator',
-				$design_tab_ids_prefix . 'responsive_page_title_typography_group',
+				$design_tab_ids_prefix . 'responsive_page_title_typography_group_separator',
+				$design_tab_ids_prefix . 'responsive_page_site_background_color',
+				$design_tab_ids_prefix . 'responsive_page_content_background_color',
+				$design_tab_ids_prefix . 'responsive_page_content_background_separator',
+				$design_tab_ids_prefix . 'responsive_page_content_before_background_separator',
 			);
 
 			$general_tab_ids_prefix = 'customize-control-responsive_page_';
@@ -83,7 +88,14 @@ if ( ! class_exists( 'Responsive_Page_Content_Customizer' ) ) :
 				$general_tab_ids_prefix . 'container_style',
 				$general_tab_ids_prefix . 'container_layout_separator',
 				$general_tab_ids_prefix . 'container_style_separator',
-				$general_tab_ids_prefix . 'title_area'
+				$general_tab_ids_prefix . 'content_alignment_separator',
+				$general_tab_ids_prefix . 'show_comments',
+				$general_tab_ids_prefix . 'default_sidebar_before_separator',
+                $general_tab_ids_prefix . 'default_sidebar',
+				$general_tab_ids_prefix . 'title_area',
+				$general_tab_ids_prefix . 'container_spacing',
+				$general_tab_ids_prefix . 'outside_container_padding',
+				$general_tab_ids_prefix . 'inside_container_padding'
 
 			);
 			responsive_tabs_button_control( $wp_customize, 'page_tabs', $tabs_label, 'responsive_page', 5, '', 'responsive_page_content_general_tab', 'responsive_page_content_design_tab', $general_tab_ids, $design_tab_ids, null );
@@ -195,7 +207,7 @@ if ( ! class_exists( 'Responsive_Page_Content_Customizer' ) ) :
 
 			// Banner Background Color
 			$page_title_banner_background_color_label = __( 'Banner Background Color', 'responsive' );
-			responsive_color_control_with_device_switchers( $wp_customize, 'page_title_banner_background', $page_title_banner_background_color_label, 'responsive_page_title_area_layout', 4, '#ffffff' );
+			responsive_color_control_with_device_switchers( $wp_customize, 'page_title_banner_background', $page_title_banner_background_color_label, 'responsive_page_title_area_layout', 4, Responsive\Core\get_responsive_customizer_defaults( 'responsive_page_title_banner_background_color' ) );
 
 
 			// Page Title Vertical Alignment
@@ -414,7 +426,7 @@ if ( ! class_exists( 'Responsive_Page_Content_Customizer' ) ) :
 
 			// Overlay Color.
 			$page_featured_image_overlay_color_label = esc_html__( 'Overlay Color', 'responsive' );
-			responsive_color_control( $wp_customize, 'page_featured_image_overlay', $page_featured_image_overlay_color_label, 'responsive_page_title_area_layout', 158, '' );
+			responsive_color_control( $wp_customize, 'page_featured_image_overlay', $page_featured_image_overlay_color_label, 'responsive_page_title_area_layout', 158, Responsive\Core\get_responsive_customizer_defaults( 'responsive_page_featured_image_overlay_color' ) );
 
 			// Content Alignment.
 			$page_content_alignment_label   = esc_html__( 'Page Content Alignment', 'responsive' );
@@ -434,9 +446,38 @@ if ( ! class_exists( 'Responsive_Page_Content_Customizer' ) ) :
 			}
 			responsive_select_button_control( $wp_customize, 'page_content_alignment', $page_content_alignment_label, 'responsive_page', 90, $page_content_alignment_choices, 'left', null );
 
-			// Typography
-			$typography_label = __( 'Title Font', 'responsive' );
-			responsive_typography_group_control( $wp_customize, 'page_title_typography_group', $typography_label, 'responsive_page', 91, 'page_title_typography' );
+			responsive_horizontal_separator_control($wp_customize, 'page_content_alignment_separator', 1, 'responsive_page', 91, 1, );
+
+			$container_spacing_label = esc_html__( 'Spacing', 'responsive' );
+			responsive_separator_control( $wp_customize, 'page_container_spacing', $container_spacing_label, 'responsive_page', 104 );
+
+			// Border Radius
+			$wp_customize->add_setting(
+				'blog_border_radius',
+				array(
+					'default'           => 'default',
+					'transport'         => 'refresh',
+					'sanitize_callback' => 'responsive_sanitize_select',
+				)
+			);
+			$page_border_radius_label = esc_html__( 'Border Radius (px)', 'responsive' );
+			responsive_radius_control($wp_customize, 'page_border_radius', 'responsive_page', 94, '', '', null, $page_border_radius_label, 'refresh');
+
+			responsive_unit_padding_control( $wp_customize, 'page_outside_container', 'responsive_page', 105, '', '', null, __( 'Outside Container Padding', 'responsive' ), 'postMessage', '', '', '', '', 'px' );
+
+			responsive_unit_padding_control( $wp_customize, 'page_inside_container', 'responsive_page', 106, '', '', null, __( 'Inside Container Padding', 'responsive' ), 'postMessage', '', '', '', '', 'px' );
+
+			// Show Comments
+			$page_show_comments_label = esc_html__( 'Show Comments', 'responsive' );
+			responsive_toggle_control( $wp_customize, 'page_show_comments', $page_show_comments_label, 'responsive_page', 100, false, null, 'refresh' );
+
+			// Page Site Background Color.
+			$page_site_background_color_label = __( 'Page Background', 'responsive' );
+			responsive_color_control( $wp_customize, 'page_site_background', $page_site_background_color_label, 'responsive_page', 102, Responsive\Core\get_responsive_customizer_defaults('responsive_page_site_background_color') );
+
+			// Page Content Background Color.
+			$page_content_background_color_label = __( 'Page Content Background', 'responsive' );
+			responsive_color_control( $wp_customize, 'page_content_background', $page_content_background_color_label, 'responsive_page', 103, Responsive\Core\get_responsive_customizer_defaults('responsive_page_content_background_color') );
 
 		}
 
