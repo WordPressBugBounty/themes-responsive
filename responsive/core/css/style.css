@@ -942,11 +942,11 @@ table th {
  * Inline elements styles
  * -----------------------------------------------------------------------------
  */
-a:not(:where(h1, h2, &h3, &.site-title, h4, h5, h6) a) {
+a:where(:not(:where(h1, h2, &h3, &.site-title, h4, h5, h6) a)) {
   color: #10659c;
 }
 
-a :focus, a :hover {
+a:where(:not(:where(h1, h2, &h3, &.site-title, h4, h5, h6) a)):focus, a:where(:not(:where(h1, h2, &h3, &.site-title, h4, h5, h6) a)):hover {
   color: #999999;
 }
 
@@ -3106,7 +3106,7 @@ body.res-transparent-header.res-has-transparent-logo .site-header .custom-logo-l
 .site-content-header {
   margin-top: 24px;
   margin-bottom: 24px;
-  padding: 28px;
+  padding: 30px;
   background-color: #ffffff;
   text-align: left;
 }
@@ -3161,7 +3161,6 @@ body.res-transparent-header.res-has-transparent-logo .site-header .custom-logo-l
 
 .site-content-header .breadcrumb-list {
   color: #1e73be;
-  font-size: 13px;
 }
 
 .site-content-header-alignment-left .site-content-header {
