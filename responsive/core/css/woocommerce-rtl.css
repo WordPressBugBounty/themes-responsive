@@ -1023,6 +1023,14 @@ ul.wc-block-grid__products {
   font-weight: bold;
 }
 
+.woocommerce .responsive-product-shipping-text {
+  font-size: 0.9em;
+  font-weight: normal;
+  margin-right: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .woocommerce ul.products {
   margin: 0;
 }
@@ -1774,6 +1782,10 @@ span.res-header-cart-info-wrap, .res-addon-cart-wrap, .res-addon-mobile-cart-wra
   z-index: 1000;
 }
 
+.responsive-floating-bar .responsive-product-shipping-text {
+  display: none;
+}
+
 .floatingb-title {
   font-size: 18px;
   font-weight: normal;
@@ -2363,4 +2375,89 @@ body.responsive-align-btn-bottom ul.wc-block-grid__products li.wc-block-grid__pr
 body.responsive-align-btn-bottom ul.products li.product .responsive-product-action-wrap,
 body.responsive-align-btn-bottom ul.wc-block-grid__products li.wc-block-grid__product .responsive-product-action-wrap {
   margin-top: auto;
+}
+
+/* Single Product Payments Structure */
+fieldset.responsive-product-payments {
+  border: 1px solid #dcdcde;
+  border-radius: 6px;
+  padding: 0 18px 18px;
+  margin: 20px 0;
+  min-inline-size: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+fieldset.responsive-product-payments legend.responsive-product-payments-title {
+  margin: 0 auto;
+  padding: 0 12px;
+  float: none;
+  width: auto;
+  text-align: center;
+  border: none;
+}
+
+fieldset.responsive-product-payments .responsive-product-payments-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px 14px;
+  padding-top: 4px;
+}
+
+fieldset.responsive-product-payments .responsive-product-payment-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+fieldset.responsive-product-payments .responsive-product-payment-item svg {
+  width: 47px;
+  height: 30px;
+  max-width: 47px;
+  max-height: 30px;
+  display: block;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+fieldset.responsive-product-payments .responsive-product-payment-item svg path:not([fill]) {
+  fill: #3c434a;
+}
+
+fieldset.responsive-product-payments .responsive-product-payment-item .responsive-product-payment-image {
+  width: 47px;
+  height: 30px;
+  max-width: 47px;
+  max-height: 30px;
+  object-fit: contain;
+  border-radius: 3px;
+  display: block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+fieldset.responsive-product-payments .responsive-product-payment-item i {
+  font-size: 26px;
+  color: #3c434a;
+}
+
+fieldset.responsive-product-payments.is-grayscale .responsive-product-payment-item {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  opacity: 0.85;
+  transition: filter 0.2s ease, opacity 0.2s ease;
+}
+
+fieldset.responsive-product-payments.is-grayscale .responsive-product-payment-item:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  opacity: 1;
+}
+
+.single-product .site-content-header .product_title,
+.single-product .responsive-single-product-entry-banner .product_title {
+  margin-top: 0;
 }
