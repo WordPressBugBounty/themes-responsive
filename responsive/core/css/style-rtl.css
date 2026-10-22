@@ -212,9 +212,7 @@ html {
     padding-right: 12px;
   }
   .col-xs-12, .site-branding, .main-navigation, .header-widgets .header-widgets-wrapper > .widget, .header-widgets .mobile-header-widgets-wrapper > .widget, .mobile-header-widgets .header-widgets-wrapper > .widget, .mobile-header-widgets .mobile-header-widgets-wrapper > .widget, .content-area, #main-blog.row .entry-column, .header-widgets #main-blog.header-widgets-wrapper .entry-column, .header-widgets #main-blog.mobile-header-widgets-wrapper .entry-column, .mobile-header-widgets #main-blog.header-widgets-wrapper .entry-column, .mobile-header-widgets #main-blog.mobile-header-widgets-wrapper .entry-column, #main-blog.navigation .entry-column, .widget-area, .footer-widgets .footer-widget, .colophon-widgets,
-  .footer-navigation,
-  .social-icon,
-  .copyright {
+  .footer-navigation {
     width: 100%;
     padding-left: 12px;
     padding-right: 12px;
@@ -942,18 +940,6 @@ table th {
  * Inline elements styles
  * -----------------------------------------------------------------------------
  */
-a:where(:not(:where(h1, h2, &h3, &.site-title, h4, h5, h6) a)) {
-  color: #10659c;
-}
-
-a:where(:not(:where(h1, h2, &h3, &.site-title, h4, h5, h6) a)):focus, a:where(:not(:where(h1, h2, &h3, &.site-title, h4, h5, h6) a)):hover {
-  color: #999999;
-}
-
-:where(h1, h2, h3, .site-title, h4, h5, h6) a {
-  color: inherit;
-}
-
 a {
   text-decoration: none;
 }
@@ -3240,26 +3226,6 @@ article.product .post-meta {
   margin-bottom: 20px;
   color: #999999;
   font-size: 13px;
-}
-
-.hentry .post-data a, article.product .post-data a,
-.hentry .post-edit-link a,
-article.product .post-edit-link a,
-.hentry .post-meta a,
-article.product .post-meta a {
-  color: #999999;
-}
-
-.hentry .post-data a:focus, article.product .post-data a:focus, .hentry .post-data a:hover, article.product .post-data a:hover,
-.hentry .post-edit-link a:focus,
-article.product .post-edit-link a:focus,
-.hentry .post-edit-link a:hover,
-article.product .post-edit-link a:hover,
-.hentry .post-meta a:focus,
-article.product .post-meta a:focus,
-.hentry .post-meta a:hover,
-article.product .post-meta a:hover {
-  color: #0066cc;
 }
 
 .hentry .post-data > span::after, article.product .post-data > span::after,
@@ -5852,17 +5818,13 @@ input[type="search"]::-webkit-search-decoration {
 
 @media (min-width: 768px) {
   .footer-bar-layout-horizontal .colophon-widgets, .footer-bar-layout-horizontal
-  .footer-navigation, .footer-bar-layout-horizontal
-  .social-icon, .footer-bar-layout-horizontal
-  .copyright {
+  .footer-navigation {
     width: auto;
   }
 }
 
 .footer-bar-layout-vertical .colophon-widgets, .footer-bar-layout-vertical
-.footer-navigation, .footer-bar-layout-vertical
-.social-icon, .footer-bar-layout-vertical
-.copyright {
+.footer-navigation {
   text-align: center;
 }
 
